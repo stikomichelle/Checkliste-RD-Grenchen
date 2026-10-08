@@ -31,7 +31,7 @@ Wichtig: Die App funktioniert nur über eine Webadresse, nicht durch Doppelklick
 Die Datei mit einem Texteditor öffnen (z. B. TextEdit im Modus «Reiner Text» oder VS Code).
 
 **`phasen`** – die 9 Standardphasen, die in jedem Fall vorkommen.
-**`faelle`** – die einzelnen Fallbeispiele. Ein Fall besteht aus:
+**`faelle`** – die einzelnen Fallbeispiele. Auf der Startseite werden sie nach `kategorie` gruppiert (Reihenfolge wie in der Datei). Ein Fall besteht aus:
 
 ```json
 {

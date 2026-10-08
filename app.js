@@ -194,11 +194,23 @@ function renderHome() {
       </section>
       ${DATA.faelle.some((f) => f.neutral) ? `<h2 class="section-title">Freie Übung</h2>
       <ul class="case-list">${DATA.faelle.filter((f) => f.neutral).map(caseCard).join('')}</ul>` : ''}
-      <h2 class="section-title">Fallbeispiele</h2>
-      <ul class="case-list">${DATA.faelle.filter((f) => !f.neutral).map(caseCard).join('')}</ul>
+      ${groupByCategory(DATA.faelle.filter((f) => !f.neutral)).map(([kat, list]) => `
+      <h2 class="section-title">${esc(kat)}</h2>
+      <ul class="case-list">${list.map(caseCard).join('')}</ul>`).join('')}
       <p class="muted small footnote">${esc(DATA.hinweis || '')}</p>
     </div>`;
   applyMode();
+}
+
+// Fälle nach Kategorie gruppieren (Reihenfolge wie in faelle.json)
+function groupByCategory(list) {
+  const groups = new Map();
+  for (const f of list) {
+    const k = f.kategorie || 'Weitere Fallbeispiele';
+    if (!groups.has(k)) groups.set(k, []);
+    groups.get(k).push(f);
+  }
+  return [...groups.entries()];
 }
 
 function caseCard(f) {
@@ -210,7 +222,7 @@ function caseCard(f) {
   }
   return `<li><a class="case-card" href="#/fall/${encodeURIComponent(f.id)}">
     <div class="case-head">
-      ${f.kategorie ? `<span class="tag">${esc(f.kategorie)}</span>` : ''}
+      ${f.neutral && f.kategorie ? `<span class="tag">${esc(f.kategorie)}</span>` : ''}
       ${f.dringlichkeit ? `<span class="tag tag-prio">${esc(f.dringlichkeit)}</span>` : ''}
       ${status}
     </div>

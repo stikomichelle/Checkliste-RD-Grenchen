@@ -527,8 +527,185 @@
       }
     },
     {
+      "id": "anaphylaxie",
+      "titel": "Anaphylaxie",
+      "kategorie": "Internistisch",
+      "dringlichkeit": "P1",
+      "meldung": {
+        "alarm": "Frau, 29 J., Atemnot und Hautausschlag nach dem Essen",
+        "ort": "Restaurant in der Altstadt",
+        "situation": "Partner meldet: Nach dem Dessert Juckreiz, geschwollene Lippen, jetzt zunehmende Atemnot."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "26/min"
+          ],
+          [
+            "SpO₂",
+            "91 %"
+          ],
+          [
+            "HF",
+            "128/min"
+          ],
+          [
+            "BD",
+            "82/48 mmHg"
+          ],
+          [
+            "GCS",
+            "15"
+          ],
+          [
+            "BZ",
+            "5.6 mmol/l"
+          ],
+          [
+            "Temp.",
+            "36.9 °C"
+          ]
+        ],
+        "befunde": "Generalisierte Urtikaria, Lippen- und Zungenschwellung, heisere Stimme, leiser inspiratorischer Stridor, exspiratorisches Giemen. Bekannte Nussallergie, Adrenalin-Autoinjektor in der Handtasche – nicht angewendet.",
+        "verlauf": [
+          "Ohne Adrenalin nach ca. 5 Minuten: BD 70/40 mmHg, Stridor zunehmend, SpO₂ 86 %.",
+          "Nach Adrenalin i.m.: HF 110/min, BD 105/65 mmHg, Schwellung und Stridor regredient.",
+          "Hinweis: biphasischer Verlauf möglich."
+        ]
+      },
+      "zusatzpunkte": {
+        "xabcde": [
+          {
+            "id": "an-x1",
+            "text": "Anaphylaxie erkannt (Haut, Atmung, Kreislauf, Magen-Darm)",
+            "info": "Plötzlicher Beginn nach Allergenkontakt, mehrere Organsysteme betroffen.",
+            "kritisch": true
+          }
+        ],
+        "anamnese": [
+          {
+            "id": "an-a1",
+            "text": "Auslöser und bekannte Allergien erfragt, Notfallset vorhanden?"
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "an-m1",
+            "text": "Adrenalin i.m. frühzeitig gemäss Algorithmus",
+            "info": "Medikament der ersten Wahl – nicht durch Antihistaminika oder Steroide verzögern.",
+            "kritisch": true
+          },
+          {
+            "id": "an-m2",
+            "text": "Allergenzufuhr gestoppt"
+          },
+          {
+            "id": "an-m3",
+            "text": "Lagerung nach Leitsymptom",
+            "info": "Atemnot: sitzend. Schock: flach, Beine hoch. Patientin nicht aufstehen lassen.",
+            "kritisch": true
+          },
+          {
+            "id": "an-m4",
+            "text": "O₂, Volumen und weitere Medikamente gemäss Algorithmus"
+          },
+          {
+            "id": "an-m5",
+            "text": "Schwellung der Atemwege: Notarzt / Atemwegsmanagement früh geplant"
+          }
+        ],
+        "transport": [
+          {
+            "id": "an-t1",
+            "text": "Spitaleinweisung auch bei Besserung",
+            "info": "Biphasischer Verlauf möglich – Überwachung im Spital."
+          }
+        ]
+      }
+    },
+    {
+      "id": "asthma",
+      "titel": "Asthmaanfall",
+      "kategorie": "Internistisch",
+      "dringlichkeit": "P1",
+      "meldung": {
+        "alarm": "Mann, 19 J., schwere Atemnot",
+        "ort": "Fussballplatz, Zufahrt über Parkplatz",
+        "situation": "Trainer meldet: Spieler bekommt kaum Luft, sein eigenes Spray hilft nicht."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "32/min"
+          ],
+          [
+            "SpO₂",
+            "89 %"
+          ],
+          [
+            "HF",
+            "132/min"
+          ],
+          [
+            "BD",
+            "135/80 mmHg"
+          ],
+          [
+            "GCS",
+            "15"
+          ],
+          [
+            "Temp.",
+            "36.8 °C"
+          ]
+        ],
+        "befunde": "Sitzt vornübergebeugt, spricht nur einzelne Wörter, Atemhilfsmuskulatur aktiv, Giemen beidseits, verlängertes Exspirium. Bekanntes Asthma, Pollensaison, Spray heute bereits 4× benutzt.",
+        "verlauf": [
+          "Ohne Therapie nach ca. 10 Minuten: Erschöpfung, AF 12/min, kaum Atemgeräusch («silent chest»), SpO₂ 82 %, GCS 13.",
+          "Bei korrekter Therapie: AF 22/min, SpO₂ 95 %, spricht ganze Sätze."
+        ]
+      },
+      "zusatzpunkte": {
+        "xabcde": [
+          {
+            "id": "as-x1",
+            "text": "Schweregrad beurteilt (Sprechdyspnoe, «silent chest», Erschöpfung)",
+            "info": "Leises Atemgeräusch und Erschöpfung sind Alarmzeichen – keine Besserung!",
+            "kritisch": true
+          }
+        ],
+        "anamnese": [
+          {
+            "id": "as-a1",
+            "text": "Bisherige Anfälle, Intensivstation / Intubation, Spray-Anwendung heute erfragt"
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "as-m1",
+            "text": "Bronchodilatatoren und Steroide gemäss Algorithmus",
+            "kritisch": true
+          },
+          {
+            "id": "as-m2",
+            "text": "O₂ mit Ziel-SpO₂ gemäss Algorithmus"
+          },
+          {
+            "id": "as-m3",
+            "text": "Sitzende Lagerung, ruhig begleiten"
+          },
+          {
+            "id": "as-m4",
+            "text": "Lebensbedrohlicher Anfall: Notarzt nachgefordert"
+          }
+        ]
+      }
+    },
+    {
       "id": "atemnot",
-      "titel": "Atemnot",
+      "titel": "Exazerbierte COPD",
       "kategorie": "Internistisch",
       "dringlichkeit": "P1",
       "meldung": {
@@ -627,8 +804,1215 @@
       }
     },
     {
+      "id": "lungenoedem",
+      "titel": "Kardiales Lungenödem",
+      "kategorie": "Internistisch",
+      "dringlichkeit": "P1",
+      "meldung": {
+        "alarm": "Mann, 81 J., schwere Atemnot in der Nacht",
+        "ort": "Einfamilienhaus, Schlafzimmer im 1. OG",
+        "situation": "Ehefrau meldet: Ihr Mann sitzt am Bettrand, ringt nach Luft, «es brodelt beim Atmen»."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "34/min"
+          ],
+          [
+            "SpO₂",
+            "82 %"
+          ],
+          [
+            "HF",
+            "118/min"
+          ],
+          [
+            "BD",
+            "210/115 mmHg"
+          ],
+          [
+            "GCS",
+            "15"
+          ],
+          [
+            "BZ",
+            "8.1 mmol/l"
+          ],
+          [
+            "Temp.",
+            "36.5 °C"
+          ]
+        ],
+        "befunde": "Orthopnoe, schaumig-rötliches Sputum, feuchte Rasselgeräusche beidseits bis Mitte Thorax, kaltschweissig, Beinödeme. Bekannte Herzinsuffizienz, Entwässerungstablette seit 3 Tagen vergessen.",
+        "verlauf": [
+          "Wird der Patient flach hingelegt: SpO₂ 75 %, starke Unruhe.",
+          "Unter Therapie (Lagerung, Nitrat, CPAP/NIV): AF 24/min, SpO₂ 92 %, BD 160/90 mmHg."
+        ]
+      },
+      "zusatzpunkte": {
+        "xabcde": [
+          {
+            "id": "lo-x1",
+            "text": "Feuchte Rasselgeräusche / schaumiges Sputum erkannt"
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "lo-m1",
+            "text": "Oberkörper hoch, Beine tief",
+            "kritisch": true
+          },
+          {
+            "id": "lo-m2",
+            "text": "Medikamente gemäss Algorithmus",
+            "info": "z. B. Nitrate bei hohem Blutdruck, Diuretikum – Kontraindikationen beachten."
+          },
+          {
+            "id": "lo-m3",
+            "text": "CPAP / NIV erwogen"
+          },
+          {
+            "id": "lo-m4",
+            "text": "Auslöser gesucht",
+            "info": "ACS, Rhythmusstörung, hypertensive Krise, Medikamenten-Compliance."
+          }
+        ],
+        "transport": [
+          {
+            "id": "lo-t1",
+            "text": "Patient nicht selber gehen lassen, sitzend transportiert"
+          }
+        ]
+      }
+    },
+    {
+      "id": "hyperventilation",
+      "titel": "Hyperventilationssyndrom",
+      "kategorie": "Internistisch",
+      "dringlichkeit": "P2",
+      "meldung": {
+        "alarm": "Frau, 22 J., Atemnot und Kribbeln in den Händen",
+        "ort": "Wohngemeinschaft, 2. OG",
+        "situation": "Mitbewohnerin meldet: Nach einem Streit atmet sie sehr schnell, die Hände verkrampfen."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "32/min"
+          ],
+          [
+            "SpO₂",
+            "100 %"
+          ],
+          [
+            "HF",
+            "112/min"
+          ],
+          [
+            "BD",
+            "135/80 mmHg"
+          ],
+          [
+            "GCS",
+            "15"
+          ],
+          [
+            "BZ",
+            "5.4 mmol/l"
+          ],
+          [
+            "Temp.",
+            "36.8 °C"
+          ]
+        ],
+        "befunde": "Pfötchenstellung beidseits, Kribbeln um den Mund, grosse Angst, Thorax auskultatorisch frei. Nimmt die Pille und raucht – Lungenembolie muss bedacht werden.",
+        "verlauf": [
+          "Mit ruhiger Atemanleitung nach ca. 10 Minuten: AF 18/min, Kribbeln regredient.",
+          "Variante für Fortgeschrittene: SpO₂ 91 % und einseitige Wadenschwellung → Verdacht Lungenembolie."
+        ]
+      },
+      "zusatzpunkte": {
+        "xabcde": [
+          {
+            "id": "hv-x1",
+            "text": "Somatische Ursachen ausgeschlossen",
+            "info": "Hypoxie, Lungenembolie, Asthma, Hypoglykämie, Ketoazidose. Hyperventilationssyndrom ist eine Ausschlussdiagnose.",
+            "kritisch": true
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "hv-m1",
+            "text": "Beruhigend begleiten, Atemanleitung (langsam, Ausatmung betonen)"
+          },
+          {
+            "id": "hv-m2",
+            "text": "Keine Rückatmung in Plastikbeutel",
+            "info": "Gefahr der Hypoxie – heute nicht mehr empfohlen."
+          }
+        ],
+        "transport": [
+          {
+            "id": "hv-t1",
+            "text": "Transportentscheid gemeinsam mit Patientin, Verzicht gemäss Vorgaben dokumentiert"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tachykardie",
+      "titel": "Tachykarde Rhythmusstörung",
+      "kategorie": "Internistisch",
+      "dringlichkeit": "P1",
+      "meldung": {
+        "alarm": "Frau, 48 J., Herzrasen seit 2 Stunden",
+        "ort": "Büro, 4. OG, Lift vorhanden",
+        "situation": "Arbeitskollege meldet: Sie hat starkes Herzklopfen und ist etwas schwindlig."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "22/min"
+          ],
+          [
+            "SpO₂",
+            "96 %"
+          ],
+          [
+            "HF",
+            "190/min, regelmässig"
+          ],
+          [
+            "BD",
+            "105/70 mmHg"
+          ],
+          [
+            "GCS",
+            "15"
+          ],
+          [
+            "BZ",
+            "5.7 mmol/l"
+          ],
+          [
+            "Temp.",
+            "36.7 °C"
+          ]
+        ],
+        "befunde": "Palpitationen, leichter Schwindel, kein Thoraxschmerz. Ähnliche Episoden früher, jeweils spontan vorbei. EKG: regelmässige Schmalkomplextachykardie 190/min.",
+        "verlauf": [
+          "Unter vagalen Manövern (modifiziertes Valsalva): Konversion in Sinusrhythmus 84/min.",
+          "Variante: BD 75/40 mmHg, Bewusstseinsstörung → instabil, Kardioversion gemäss Algorithmus."
+        ]
+      },
+      "zusatzpunkte": {
+        "xabcde": [
+          {
+            "id": "ta-x1",
+            "text": "Instabilitätszeichen geprüft",
+            "info": "Schock, Synkope, Myokardischämie, Herzinsuffizienz.",
+            "kritisch": true
+          }
+        ],
+        "secondary": [
+          {
+            "id": "ta-s1",
+            "text": "Rhythmus beurteilt: QRS schmal / breit, regelmässig / unregelmässig",
+            "kritisch": true
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "ta-m1",
+            "text": "Defibrillator angeschlossen, Pads geklebt",
+            "kritisch": true
+          },
+          {
+            "id": "ta-m2",
+            "text": "Vagale Manöver bei stabiler Schmalkomplextachykardie"
+          },
+          {
+            "id": "ta-m3",
+            "text": "Medikamente / Kardioversion gemäss Algorithmus"
+          },
+          {
+            "id": "ta-m4",
+            "text": "12-Kanal-EKG vor und nach Konversion"
+          }
+        ]
+      }
+    },
+    {
+      "id": "bradykardie",
+      "titel": "Bradykarde Rhythmusstörung",
+      "kategorie": "Internistisch",
+      "dringlichkeit": "P1",
+      "meldung": {
+        "alarm": "Mann, 79 J., Schwindel, beinahe kollabiert",
+        "ort": "Alterswohnung, Parterre",
+        "situation": "Spitex meldet: Patient ist sehr blass, langsamer Puls, wäre beinahe umgefallen."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "18/min"
+          ],
+          [
+            "SpO₂",
+            "95 %"
+          ],
+          [
+            "HF",
+            "32/min"
+          ],
+          [
+            "BD",
+            "78/45 mmHg"
+          ],
+          [
+            "GCS",
+            "14"
+          ],
+          [
+            "BZ",
+            "6.6 mmol/l"
+          ],
+          [
+            "Temp.",
+            "36.4 °C"
+          ]
+        ],
+        "befunde": "Blass, kaltschweissig, verlangsamt. Nimmt Betablocker, Dosis kürzlich erhöht. Niereninsuffizienz bekannt. EKG: AV-Block III° mit breitem Kammerersatzrhythmus.",
+        "verlauf": [
+          "Nach Atropin: keine Wirkung (infranodaler Block).",
+          "Unter Katecholamin bzw. externem Pacing: HF 70/min, BD 110/65 mmHg."
+        ]
+      },
+      "zusatzpunkte": {
+        "xabcde": [
+          {
+            "id": "br-x1",
+            "text": "Instabilitätszeichen geprüft",
+            "info": "Schock, Synkope, Myokardischämie, Herzinsuffizienz.",
+            "kritisch": true
+          }
+        ],
+        "anamnese": [
+          {
+            "id": "br-a1",
+            "text": "Medikamente erfragt (Betablocker, Digitalis, Kalziumantagonisten)"
+          },
+          {
+            "id": "br-a2",
+            "text": "Hyperkaliämie als Ursache bedacht (Niereninsuffizienz)"
+          }
+        ],
+        "secondary": [
+          {
+            "id": "br-s1",
+            "text": "Art der Bradykardie im EKG bestimmt (Sinus, AV-Block I–III)",
+            "kritisch": true
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "br-m1",
+            "text": "Pads geklebt, Pacing-Bereitschaft",
+            "kritisch": true
+          },
+          {
+            "id": "br-m2",
+            "text": "Atropin / Katecholamin / externes Pacing gemäss Algorithmus"
+          },
+          {
+            "id": "br-m3",
+            "text": "Notarzt nachgefordert"
+          }
+        ]
+      }
+    },
+    {
+      "id": "synkope",
+      "titel": "Synkope unklarer Genese",
+      "kategorie": "Internistisch",
+      "dringlichkeit": "P2",
+      "meldung": {
+        "alarm": "Mann, 52 J., kurz bewusstlos",
+        "ort": "Bürogebäude, Treppenhaus 3. OG",
+        "situation": "Kollegin meldet: Er ist auf der Treppe plötzlich zusammengebrochen und nach ca. 30 Sekunden wieder aufgewacht."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "16/min"
+          ],
+          [
+            "SpO₂",
+            "97 %"
+          ],
+          [
+            "HF",
+            "54/min"
+          ],
+          [
+            "BD",
+            "110/70 mmHg"
+          ],
+          [
+            "GCS",
+            "15"
+          ],
+          [
+            "BZ",
+            "5.9 mmol/l"
+          ],
+          [
+            "Temp.",
+            "36.6 °C"
+          ]
+        ],
+        "befunde": "Blass, kleine Platzwunde an der Stirn. Synkope unter Belastung, ohne Vorwarnzeichen. Vater mit 55 J. plötzlich verstorben. EKG: intermittierend AV-Block II° Typ Mobitz.",
+        "verlauf": [
+          "Während des Transports: erneute Synkope, HF 30/min.",
+          "Lehrpunkt: Red Flags erkennen – nicht als «harmlose Ohnmacht» abtun."
+        ]
+      },
+      "zusatzpunkte": {
+        "xabcde": [
+          {
+            "id": "sy-x1",
+            "text": "Sturzverletzungen gesucht (Kopf, HWS)"
+          }
+        ],
+        "anamnese": [
+          {
+            "id": "sy-a1",
+            "text": "Umstände erfragt (Prodromi, Lage, Belastung, Auslöser)"
+          },
+          {
+            "id": "sy-a2",
+            "text": "Red Flags erfragt",
+            "info": "Belastungssynkope, keine Vorwarnzeichen, Thoraxschmerz, Palpitationen, plötzlicher Herztod in der Familie.",
+            "kritisch": true
+          }
+        ],
+        "secondary": [
+          {
+            "id": "sy-s1",
+            "text": "12-Kanal-EKG abgeleitet und beurteilt",
+            "kritisch": true
+          },
+          {
+            "id": "sy-s2",
+            "text": "Orthostase / Volumenmangel bedacht"
+          }
+        ],
+        "transport": [
+          {
+            "id": "sy-t1",
+            "text": "Monitorüberwachung und Defi-Bereitschaft während Transport"
+          }
+        ]
+      }
+    },
+    {
+      "id": "hypoglykaemie",
+      "titel": "Hypoglykämie",
+      "kategorie": "Internistisch",
+      "dringlichkeit": "P1",
+      "meldung": {
+        "alarm": "Mann, 67 J., plötzlich verwirrt",
+        "ort": "Einfamilienhaus, Küche",
+        "situation": "Ehefrau meldet: Ihr Mann ist seit 20 Minuten verwirrt, schwitzt stark und spricht undeutlich. Er spritzt Insulin."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "16/min"
+          ],
+          [
+            "SpO₂",
+            "97 %"
+          ],
+          [
+            "HF",
+            "102/min"
+          ],
+          [
+            "BD",
+            "145/85 mmHg"
+          ],
+          [
+            "GCS",
+            "11 (E3 V3 M5)"
+          ],
+          [
+            "BZ",
+            "1.9 mmol/l"
+          ],
+          [
+            "Temp.",
+            "36.2 °C"
+          ]
+        ],
+        "befunde": "Kaltschweissig, unruhig, keine Halbseitensymptomatik. Hat heute Morgen Insulin gespritzt, wegen Magen-Darm-Infekt kaum gegessen.",
+        "verlauf": [
+          "Ohne Glukose: zunehmend somnolent (GCS 8), Krampfanfall möglich.",
+          "Nach Glukose: innert 5 Minuten GCS 15, BZ 7.2 mmol/l."
+        ]
+      },
+      "zusatzpunkte": {
+        "xabcde": [
+          {
+            "id": "hy-x1",
+            "text": "Blutzucker früh gemessen (bei jeder Bewusstseinsstörung)",
+            "kritisch": true
+          }
+        ],
+        "anamnese": [
+          {
+            "id": "hy-a1",
+            "text": "Diabetesmedikation erfragt (Insulinart, Sulfonylharnstoffe, letzte Dosis)"
+          },
+          {
+            "id": "hy-a2",
+            "text": "Ursache gesucht (Infekt, Erbrechen, Alkohol, Dosisfehler, Sport)"
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "hy-m1",
+            "text": "Glukose gemäss Algorithmus",
+            "info": "Oral nur bei erhaltenem Schluckreflex, sonst i.v. oder Glukagon.",
+            "kritisch": true
+          },
+          {
+            "id": "hy-m2",
+            "text": "Blutzucker nach Therapie kontrolliert"
+          }
+        ],
+        "transport": [
+          {
+            "id": "hy-t1",
+            "text": "Transportentscheid begründet",
+            "info": "Langwirksames Insulin oder Sulfonylharnstoffe → Rückfallgefahr, Transport empfohlen."
+          }
+        ]
+      }
+    },
+    {
+      "id": "sepsis",
+      "titel": "Sepsis bei Pneumonie",
+      "kategorie": "Internistisch",
+      "dringlichkeit": "P1",
+      "meldung": {
+        "alarm": "Mann, 72 J., Fieber und Verwirrtheit",
+        "ort": "Mehrfamilienhaus, 1. OG",
+        "situation": "Ehefrau meldet: Seit 3 Tagen Husten, heute ist er verwirrt und atmet sehr schnell."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "28/min"
+          ],
+          [
+            "SpO₂",
+            "88 %"
+          ],
+          [
+            "HF",
+            "122/min"
+          ],
+          [
+            "BD",
+            "88/50 mmHg"
+          ],
+          [
+            "Rekap.",
+            "3 s"
+          ],
+          [
+            "GCS",
+            "13"
+          ],
+          [
+            "BZ",
+            "9.0 mmol/l"
+          ],
+          [
+            "Temp.",
+            "39.2 °C"
+          ]
+        ],
+        "befunde": "Rasselgeräusche rechts basal, produktiver Husten, marmorierte Haut an den Knien, wenig Urin seit gestern.",
+        "verlauf": [
+          "Ohne Volumen nach ca. 15 Minuten: BD 75/40 mmHg, GCS 11.",
+          "Unter O₂ und Volumen: BD 100/60 mmHg, SpO₂ 93 %."
+        ]
+      },
+      "zusatzpunkte": {
+        "xabcde": [
+          {
+            "id": "se-x1",
+            "text": "Sepsis-Verdacht erkannt (Screening gemäss Vorgaben, z. B. qSOFA)",
+            "info": "AF ≥ 22/min, veränderter Bewusstseinszustand, systolischer BD ≤ 100 mmHg.",
+            "kritisch": true
+          },
+          {
+            "id": "se-x2",
+            "text": "Infektfokus gesucht (Lunge, Urin, Haut, Abdomen)"
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "se-m1",
+            "text": "O₂ und Volumen gemäss Algorithmus"
+          },
+          {
+            "id": "se-m2",
+            "text": "Hygienemassnahmen (Maske für Patient und Team)"
+          }
+        ],
+        "transport": [
+          {
+            "id": "se-t1",
+            "text": "Voranmeldung «Sepsis» im Zielspital",
+            "info": "Zeitkritisch – frühe Antibiotikagabe verbessert die Prognose.",
+            "kritisch": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "akutes-abdomen",
+      "titel": "Akutes Abdomen",
+      "kategorie": "Internistisch",
+      "dringlichkeit": "P1",
+      "meldung": {
+        "alarm": "Mann, 56 J., plötzlich stärkste Bauchschmerzen",
+        "ort": "Einfamilienhaus, Wohnzimmer",
+        "situation": "Sohn meldet: Vater liegt gekrümmt auf dem Sofa, hat stärkste Bauchschmerzen und ist ganz blass."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "26/min"
+          ],
+          [
+            "SpO₂",
+            "95 %"
+          ],
+          [
+            "HF",
+            "118/min"
+          ],
+          [
+            "BD",
+            "95/60 mmHg"
+          ],
+          [
+            "GCS",
+            "15"
+          ],
+          [
+            "BZ",
+            "7.0 mmol/l"
+          ],
+          [
+            "Temp.",
+            "37.8 °C"
+          ],
+          [
+            "NRS",
+            "10/10"
+          ]
+        ],
+        "befunde": "Liegt still mit angezogenen Beinen, brettharter Bauch, Schmerz vor 1 Stunde schlagartig im Oberbauch, jetzt diffus. Magengeschwür bekannt, nimmt Schmerzmittel (NSAR) wegen Rückenschmerzen.",
+        "verlauf": [
+          "Nach ca. 15 Minuten: HF 135/min, BD 80/50 mmHg – zunehmender Schock."
+        ]
+      },
+      "zusatzpunkte": {
+        "xabcde": [
+          {
+            "id": "aa-x1",
+            "text": "Abdomen untersucht (Abwehrspannung, Druckschmerz, Peritonismus, Pulsationen)"
+          }
+        ],
+        "anamnese": [
+          {
+            "id": "aa-a1",
+            "text": "Schmerzbeginn, Lokalisation, Wanderung und Ausstrahlung erfragt"
+          },
+          {
+            "id": "aa-a2",
+            "text": "Stuhl, Erbrechen (Blut / Kaffeesatz), Miktion erfragt"
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "aa-m1",
+            "text": "Schockzeichen erkannt, Volumen gemäss Algorithmus",
+            "kritisch": true
+          },
+          {
+            "id": "aa-m2",
+            "text": "Schmerztherapie gemäss Algorithmus",
+            "info": "Analgesie erschwert die Diagnose im Spital nicht."
+          },
+          {
+            "id": "aa-m3",
+            "text": "Nüchtern lassen, schmerzarme Lagerung (Knierolle)"
+          }
+        ],
+        "transport": [
+          {
+            "id": "aa-t1",
+            "text": "Spital mit Chirurgie, Voranmeldung",
+            "kritisch": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "unklares-abdomen",
+      "titel": "Unklares Abdomen",
+      "kategorie": "Internistisch",
+      "dringlichkeit": "P2",
+      "meldung": {
+        "alarm": "Frau, 78 J., Bauchweh und Übelkeit seit dem Morgen",
+        "ort": "Mehrfamilienhaus, 3. OG mit Lift",
+        "situation": "Tochter meldet: Mutter hat Bauchweh, ist müde und hat einmal erbrochen."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "20/min"
+          ],
+          [
+            "SpO₂",
+            "94 %"
+          ],
+          [
+            "HF",
+            "104/min"
+          ],
+          [
+            "BD",
+            "100/65 mmHg"
+          ],
+          [
+            "GCS",
+            "15"
+          ],
+          [
+            "BZ",
+            "11.2 mmol/l"
+          ],
+          [
+            "Temp.",
+            "36.9 °C"
+          ],
+          [
+            "NRS",
+            "5/10"
+          ]
+        ],
+        "befunde": "Diffuser Oberbauchschmerz, Bauch weich, kaltschweissig, ausgeprägte Müdigkeit. Diabetes mellitus bekannt. 12-Kanal-EKG: ST-Hebungen in II, III, aVF – inferiorer Myokardinfarkt.",
+        "verlauf": [
+          "Wird kein EKG abgeleitet, bleibt die Diagnose verborgen.",
+          "Lehrpunkt: atypische Infarktsymptome bei Frauen, älteren Menschen und Diabetikern."
+        ]
+      },
+      "zusatzpunkte": {
+        "xabcde": [
+          {
+            "id": "ua-x1",
+            "text": "Abdomen untersucht (Abwehrspannung, Druckschmerz, Pulsationen)"
+          }
+        ],
+        "anamnese": [
+          {
+            "id": "ua-a1",
+            "text": "Vorerkrankungen erfragt (Diabetes, KHK, Vorhofflimmern, Aneurysma)"
+          }
+        ],
+        "secondary": [
+          {
+            "id": "ua-s1",
+            "text": "12-Kanal-EKG bei Oberbauchschmerz abgeleitet",
+            "kritisch": true
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "ua-m1",
+            "text": "Nicht-abdominelle Ursachen bedacht",
+            "info": "Herzinfarkt, Pneumonie, Ketoazidose, Aortenaneurysma, Mesenterialischämie.",
+            "kritisch": true
+          }
+        ],
+        "transport": [
+          {
+            "id": "ua-t1",
+            "text": "Zielspital gemäss Arbeitsdiagnose gewählt (z. B. Herzkatheter bei STEMI)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "krampfanfall",
+      "titel": "Krampfereignis",
+      "kategorie": "Neurologisch",
+      "dringlichkeit": "P1",
+      "meldung": {
+        "alarm": "Frau, 24 J., Krampfanfall",
+        "ort": "Einkaufszentrum, Erdgeschoss",
+        "situation": "Passanten melden: Junge Frau ist gestürzt, zuckt am ganzen Körper und krampft immer noch."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "24/min"
+          ],
+          [
+            "SpO₂",
+            "88 % (im Anfall)"
+          ],
+          [
+            "HF",
+            "124/min"
+          ],
+          [
+            "BD",
+            "160/95 mmHg"
+          ],
+          [
+            "GCS",
+            "3 (im Anfall)"
+          ],
+          [
+            "BZ",
+            "5.8 mmol/l"
+          ],
+          [
+            "Temp.",
+            "37.4 °C"
+          ]
+        ],
+        "befunde": "Generalisiert tonisch-klonischer Anfall, bei Eintreffen bereits 6 Minuten Dauer. Seitlicher Zungenbiss, Urinabgang. Bekannte Epilepsie, Medikamente in den Ferien vergessen.",
+        "verlauf": [
+          "Ohne antikonvulsive Therapie: Anfall hält an (Status epilepticus).",
+          "Nach Benzodiazepin: Anfall sistiert, postiktal GCS 9, nach 15 Minuten GCS 13."
+        ]
+      },
+      "zusatzpunkte": {
+        "szene": [
+          {
+            "id": "kr-s1",
+            "text": "Patientin vor Verletzungen geschützt, nichts in den Mund"
+          }
+        ],
+        "xabcde": [
+          {
+            "id": "kr-x1",
+            "text": "Anfallsdauer bestimmt (> 5 Minuten = Status epilepticus)",
+            "kritisch": true
+          }
+        ],
+        "anamnese": [
+          {
+            "id": "kr-a1",
+            "text": "Fremdanamnese: Beginn, Ablauf, Dauer, Epilepsie, Medikamente, Trauma, Alkohol"
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "kr-m1",
+            "text": "Antikonvulsive Therapie gemäss Algorithmus",
+            "kritisch": true
+          },
+          {
+            "id": "kr-m2",
+            "text": "Atemweg in der postiktalen Phase gesichert (Seitenlage, Absaugbereitschaft)"
+          },
+          {
+            "id": "kr-m3",
+            "text": "Verletzungen gesucht (Kopf, Zunge, Schulter)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "stroke",
+      "titel": "Stroke",
+      "kategorie": "Neurologisch",
+      "dringlichkeit": "P1",
+      "meldung": {
+        "alarm": "Frau, 74 J., plötzliche Sprachstörung",
+        "ort": "Alterswohnung, 2. OG mit Lift",
+        "situation": "Tochter meldet: Mutter spricht seit 40 Minuten verwaschen, der rechte Arm ist schwach."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "18/min"
+          ],
+          [
+            "SpO₂",
+            "96 %"
+          ],
+          [
+            "HF",
+            "88/min, unregelmässig"
+          ],
+          [
+            "BD",
+            "185/100 mmHg"
+          ],
+          [
+            "GCS",
+            "14 (V4)"
+          ],
+          [
+            "BZ",
+            "6.4 mmol/l"
+          ],
+          [
+            "Temp.",
+            "36.7 °C"
+          ]
+        ],
+        "befunde": "Fazialisparese rechts, Armschwäche rechts, Aphasie. Vorhofflimmern bekannt, nimmt ein DOAK (Einnahme heute Morgen). Zuletzt gesund gesehen: 08:20 Uhr.",
+        "verlauf": [
+          "Schluckstörung – bei Gabe von Getränken Aspirationsgefahr.",
+          "Sonst stabil; Lehrpunkt: Zeit vor Ort kurz halten."
+        ]
+      },
+      "zusatzpunkte": {
+        "xabcde": [
+          {
+            "id": "st-x1",
+            "text": "Stroke-Zeichen strukturiert erhoben (z. B. BE-FAST)",
+            "kritisch": true
+          },
+          {
+            "id": "st-x2",
+            "text": "Hypoglykämie als Differenzialdiagnose ausgeschlossen",
+            "kritisch": true
+          }
+        ],
+        "anamnese": [
+          {
+            "id": "st-a1",
+            "text": "Symptombeginn bzw. «zuletzt gesund gesehen» exakt erhoben",
+            "kritisch": true
+          },
+          {
+            "id": "st-a2",
+            "text": "Antikoagulation, kürzliche Operationen / Blutungen erfragt"
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "st-m1",
+            "text": "Kurze Zeit vor Ort («time is brain»)",
+            "kritisch": true
+          },
+          {
+            "id": "st-m2",
+            "text": "Nüchtern lassen, Oberkörper leicht hoch"
+          }
+        ],
+        "transport": [
+          {
+            "id": "st-t1",
+            "text": "Stroke Unit / Stroke Center mit Voranmeldung",
+            "kritisch": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "opioid",
+      "titel": "Opioidintoxikation",
+      "kategorie": "Toxikologisch",
+      "dringlichkeit": "P1",
+      "meldung": {
+        "alarm": "Mann, ca. 30 J., bewusstlos",
+        "ort": "Öffentliche Toilette beim Bahnhof",
+        "situation": "Reinigungspersonal meldet: Mann liegt am Boden und atmet kaum."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "4/min"
+          ],
+          [
+            "SpO₂",
+            "72 %"
+          ],
+          [
+            "HF",
+            "58/min"
+          ],
+          [
+            "BD",
+            "100/60 mmHg"
+          ],
+          [
+            "GCS",
+            "4 (E1 V1 M2)"
+          ],
+          [
+            "BZ",
+            "5.2 mmol/l"
+          ],
+          [
+            "Temp.",
+            "35.6 °C"
+          ],
+          [
+            "Pupillen",
+            "stecknadelkopfgross"
+          ]
+        ],
+        "befunde": "Spritzenutensilien neben dem Patienten, Einstichstellen an beiden Unterarmen.",
+        "verlauf": [
+          "Nach Beutel-Masken-Beatmung: SpO₂ 95 %.",
+          "Nach Naloxon: erwacht, agitiert, will gehen. Wirkdauer von Naloxon kürzer als die des Opioids – Gefahr erneuter Atemdepression."
+        ]
+      },
+      "zusatzpunkte": {
+        "szene": [
+          {
+            "id": "op-s1",
+            "text": "Eigenschutz: Spritzen und Nadeln gesichert",
+            "kritisch": true
+          }
+        ],
+        "xabcde": [
+          {
+            "id": "op-x1",
+            "text": "Hypoventilation erkannt, Beutel-Masken-Beatmung vor dem Antidot",
+            "kritisch": true
+          },
+          {
+            "id": "op-x2",
+            "text": "Miosis erkannt"
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "op-m1",
+            "text": "Naloxon titriert gemäss Algorithmus",
+            "info": "Ziel: ausreichende Spontanatmung, nicht vollständiges Erwachen – Entzug und Agitation vermeiden.",
+            "kritisch": true
+          },
+          {
+            "id": "op-m2",
+            "text": "Mischintoxikation bedacht (Benzodiazepine, Alkohol)"
+          }
+        ],
+        "transport": [
+          {
+            "id": "op-t1",
+            "text": "Überwachung trotz Erwachen empfohlen",
+            "info": "Bei Transportverweigerung Urteilsfähigkeit prüfen und dokumentieren."
+          }
+        ]
+      }
+    },
+    {
+      "id": "alkohol",
+      "titel": "C2-Intoxikation",
+      "kategorie": "Toxikologisch",
+      "dringlichkeit": "P2",
+      "meldung": {
+        "alarm": "Mann, 45 J., liegt hilflos am Boden",
+        "ort": "Bahnhofplatz, Polizei vor Ort",
+        "situation": "Polizei meldet: Stark alkoholisierter Mann, kaum ansprechbar, liegt seit unbekannter Zeit draussen."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "14/min"
+          ],
+          [
+            "SpO₂",
+            "94 %"
+          ],
+          [
+            "HF",
+            "96/min"
+          ],
+          [
+            "BD",
+            "105/65 mmHg"
+          ],
+          [
+            "GCS",
+            "10 (E2 V3 M5)"
+          ],
+          [
+            "BZ",
+            "3.4 mmol/l"
+          ],
+          [
+            "Temp.",
+            "35.1 °C"
+          ],
+          [
+            "Pupillen",
+            "isokor"
+          ]
+        ],
+        "befunde": "Alkoholgeruch, Erbrochenes auf der Kleidung, Hämatom am Hinterkopf.",
+        "verlauf": [
+          "Nach ca. 15 Minuten: Pupille rechts weiter als links, GCS 8 → Verdacht auf intrakranielle Blutung.",
+          "Lehrpunkt: Alkohol nicht als einzige Ursache annehmen (Hypoglykämie, Hypothermie, SHT)."
+        ]
+      },
+      "zusatzpunkte": {
+        "szene": [
+          {
+            "id": "al-s1",
+            "text": "Eigenschutz (Aggression, Erbrochenes)"
+          }
+        ],
+        "xabcde": [
+          {
+            "id": "al-x1",
+            "text": "Atemweg bei Erbrechen gesichert (Seitenlage, Absaugbereitschaft)",
+            "kritisch": true
+          },
+          {
+            "id": "al-x2",
+            "text": "Kopfverletzung gesucht – Alkohol nicht als einzige Ursache angenommen",
+            "kritisch": true
+          },
+          {
+            "id": "al-x3",
+            "text": "Blutzucker und Temperatur gemessen, Wärmeerhalt",
+            "kritisch": true
+          }
+        ],
+        "anamnese": [
+          {
+            "id": "al-a1",
+            "text": "Mischintoxikation erfragt (Medikamente, Drogen)"
+          }
+        ],
+        "transport": [
+          {
+            "id": "al-t1",
+            "text": "Spital mit CT bei Verdacht auf SHT"
+          }
+        ]
+      }
+    },
+    {
+      "id": "co-intoxikation",
+      "titel": "CO-Intoxikation",
+      "kategorie": "Toxikologisch",
+      "dringlichkeit": "P1",
+      "meldung": {
+        "alarm": "Mann, 42 J., bewusstseinsgetrübt im Keller",
+        "ort": "Einfamilienhaus, Kellerraum",
+        "situation": "Ehefrau meldet: Ihr Mann reagiert kaum, er hat im Keller mit einem Benzin-Stromaggregat gearbeitet. Sie selbst hat Kopfweh."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "22/min"
+          ],
+          [
+            "SpO₂",
+            "98 % (falsch hoch)"
+          ],
+          [
+            "HF",
+            "116/min"
+          ],
+          [
+            "BD",
+            "100/60 mmHg"
+          ],
+          [
+            "GCS",
+            "12"
+          ],
+          [
+            "BZ",
+            "6.0 mmol/l"
+          ],
+          [
+            "SpCO",
+            "32 %"
+          ]
+        ],
+        "befunde": "Kopfschmerz, Übelkeit, Verwirrtheit. Ehefrau mit Kopfschmerz und Schwindel. Der CO-Warner des Teams schlägt beim Betreten des Hauses an.",
+        "verlauf": [
+          "Bleibt das Team im Gebäude: eigene Symptome (Kopfschmerz, Schwindel).",
+          "Unter 100 % O₂: GCS 14 nach 20 Minuten."
+        ]
+      },
+      "zusatzpunkte": {
+        "szene": [
+          {
+            "id": "co-s1",
+            "text": "CO-Warner getragen, Alarm erkannt, Gefahrenbereich sofort verlassen",
+            "kritisch": true
+          },
+          {
+            "id": "co-s2",
+            "text": "Feuerwehr aufgeboten, Rettung nur unter Eigenschutz",
+            "kritisch": true
+          },
+          {
+            "id": "co-s3",
+            "text": "Weitere Betroffene gesucht (Familie, Nachbarn, Haustiere)"
+          }
+        ],
+        "xabcde": [
+          {
+            "id": "co-x1",
+            "text": "SpO₂ als unzuverlässig erkannt, SpCO gemessen",
+            "kritisch": true
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "co-m1",
+            "text": "Hochdosiert O₂ (100 %) unabhängig von der SpO₂",
+            "kritisch": true
+          }
+        ],
+        "transport": [
+          {
+            "id": "co-t1",
+            "text": "Indikation für Überdruckkammer (HBO) abgeklärt"
+          }
+        ]
+      }
+    },
+    {
       "id": "polytrauma",
-      "titel": "Motorradunfall",
+      "titel": "Polytrauma (Motorradunfall)",
       "kategorie": "Trauma",
       "dringlichkeit": "P1",
       "meldung": {
@@ -748,6 +2132,533 @@
           {
             "id": "pt-t1",
             "text": "Transport in Traumazentrum, Schockraum vorangemeldet",
+            "kritisch": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "sht",
+      "titel": "SHT",
+      "kategorie": "Trauma",
+      "dringlichkeit": "P1",
+      "meldung": {
+        "alarm": "Mann, 68 J., Sturz von der Leiter",
+        "ort": "Einfamilienhaus, Garten",
+        "situation": "Nachbar meldet: Mann ist ca. 2.5 m von der Leiter gefallen, war kurz bewusstlos."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "18/min"
+          ],
+          [
+            "SpO₂",
+            "95 %"
+          ],
+          [
+            "HF",
+            "64/min"
+          ],
+          [
+            "BD",
+            "175/90 mmHg"
+          ],
+          [
+            "GCS",
+            "13 (E3 V4 M6)"
+          ],
+          [
+            "BZ",
+            "6.8 mmol/l"
+          ],
+          [
+            "Pupillen",
+            "isokor, prompt"
+          ]
+        ],
+        "befunde": "Platzwunde am Hinterkopf, Erinnerungslücke, hat einmal erbrochen. Nimmt ein DOAK wegen Vorhofflimmern.",
+        "verlauf": [
+          "Nach ca. 15 Minuten: GCS 9, Pupille links weit und träge, BD 195/95 mmHg, HF 52/min (Hinweis auf Hirndruck)."
+        ]
+      },
+      "zusatzpunkte": {
+        "xabcde": [
+          {
+            "id": "sh-x1",
+            "text": "HWS-Immobilisation bei entsprechendem Unfallmechanismus"
+          },
+          {
+            "id": "sh-x2",
+            "text": "GCS und Pupillen engmaschig kontrolliert, Verlauf dokumentiert",
+            "kritisch": true
+          },
+          {
+            "id": "sh-x3",
+            "text": "Hypoxie und Hypotonie vermieden",
+            "info": "Sekundäre Hirnschädigung verhindern – Zielwerte gemäss Vorgaben.",
+            "kritisch": true
+          }
+        ],
+        "anamnese": [
+          {
+            "id": "sh-a1",
+            "text": "Antikoagulation erfragt",
+            "kritisch": true
+          },
+          {
+            "id": "sh-a2",
+            "text": "Bewusstlosigkeit, Erinnerungslücke, Erbrechen erfragt"
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "sh-m1",
+            "text": "Oberkörper 30° hoch (wenn kein Schock)"
+          }
+        ],
+        "transport": [
+          {
+            "id": "sh-t1",
+            "text": "Spital mit CT und Neurochirurgie, Voranmeldung",
+            "kritisch": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "osg-fraktur",
+      "titel": "OSG-Luxationsfraktur",
+      "kategorie": "Trauma",
+      "dringlichkeit": "P2",
+      "meldung": {
+        "alarm": "Frau, 35 J., Sturz beim Wandern",
+        "ort": "Wanderweg, ca. 300 m vom Parkplatz, steiles Gelände",
+        "situation": "Wanderkollege meldet: Sie ist ausgerutscht, der Fuss steht schief, sie kann nicht mehr gehen."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "20/min"
+          ],
+          [
+            "SpO₂",
+            "98 %"
+          ],
+          [
+            "HF",
+            "96/min"
+          ],
+          [
+            "BD",
+            "130/80 mmHg"
+          ],
+          [
+            "GCS",
+            "15"
+          ],
+          [
+            "NRS",
+            "9/10"
+          ]
+        ],
+        "befunde": "Deutliche Fehlstellung des rechten Sprunggelenks, Haut über dem Innenknöchel gespannt und blass, Fusspulse schwach tastbar, Sensibilität erhalten. Keine weiteren Verletzungen.",
+        "verlauf": [
+          "Ohne Reposition: Haut über dem Knöchel wird weisser, Fuss kühl.",
+          "Nach Analgesie und achsengerechtem Zug: Pulse gut tastbar, Haut rosig."
+        ]
+      },
+      "zusatzpunkte": {
+        "xabcde": [
+          {
+            "id": "os-x1",
+            "text": "Isolierte Verletzung bestätigt (Mechanismus, Body-Check)"
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "os-m1",
+            "text": "DMS vor und nach jeder Manipulation geprüft",
+            "info": "Durchblutung, Motorik, Sensibilität.",
+            "kritisch": true
+          },
+          {
+            "id": "os-m2",
+            "text": "Schmerztherapie gemäss Algorithmus",
+            "kritisch": true
+          },
+          {
+            "id": "os-m3",
+            "text": "Achsengerechte Reposition bei gefährdeter Durchblutung / Haut, gemäss Kompetenz"
+          },
+          {
+            "id": "os-m4",
+            "text": "Schienung inkl. benachbarter Gelenke (z. B. Vakuumschiene)"
+          },
+          {
+            "id": "os-m5",
+            "text": "Schuh und Schmuck entfernt, offene Wunden steril abgedeckt"
+          }
+        ],
+        "transport": [
+          {
+            "id": "os-t1",
+            "text": "Rettung aus unwegsamem Gelände geplant (Feuerwehr, REGA)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "schenkelhals",
+      "titel": "Schenkelhalsfraktur",
+      "kategorie": "Trauma",
+      "dringlichkeit": "P2",
+      "meldung": {
+        "alarm": "Frau, 84 J., nach Sturz am Boden",
+        "ort": "Wohnung, 2. OG ohne Lift",
+        "situation": "Nachbarin meldet: Frau liegt im Badezimmer am Boden, kann nicht aufstehen, liegt vermutlich seit gestern Abend dort."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "18/min"
+          ],
+          [
+            "SpO₂",
+            "95 %"
+          ],
+          [
+            "HF",
+            "98/min"
+          ],
+          [
+            "BD",
+            "115/70 mmHg"
+          ],
+          [
+            "GCS",
+            "15"
+          ],
+          [
+            "BZ",
+            "5.0 mmol/l"
+          ],
+          [
+            "Temp.",
+            "35.4 °C"
+          ],
+          [
+            "NRS",
+            "8/10"
+          ]
+        ],
+        "befunde": "Rechtes Bein verkürzt und aussenrotiert, Druckschmerz in der Leiste. Liegt seit ca. 10 Stunden am Boden. Weiss nicht mehr, warum sie gestürzt ist.",
+        "verlauf": [
+          "Umlagerung ohne Analgesie: starke Schmerzen, HF 120/min.",
+          "Lehrpunkt: Sturzursache (Synkope?) und Liegefolgen abklären."
+        ]
+      },
+      "zusatzpunkte": {
+        "xabcde": [
+          {
+            "id": "sc-x1",
+            "text": "Typische Fehlstellung erkannt (Verkürzung, Aussenrotation), DMS geprüft"
+          }
+        ],
+        "anamnese": [
+          {
+            "id": "sc-a1",
+            "text": "Sturzursache abgeklärt (Synkope, Schwindel, Stolpern, Medikamente)",
+            "kritisch": true
+          },
+          {
+            "id": "sc-a2",
+            "text": "Liegedauer erfragt (Unterkühlung, Druckstellen, Muskelzerfall)"
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "sc-m1",
+            "text": "Schmerztherapie vor Umlagerung",
+            "kritisch": true
+          },
+          {
+            "id": "sc-m2",
+            "text": "Schonende Umlagerung (Schaufeltrage, Vakuummatratze)"
+          },
+          {
+            "id": "sc-m3",
+            "text": "Wärmeerhalt"
+          },
+          {
+            "id": "sc-m4",
+            "text": "Medikamentenliste mitgenommen"
+          }
+        ]
+      }
+    },
+    {
+      "id": "pseudokrupp",
+      "titel": "Pseudokrupp",
+      "kategorie": "Pädiatrie",
+      "dringlichkeit": "P2",
+      "meldung": {
+        "alarm": "Kind, 2 J., Atemnot und bellender Husten",
+        "ort": "Mehrfamilienhaus, 1. OG",
+        "situation": "Mutter meldet: Ihr Sohn ist nachts mit bellendem Husten erwacht und atmet laut."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "38/min"
+          ],
+          [
+            "SpO₂",
+            "95 %"
+          ],
+          [
+            "HF",
+            "140/min"
+          ],
+          [
+            "Temp.",
+            "38.0 °C"
+          ],
+          [
+            "GCS",
+            "15"
+          ]
+        ],
+        "befunde": "Bellender Husten, Heiserkeit, inspiratorischer Stridor in Ruhe, leichte Einziehungen am Hals. Sitzt auf dem Schoss der Mutter. Erkältet seit 2 Tagen. Kein Speichelfluss.",
+        "verlauf": [
+          "Bei Aufregung (Trennung von der Mutter, Rachen anschauen): Stridor nimmt zu, SpO₂ 90 %.",
+          "In Ruhe, mit kühler Luft und Medikamenten: Stridor nur noch bei Aufregung."
+        ]
+      },
+      "zusatzpunkte": {
+        "ersteindruck": [
+          {
+            "id": "pat",
+            "text": "Pädiatrisches Beurteilungsdreieck (Aussehen, Atemarbeit, Hautdurchblutung)",
+            "info": "Erster Blick aus Distanz, bevor das Kind berührt wird.",
+            "kritisch": true
+          }
+        ],
+        "xabcde": [
+          {
+            "id": "norm",
+            "text": "Altersentsprechende Normwerte berücksichtigt",
+            "info": "AF, HF und BD je nach Alter unterschiedlich – Tabelle / Kinder-Notfallband nutzen."
+          },
+          {
+            "id": "pk-x1",
+            "text": "Rachen nicht inspiziert",
+            "info": "Aufregung kann die Atemwege weiter verengen.",
+            "kritisch": true
+          }
+        ],
+        "anamnese": [
+          {
+            "id": "pk-a1",
+            "text": "Differenzialdiagnosen bedacht",
+            "info": "Epiglottitis (Speichelfluss, kein Husten, hohes Fieber, sehr krank), Fremdkörper."
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "pk-m1",
+            "text": "Kind bei Bezugsperson gelassen, ruhige Atmosphäre",
+            "kritisch": true
+          },
+          {
+            "id": "pk-m2",
+            "text": "Medikamente gemäss pädiatrischem Algorithmus"
+          }
+        ],
+        "transport": [
+          {
+            "id": "pk-t1",
+            "text": "Kinderklinik, Bezugsperson begleitet"
+          }
+        ]
+      }
+    },
+    {
+      "id": "fieberkrampf",
+      "titel": "Fieberkrampf",
+      "kategorie": "Pädiatrie",
+      "dringlichkeit": "P1",
+      "meldung": {
+        "alarm": "Kind, 18 Monate, Krampfanfall",
+        "ort": "Reihenhaus, Wohnzimmer",
+        "situation": "Vater meldet: Das Kind hat am ganzen Körper gezuckt, jetzt ist es ganz schläfrig. Seit gestern Fieber."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "30/min"
+          ],
+          [
+            "SpO₂",
+            "96 %"
+          ],
+          [
+            "HF",
+            "150/min"
+          ],
+          [
+            "Temp.",
+            "39.6 °C"
+          ],
+          [
+            "GCS",
+            "12 (postiktal)"
+          ],
+          [
+            "BZ",
+            "5.1 mmol/l"
+          ]
+        ],
+        "befunde": "Generalisierter Anfall ca. 3 Minuten, bei Eintreffen vorbei. Postiktal schläfrig, Infekt der oberen Atemwege. Keine Nackensteife, keine Petechien. Erster Anfall. Eltern stark verängstigt.",
+        "verlauf": [
+          "Variante: erneuter Anfall über 5 Minuten → Antikonvulsivum gemäss pädiatrischem Algorithmus.",
+          "Sonst nach 20 Minuten wach und weinerlich."
+        ]
+      },
+      "zusatzpunkte": {
+        "ersteindruck": [
+          {
+            "id": "pat",
+            "text": "Pädiatrisches Beurteilungsdreieck (Aussehen, Atemarbeit, Hautdurchblutung)",
+            "info": "Erster Blick aus Distanz, bevor das Kind berührt wird.",
+            "kritisch": true
+          }
+        ],
+        "xabcde": [
+          {
+            "id": "norm",
+            "text": "Altersentsprechende Normwerte berücksichtigt",
+            "info": "AF, HF und BD je nach Alter unterschiedlich – Tabelle / Kinder-Notfallband nutzen."
+          },
+          {
+            "id": "fk-x1",
+            "text": "Blutzucker gemessen"
+          },
+          {
+            "id": "fk-x2",
+            "text": "Meningitis-Zeichen gesucht (Petechien, Nackensteife, vorgewölbte Fontanelle)",
+            "kritisch": true
+          }
+        ],
+        "anamnese": [
+          {
+            "id": "fk-a1",
+            "text": "Anfallsdauer, Ablauf, frühere Anfälle, Fieberbeginn, Impfstatus erfragt"
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "fk-m1",
+            "text": "Antikonvulsivum bei Anfall > 5 Minuten gemäss pädiatrischem Algorithmus",
+            "kritisch": true
+          },
+          {
+            "id": "fk-m2",
+            "text": "Fieber senken / leicht entkleiden"
+          },
+          {
+            "id": "fk-m3",
+            "text": "Eltern beruhigt und informiert"
+          }
+        ],
+        "transport": [
+          {
+            "id": "fk-t1",
+            "text": "Kinderklinik (erster Anfall), Bezugsperson begleitet"
+          }
+        ]
+      }
+    },
+    {
+      "id": "fremdkoerper",
+      "titel": "Fremdkörperaspiration",
+      "kategorie": "Pädiatrie",
+      "dringlichkeit": "P1",
+      "meldung": {
+        "alarm": "Kind, 3 J., plötzliche Atemnot beim Essen",
+        "ort": "Spielplatz im Quartier",
+        "situation": "Mutter meldet: Ihre Tochter hat Erdnüsse gegessen, plötzlich gehustet und bekommt schlecht Luft."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "40/min"
+          ],
+          [
+            "SpO₂",
+            "91 %"
+          ],
+          [
+            "HF",
+            "150/min"
+          ],
+          [
+            "GCS",
+            "15"
+          ]
+        ],
+        "befunde": "Hustet kräftig, keuchend. Atemgeräusch rechts abgeschwächt, Giemen. Ansprechbar und weint.",
+        "verlauf": [
+          "Husten wird schwach, Zyanose → ineffektiver Husten: Rückenschläge / Oberbauchkompressionen.",
+          "Bei Bewusstlosigkeit: Reanimation beginnen."
+        ]
+      },
+      "zusatzpunkte": {
+        "ersteindruck": [
+          {
+            "id": "pat",
+            "text": "Pädiatrisches Beurteilungsdreieck (Aussehen, Atemarbeit, Hautdurchblutung)",
+            "info": "Erster Blick aus Distanz, bevor das Kind berührt wird.",
+            "kritisch": true
+          }
+        ],
+        "xabcde": [
+          {
+            "id": "norm",
+            "text": "Altersentsprechende Normwerte berücksichtigt",
+            "info": "AF, HF und BD je nach Alter unterschiedlich – Tabelle / Kinder-Notfallband nutzen."
+          },
+          {
+            "id": "fr-x1",
+            "text": "Hustenstoss beurteilt: effektiv oder ineffektiv",
+            "kritisch": true
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "fr-m1",
+            "text": "Effektiver Husten: zum Husten ermutigen, keine Manöver"
+          },
+          {
+            "id": "fr-m2",
+            "text": "Ineffektiver Husten: Rückenschläge / Oberbauchkompressionen gemäss Algorithmus",
+            "kritisch": true
+          },
+          {
+            "id": "fr-m3",
+            "text": "Bei Bewusstlosigkeit: Reanimation, Mund inspizieren, keine blinde Fingerauswischung"
+          }
+        ],
+        "transport": [
+          {
+            "id": "fr-t1",
+            "text": "Kinderklinik mit Bronchoskopie-Möglichkeit, Voranmeldung",
             "kritisch": true
           }
         ]
