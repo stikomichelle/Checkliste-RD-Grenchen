@@ -71,5 +71,4 @@ Nach dem Bearbeiten den Ordner einfach erneut auf Netlify hochladen. Geänderte 
 Achtung: Wird die `id` eines Punktes geändert, geht dessen gespeicherter Haken auf den Geräten verloren.
 
 ## 5. Design oder Funktionen ändern
-Nach Änderungen an `app.js`, `styles.css` oder `index.html` in `sw.js` die Zeile
-`const CACHE = 'rd-checkliste-v1';` auf `v2`, `v3` … erhöhen, damit installierte Apps die neue Version laden.
+Änderungen werden automatisch geladen, sobald das Gerät online ist. Eine Versionsnummer muss nicht mehr angepasst werden.
