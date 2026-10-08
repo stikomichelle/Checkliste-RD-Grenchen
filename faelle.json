@@ -1,0 +1,744 @@
+{
+  "version": 1,
+  "hinweis": "Übungsinhalte – medizinische Angaben vor dem Einsatz durch die Berufsbildung prüfen und an die Algorithmen des eigenen Rettungsdienstes anpassen.",
+  "phasen": [
+    {
+      "id": "vorbereitung",
+      "titel": "Einsatzvorbereitung / Anfahrt",
+      "punkte": [
+        {
+          "id": "v1",
+          "text": "Einsatzmeldung gelesen, Rückfragen an Einsatzzentrale geklärt",
+          "info": "Adresse, Zugang, Anzahl Patienten, Gefahren, Zusatzinfos der Einsatzzentrale (144)."
+        },
+        {
+          "id": "v2",
+          "text": "Rollen im Team verteilt (Teamleitung, Assistenz)",
+          "info": "Wer führt, wer dokumentiert, wer übernimmt welches Material?"
+        },
+        {
+          "id": "v3",
+          "text": "Mögliche Differenzialdiagnosen besprochen",
+          "info": "2–3 Hypothesen formulieren, ohne sich früh festzulegen."
+        },
+        {
+          "id": "v4",
+          "text": "Material gemäss Meldebild bereitgestellt",
+          "info": "Notfallrucksack, Monitor/Defibrillator, Sauerstoff, Absaugung, Trage/Tragestuhl."
+        },
+        {
+          "id": "v5",
+          "text": "Nachforderung frühzeitig geprüft",
+          "info": "Notarzt, REGA, Polizei, Feuerwehr, weitere Rettungsmittel."
+        }
+      ]
+    },
+    {
+      "id": "szene",
+      "titel": "Eigenschutz & Szene",
+      "punkte": [
+        {
+          "id": "s1",
+          "text": "Gefahren an der Einsatzstelle erkannt",
+          "info": "Verkehr, Strom, Gas, Feuer, Tiere, Aggression, Absturz.",
+          "kritisch": true
+        },
+        {
+          "id": "s2",
+          "text": "Persönliche Schutzausrüstung getragen",
+          "info": "Handschuhe, Warnkleidung, bei Bedarf Schutzbrille / Maske.",
+          "kritisch": true
+        },
+        {
+          "id": "s3",
+          "text": "Anzahl Patienten festgestellt"
+        },
+        {
+          "id": "s4",
+          "text": "Situation / Mechanismus erfasst",
+          "info": "Was ist passiert? Hinweise im Umfeld (Medikamente, Unfallspuren, Angehörige)."
+        },
+        {
+          "id": "s5",
+          "text": "Rückmeldung / Nachforderung an Einsatzzentrale",
+          "info": "Lagemeldung, sobald Szene beurteilt ist."
+        }
+      ]
+    },
+    {
+      "id": "ersteindruck",
+      "titel": "Ersteindruck",
+      "punkte": [
+        {
+          "id": "e1",
+          "text": "Vorstellung, Ansprache, Einverständnis",
+          "info": "Name, Funktion, was als Nächstes passiert."
+        },
+        {
+          "id": "e2",
+          "text": "Bewusstseinslage nach AVPU",
+          "info": "Alert – Voice – Pain – Unresponsive."
+        },
+        {
+          "id": "e3",
+          "text": "Ersteindruck: kritisch / nicht kritisch",
+          "info": "Hautfarbe, Atmung, Bewusstsein, Position. Entscheidet über Tempo und Nachforderung.",
+          "kritisch": true
+        },
+        {
+          "id": "e4",
+          "text": "Sofortige Lebensbedrohung ausgeschlossen bzw. erkannt",
+          "info": "Kreislaufstillstand? → Reanimation nach Algorithmus.",
+          "kritisch": true
+        }
+      ]
+    },
+    {
+      "id": "xabcde",
+      "titel": "Primary Survey (xABCDE)",
+      "punkte": [
+        {
+          "id": "x",
+          "text": "x – Kritische äussere Blutung",
+          "info": "Sofort vor A: lebensbedrohliche Blutung stoppen.",
+          "kritisch": true,
+          "unterpunkte": [
+            {
+              "id": "x-1",
+              "text": "Lebensbedrohliche Blutung gesucht (rascher Body-Check)?"
+            },
+            {
+              "id": "x-2",
+              "text": "Blutung gestoppt (Druck, Druckverband, Tourniquet, Hämostyptikum)?"
+            }
+          ]
+        },
+        {
+          "id": "a",
+          "text": "A – Airway (Atemweg)",
+          "kritisch": true,
+          "unterpunkte": [
+            {
+              "id": "a-1",
+              "text": "Atemweg frei? Spricht der Patient?"
+            },
+            {
+              "id": "a-2",
+              "text": "Atemgeräusche (Stridor, Gurgeln, Schnarchen)?"
+            },
+            {
+              "id": "a-3",
+              "text": "Fremdkörper, Erbrochenes, Blut, Schwellung im Mund-Rachen-Raum?"
+            },
+            {
+              "id": "a-4",
+              "text": "HWS-Protektion nötig (Trauma)?"
+            },
+            {
+              "id": "a-5",
+              "text": "Atemweg gesichert (Lagerung, Absaugen, Hilfsmittel)?"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "text": "B – Breathing (Atmung)",
+          "kritisch": true,
+          "unterpunkte": [
+            {
+              "id": "b-1",
+              "text": "Atemfrequenz?"
+            },
+            {
+              "id": "b-2",
+              "text": "Hautkolorit (Zyanose)?"
+            },
+            {
+              "id": "b-3",
+              "text": "Dyspnoe / Atemarbeit (Atemhilfsmuskulatur, Sprechdyspnoe)?"
+            },
+            {
+              "id": "b-4",
+              "text": "SpO₂?"
+            },
+            {
+              "id": "b-5",
+              "text": "Auskultation?"
+            },
+            {
+              "id": "b-6",
+              "text": "Seitengleiche Thoraxhebungen?"
+            },
+            {
+              "id": "b-7",
+              "text": "Thorax stabil (Trauma)?"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "text": "C – Circulation (Kreislauf)",
+          "kritisch": true,
+          "unterpunkte": [
+            {
+              "id": "c-1",
+              "text": "Puls zentral / peripher (Frequenz, Rhythmus, Qualität)?"
+            },
+            {
+              "id": "c-2",
+              "text": "Rekapillarisierungszeit?"
+            },
+            {
+              "id": "c-3",
+              "text": "Haut (Farbe, Temperatur, Kaltschweissigkeit)?"
+            },
+            {
+              "id": "c-4",
+              "text": "Blutdruck?"
+            },
+            {
+              "id": "c-5",
+              "text": "Blutverlust / Blutungsräume (Thorax, Abdomen, Becken, Oberschenkel)?"
+            },
+            {
+              "id": "c-6",
+              "text": "Monitoring / EKG angeschlossen?"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "text": "D – Disability (Neurologie)",
+          "unterpunkte": [
+            {
+              "id": "d-1",
+              "text": "Bewusstsein (AVPU / GCS)?"
+            },
+            {
+              "id": "d-2",
+              "text": "Pupillen (Grösse, Reaktion, seitengleich)?"
+            },
+            {
+              "id": "d-3",
+              "text": "Blutzucker?"
+            },
+            {
+              "id": "d-4",
+              "text": "Motorik und Sensibilität aller Extremitäten?"
+            },
+            {
+              "id": "d-5",
+              "text": "Stroke-Zeichen (z. B. BE-FAST)?"
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "text": "E – Exposure / Environment",
+          "unterpunkte": [
+            {
+              "id": "e-1",
+              "text": "Entkleidet soweit nötig, Body-Check?"
+            },
+            {
+              "id": "e-2",
+              "text": "Verletzungen / Hautveränderungen (Ausschlag, Ödeme, Einstiche)?"
+            },
+            {
+              "id": "e-3",
+              "text": "Körpertemperatur?"
+            },
+            {
+              "id": "e-4",
+              "text": "Wärmeerhalt / Schutz vor Auskühlung?"
+            },
+            {
+              "id": "e-5",
+              "text": "Hinweise aus der Umgebung (Medikamente, Auffindesituation)?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anamnese",
+      "titel": "Anamnese (SAMPLERS / OPQRST)",
+      "punkte": [
+        {
+          "id": "an-s",
+          "text": "S – Symptome / Leitsymptom",
+          "info": "Was ist das Hauptproblem? Seit wann?"
+        },
+        {
+          "id": "an-a",
+          "text": "A – Allergien"
+        },
+        {
+          "id": "an-m",
+          "text": "M – Medikamente",
+          "info": "Medikamentenliste, Antikoagulation, Einnahme heute?"
+        },
+        {
+          "id": "an-p",
+          "text": "P – Patientengeschichte / Vorerkrankungen"
+        },
+        {
+          "id": "an-l",
+          "text": "L – Letzte Mahlzeit, Ausscheidung, ggf. letzte Periode"
+        },
+        {
+          "id": "an-e",
+          "text": "E – Ereignis: Was ging voraus?"
+        },
+        {
+          "id": "an-r",
+          "text": "R – Risikofaktoren"
+        },
+        {
+          "id": "an-s2",
+          "text": "S – Schwangerschaft (bei Patientinnen im gebärfähigen Alter)",
+          "info": "Mögliche Schwangerschaft? Schwangerschaftswoche? Relevant für Diagnose, Medikamente und Zielspital."
+        },
+        {
+          "id": "an-op",
+          "text": "OPQRST bei Schmerz erhoben",
+          "info": "Onset – Provocation/Palliation – Quality – Region/Radiation – Severity (NRS) – Time."
+        }
+      ]
+    },
+    {
+      "id": "secondary",
+      "titel": "Secondary Survey / Vitalparameter",
+      "punkte": [
+        {
+          "id": "sec1",
+          "text": "Vollständige Vitalparameter erhoben",
+          "info": "AF, SpO₂, HF, BD, Temperatur, BZ, GCS, Schmerz (NRS)."
+        },
+        {
+          "id": "sec2",
+          "text": "Fokussierte bzw. Head-to-toe-Untersuchung"
+        },
+        {
+          "id": "sec3",
+          "text": "Reassessment nach Massnahmen / bei Veränderung",
+          "info": "Bei instabilem Patienten engmaschig, mindestens alle 5 Minuten."
+        }
+      ]
+    },
+    {
+      "id": "massnahmen",
+      "titel": "Massnahmen & Arbeitsdiagnose",
+      "punkte": [
+        {
+          "id": "m1",
+          "text": "Arbeitsdiagnose formuliert und im Team kommuniziert"
+        },
+        {
+          "id": "m2",
+          "text": "Massnahmen gemäss Algorithmus eingeleitet",
+          "info": "Nach den Vorgaben des eigenen Rettungsdienstes."
+        },
+        {
+          "id": "m3",
+          "text": "Lagerung angepasst"
+        },
+        {
+          "id": "m4",
+          "text": "Wirkung der Massnahmen überprüft"
+        },
+        {
+          "id": "m5",
+          "text": "Patient / Angehörige informiert"
+        }
+      ]
+    },
+    {
+      "id": "transport",
+      "titel": "Transportentscheid & Zielspital",
+      "punkte": [
+        {
+          "id": "t1",
+          "text": "Transportpriorität festgelegt",
+          "info": "Dringlichkeit, Fahrt mit / ohne Sondersignal."
+        },
+        {
+          "id": "t2",
+          "text": "Geeignetes Zielspital gewählt",
+          "info": "Welche Versorgung braucht der Patient? Nicht automatisch das nächste Spital."
+        },
+        {
+          "id": "t3",
+          "text": "Voranmeldung im Spital"
+        },
+        {
+          "id": "t4",
+          "text": "Patient für Transport gesichert, Überwachung weitergeführt"
+        }
+      ]
+    },
+    {
+      "id": "uebergabe",
+      "titel": "Rapport",
+      "punkte": [
+        {
+          "id": "r-voll",
+          "text": "Rapport vollständig",
+          "info": "Alle relevanten Informationen: Patient, Situation, Befunde, Vitalwerte, Massnahmen und deren Wirkung, Verlauf."
+        },
+        {
+          "id": "r-sinn",
+          "text": "Rapport sinnvoll",
+          "info": "Das Wesentliche zuerst, Relevantes von Unwichtigem getrennt, auf das Gegenüber abgestimmt."
+        },
+        {
+          "id": "r-struk",
+          "text": "Rapport strukturiert",
+          "info": "Klarer, nachvollziehbarer Aufbau – z. B. entlang xABCDE."
+        },
+        {
+          "id": "r-doc",
+          "text": "Einsatzprotokoll vollständig übergeben"
+        }
+      ]
+    }
+  ],
+  "faelle": [
+    {
+      "id": "thoraxschmerz",
+      "titel": "Thoraxschmerz",
+      "kategorie": "Internistisch",
+      "dringlichkeit": "P1",
+      "meldung": {
+        "alarm": "Mann, 58 J., starke Brustschmerzen seit ca. 30 Minuten",
+        "ort": "Bürogebäude, 2. OG, Lift vorhanden",
+        "situation": "Arbeitskollegin meldet: Patient sitzt blass und schwitzend am Schreibtisch, Schmerz strahlt in den linken Arm aus."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "20/min"
+          ],
+          [
+            "SpO₂",
+            "95 % (Raumluft)"
+          ],
+          [
+            "HF",
+            "96/min, regelmässig"
+          ],
+          [
+            "BD",
+            "150/90 mmHg"
+          ],
+          [
+            "GCS",
+            "15"
+          ],
+          [
+            "BZ",
+            "6.2 mmol/l"
+          ],
+          [
+            "Temp.",
+            "36.8 °C"
+          ],
+          [
+            "NRS",
+            "8/10"
+          ]
+        ],
+        "befunde": "Kaltschweissig, blass, ängstlich. 12-Kanal-EKG: ST-Hebungen in II, III, aVF.",
+        "verlauf": [
+          "Nach ca. 10 Minuten: HF 48/min, BD 85/50 mmHg, Patient schwindlig.",
+          "Hinweis Rechtsherzbeteiligung: rechtspräkordiale Ableitungen (V4R) zeigen ST-Hebung."
+        ]
+      },
+      "zusatzpunkte": {
+        "anamnese": [
+          {
+            "id": "th-a1",
+            "text": "Kardiovaskuläre Risikofaktoren erfragt",
+            "info": "Rauchen, Hypertonie, Diabetes, Hyperlipidämie, Familienanamnese, bekannte KHK."
+          },
+          {
+            "id": "th-a2",
+            "text": "Einnahme von PDE-5-Hemmern erfragt",
+            "info": "Vor jeder Nitrat-Gabe abklären.",
+            "kritisch": true
+          }
+        ],
+        "secondary": [
+          {
+            "id": "th-s1",
+            "text": "12-Kanal-EKG innert 10 Minuten nach Patientenkontakt",
+            "info": "Früh ableiten und beurteilen, bei Bedarf übermitteln.",
+            "kritisch": true
+          },
+          {
+            "id": "th-s2",
+            "text": "Bei inferiorem Infarkt: rechtspräkordiale Ableitungen",
+            "info": "V4R – Rechtsherzbeteiligung hat Konsequenzen für Nitrate und Volumen."
+          },
+          {
+            "id": "th-s3",
+            "text": "Differenzialdiagnosen bedacht",
+            "info": "Lungenembolie, Aortendissektion, Pneumothorax, Perikarditis."
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "th-m1",
+            "text": "Defibrillationsbereitschaft hergestellt (Pads geklebt)",
+            "kritisch": true
+          },
+          {
+            "id": "th-m2",
+            "text": "Medikamente gemäss ACS-Algorithmus",
+            "info": "Analgesie, Thrombozytenaggregationshemmung, Antikoagulation – nach lokalen Vorgaben und Kontraindikationen."
+          },
+          {
+            "id": "th-m3",
+            "text": "Venöser Zugang gelegt"
+          }
+        ],
+        "transport": [
+          {
+            "id": "th-t1",
+            "text": "Bei STEMI: Direkttransport in Zentrum mit Herzkatheterlabor",
+            "info": "Voranmeldung beim Kardiologen, EKG übermitteln.",
+            "kritisch": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "atemnot",
+      "titel": "Atemnot",
+      "kategorie": "Internistisch",
+      "dringlichkeit": "P1",
+      "meldung": {
+        "alarm": "Frau, 72 J., zunehmende Atemnot seit gestern",
+        "ort": "Mehrfamilienhaus, Wohnung im 3. OG, kein Lift",
+        "situation": "Ehemann meldet: Seine Frau kann kaum noch sprechen, sie hat «eine Lungenkrankheit» und hustet seit Tagen."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "28/min"
+          ],
+          [
+            "SpO₂",
+            "84 % (Raumluft)"
+          ],
+          [
+            "HF",
+            "112/min"
+          ],
+          [
+            "BD",
+            "165/95 mmHg"
+          ],
+          [
+            "GCS",
+            "15"
+          ],
+          [
+            "BZ",
+            "7.4 mmol/l"
+          ],
+          [
+            "Temp.",
+            "38.1 °C"
+          ]
+        ],
+        "befunde": "Kutschersitz, Lippenbremse, Atemhilfsmuskulatur aktiv, Sprechdyspnoe (nur 2–3 Wörter). Auskultation: Giemen und Brummen beidseits, verlängertes Exspirium. Bekannte COPD, Heimsauerstoff 2 l/min.",
+        "verlauf": [
+          "Bei hochdosierter O₂-Gabe ohne Zielwert: nach ca. 8 Minuten zunehmend schläfrig (GCS 12), AF 12/min.",
+          "Bei korrekter Therapie: AF sinkt auf 22/min, SpO₂ 90 %, Patientin spricht ganze Sätze."
+        ]
+      },
+      "zusatzpunkte": {
+        "xabcde": [
+          {
+            "id": "at-x1",
+            "text": "Zeichen der Atemerschöpfung beurteilt",
+            "info": "Sprechdyspnoe, Atemhilfsmuskulatur, paradoxe Atmung, Bewusstseinsveränderung.",
+            "kritisch": true
+          }
+        ],
+        "anamnese": [
+          {
+            "id": "at-a1",
+            "text": "Bekannte Lungenerkrankung, Heimsauerstoff, Inhalatoren erfragt"
+          },
+          {
+            "id": "at-a2",
+            "text": "Frühere Exazerbationen / Intubation / NIV erfragt"
+          },
+          {
+            "id": "at-a3",
+            "text": "Infektzeichen erfragt (Fieber, Auswurf)"
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "at-m1",
+            "text": "O₂-Gabe mit SpO₂-Zielbereich bei COPD (88–92 %)",
+            "info": "Hyperoxie vermeiden – Gefahr der Hyperkapnie.",
+            "kritisch": true
+          },
+          {
+            "id": "at-m2",
+            "text": "Oberkörper hoch / Kutschersitz ermöglicht"
+          },
+          {
+            "id": "at-m3",
+            "text": "Inhalationstherapie gemäss Algorithmus",
+            "info": "Bronchodilatatoren, ggf. Steroide – nach lokalen Vorgaben."
+          },
+          {
+            "id": "at-m4",
+            "text": "Indikation für NIV / Notarzt geprüft"
+          }
+        ],
+        "transport": [
+          {
+            "id": "at-t1",
+            "text": "Rettungsweg geplant (Treppe, Tragestuhl, Hilfe)",
+            "info": "Patientin nicht selber gehen lassen – Belastung verschlechtert die Atemnot."
+          }
+        ]
+      }
+    },
+    {
+      "id": "polytrauma",
+      "titel": "Motorradunfall",
+      "kategorie": "Trauma",
+      "dringlichkeit": "P1",
+      "meldung": {
+        "alarm": "Verkehrsunfall Motorrad gegen Personenwagen, 1 Person verletzt",
+        "ort": "Kantonsstrasse ausserorts, 80 km/h-Strecke",
+        "situation": "Augenzeuge meldet: Motorradfahrer liegt neben der Strasse, ist wach, schreit vor Schmerzen. Polizei ist alarmiert."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "30/min"
+          ],
+          [
+            "SpO₂",
+            "90 % (Raumluft)"
+          ],
+          [
+            "HF",
+            "128/min"
+          ],
+          [
+            "BD",
+            "88/50 mmHg"
+          ],
+          [
+            "Rekap.",
+            "4 s"
+          ],
+          [
+            "GCS",
+            "13 (E3 V4 M6)"
+          ],
+          [
+            "BZ",
+            "6.8 mmol/l"
+          ],
+          [
+            "Temp.",
+            "35.9 °C"
+          ]
+        ],
+        "befunde": "Mann, 24 J., Helm noch auf. Spritzende Blutung rechter Oberschenkel. Atemgeräusch rechts abgeschwächt, Prellmarke Thorax rechts. Becken instabil auf Druck schmerzhaft. Offene Unterschenkelfraktur links.",
+        "verlauf": [
+          "Ohne Blutstillung innert 2 Minuten: HF 145/min, BD 70/40 mmHg, GCS 10.",
+          "Nach ca. 10 Minuten: zunehmende Atemnot, SpO₂ 82 %, gestaute Halsvenen – Verdacht Spannungspneumothorax."
+        ]
+      },
+      "zusatzpunkte": {
+        "szene": [
+          {
+            "id": "pt-s1",
+            "text": "Unfallstelle gesichert (Fahrzeugposition, Warnmittel)",
+            "kritisch": true
+          },
+          {
+            "id": "pt-s2",
+            "text": "Unfallmechanismus als Hochrasanztrauma eingestuft",
+            "info": "Konsequenz: Notarzt / REGA, Traumazentrum, kurze Zeit vor Ort."
+          }
+        ],
+        "xabcde": [
+          {
+            "id": "pt-x1",
+            "text": "Tourniquet am Oberschenkel angelegt, Zeit notiert",
+            "info": "Proximal der Blutung, so fest wie nötig, Uhrzeit dokumentieren.",
+            "kritisch": true
+          },
+          {
+            "id": "pt-x2",
+            "text": "Manuelle HWS-Stabilisierung, Helmabnahme zu zweit",
+            "kritisch": true
+          },
+          {
+            "id": "pt-x3",
+            "text": "Zeichen eines Spannungspneumothorax gesucht",
+            "info": "Einseitig abgeschwächtes Atemgeräusch, Hypoxie, Schock, gestaute Halsvenen.",
+            "kritisch": true
+          },
+          {
+            "id": "pt-x4",
+            "text": "Beckenschlinge bei Verdacht auf Beckenverletzung",
+            "info": "Becken nicht wiederholt prüfen («Federn» vermeiden).",
+            "kritisch": true
+          },
+          {
+            "id": "pt-x5",
+            "text": "Wärmeerhalt (Hypothermie verhindern)"
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "pt-m1",
+            "text": "Notarzt / REGA nachgefordert"
+          },
+          {
+            "id": "pt-m2",
+            "text": "Kurze Zeit vor Ort angestrebt («Load and go»)",
+            "info": "Nur lebensrettende Massnahmen vor Ort, Rest während Transport.",
+            "kritisch": true
+          },
+          {
+            "id": "pt-m3",
+            "text": "Volumen / Blutdruckziel gemäss Traumaprotokoll",
+            "info": "Permissive Hypotension, Tranexamsäure – nach lokalen Vorgaben."
+          },
+          {
+            "id": "pt-m4",
+            "text": "Ganzkörperimmobilisation nach Bedarf (Vakuummatratze)"
+          },
+          {
+            "id": "pt-m5",
+            "text": "Offene Fraktur steril abgedeckt"
+          }
+        ],
+        "transport": [
+          {
+            "id": "pt-t1",
+            "text": "Transport in Traumazentrum, Schockraum vorangemeldet",
+            "kritisch": true
+          }
+        ]
+      }
+    }
+  ]
+}
