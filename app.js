@@ -1,7 +1,7 @@
 'use strict';
 
 /* =========================================================
-   RD Fallübungen – Checklisten-App
+   Checkliste Fallbeispiele – Checklisten-App
    Inhalte kommen aus faelle.json, Fortschritt liegt im
    Browser-Speicher (localStorage) des jeweiligen Geräts.
    ========================================================= */
@@ -175,7 +175,7 @@ function isStandalone() {
 }
 
 function renderHome() {
-  document.title = 'RD Fallübungen';
+  document.title = 'Checkliste Fallbeispiele';
   const tip = isIOS() && !isStandalone()
     ? `<section class="card install-tip"><strong>Als App installieren</strong>In Safari auf «Teilen» tippen und «Zum Home-Bildschirm» wählen.</section>`
     : '';
@@ -183,7 +183,7 @@ function renderHome() {
     <header class="topbar"><div class="topbar-inner">
       <div class="brand">
         <img src="icons/icon-192.png" alt="" class="brand-icon">
-        <div><h1>RD Fallübungen</h1><p class="sub">Checklisten für Fallbeispiele</p></div>
+        <div><h1>Checkliste Fallbeispiele</h1><p class="sub">Rettungsdienst · Übungen</p></div>
       </div>
     </div></header>
     <div class="content">
@@ -235,7 +235,7 @@ function caseCard(f) {
 /* ---------- Fall / Checkliste ---------- */
 function renderCase(fall) {
   const cs = caseState(fall.id);
-  document.title = `${fall.titel} · RD Fallübungen`;
+  document.title = `${fall.titel} · Checkliste Fallbeispiele`;
   const phases = phasesFor(fall);
   const open = openPhases[fall.id] || (openPhases[fall.id] = new Set(phases.map((p) => p.id)));
   const m = fall.meldung || {};
@@ -435,7 +435,7 @@ function sumItemHtml(it, cs, isSub) {
 
 function renderSummary(fall) {
   const cs = caseState(fall.id);
-  document.title = `Zusammenfassung ${fall.titel} · RD Fallübungen`;
+  document.title = `Zusammenfassung ${fall.titel} · Checkliste Fallbeispiele`;
   const phases = phasesFor(fall);
   const critOpen = phases.flatMap((p) => flatItems(p).filter((it) => it.kritisch && !cs.checked[it.key]).map((it) => ({ ...it, phase: p.titel })));
   const today = new Date().toLocaleDateString('de-CH', { day: '2-digit', month: '2-digit', year: 'numeric' });
@@ -446,7 +446,7 @@ function renderSummary(fall) {
       <div class="topbar-title"><h1>Zusammenfassung</h1><p class="sub">${esc(fall.titel)}</p></div>
     </div></header>
     <div class="content summary">
-      <div class="print-head"><h1>Zusammenfassung: ${esc(fall.titel)}</h1><p>RD Fallübungen · ${today}</p></div>
+      <div class="print-head"><h1>Zusammenfassung: ${esc(fall.titel)}</h1><p>Checkliste Fallbeispiele · ${today}</p></div>
 
       <section class="card sum-meta">
         <div><span class="muted small">${fall.neutral ? 'Einsatz / Stichwort' : 'Fallbeispiel'}</span><strong>${esc(fall.neutral ? (cs.stichwort || '–') : fall.titel)}</strong></div>

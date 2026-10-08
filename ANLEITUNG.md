@@ -1,4 +1,4 @@
-# RD Fallübungen – Anleitung
+# Checkliste Fallbeispiele – Anleitung
 
 ## 1. Online stellen (Netlify)
 Neue Version: In Netlify im Projekt unter «Deploys» die Datei `rd-checkliste-netlify.zip` ins Feld unten ziehen.

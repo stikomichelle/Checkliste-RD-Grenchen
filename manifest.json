@@ -1,6 +1,6 @@
 {
-  "name": "RD Fallübungen",
-  "short_name": "RD Übung",
+  "name": "Checkliste Fallbeispiele",
+  "short_name": "Checkliste Fallbeispiele",
   "description": "Interaktive Checklisten für Fallbeispiele in der Rettungsdienst-Ausbildung",
   "lang": "de-CH",
   "start_url": "./",
