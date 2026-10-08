@@ -308,21 +308,27 @@
     },
     {
       "id": "secondary",
-      "titel": "Secondary Survey / Vitalparameter",
+      "titel": "Vitalparameter",
       "punkte": [
         {
-          "id": "sec1",
-          "text": "Vollständige Vitalparameter erhoben",
-          "info": "AF, SpO₂, HF, BD, Temperatur, BZ, GCS, Schmerz (NRS)."
+          "id": "vp-nrs",
+          "text": "Schmerz (NRS 0–10)",
+          "info": "Lokalisation und Intensität; Verlauf nach Massnahmen erneut erfragen."
         },
         {
-          "id": "sec2",
-          "text": "Fokussierte bzw. Head-to-toe-Untersuchung"
+          "id": "vp-etco2",
+          "text": "etCO₂ (Kapnografie), falls indiziert",
+          "info": "z. B. bei Atemwegssicherung, Reanimation, Bewusstseinsstörung, schwerer Atemnot."
         },
         {
-          "id": "sec3",
-          "text": "Reassessment nach Massnahmen / bei Veränderung",
-          "info": "Bei instabilem Patienten engmaschig, mindestens alle 5 Minuten."
+          "id": "vp-12",
+          "text": "12-Kanal-EKG, falls indiziert",
+          "info": "z. B. bei Thoraxschmerz, Rhythmusstörung, Synkope, Atemnot."
+        },
+        {
+          "id": "vp-verlauf",
+          "text": "Vitalparameter im Verlauf wiederholt gemessen",
+          "info": "Bei instabilen Patienten engmaschig, mindestens alle 5 Minuten."
         }
       ]
     },
@@ -405,6 +411,13 @@
   ],
   "faelle": [
     {
+      "id": "neutral",
+      "titel": "Neutrale Checkliste",
+      "kategorie": "Ohne Fallbeispiel",
+      "neutral": true,
+      "beschreibung": "Alle Standardphasen ohne vorgegebenes Szenario – für eigene oder mündlich gestellte Fälle."
+    },
+    {
       "id": "thoraxschmerz",
       "titel": "Thoraxschmerz",
       "kategorie": "Internistisch",
@@ -480,14 +493,14 @@
             "id": "th-s2",
             "text": "Bei inferiorem Infarkt: rechtspräkordiale Ableitungen",
             "info": "V4R – Rechtsherzbeteiligung hat Konsequenzen für Nitrate und Volumen."
-          },
+          }
+        ],
+        "massnahmen": [
           {
             "id": "th-s3",
             "text": "Differenzialdiagnosen bedacht",
             "info": "Lungenembolie, Aortendissektion, Pneumothorax, Perikarditis."
-          }
-        ],
-        "massnahmen": [
+          },
           {
             "id": "th-m1",
             "text": "Defibrillationsbereitschaft hergestellt (Pads geklebt)",

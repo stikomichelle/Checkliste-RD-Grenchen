@@ -365,3 +365,10 @@ body.pruefung .item.crit::before { display: none; }
   .sum-meta { grid-template-columns: 1fr 1fr; }
   .subitems { padding-left: 16px; }
 }
+
+/* Eingabefeld (neutrale Checkliste) */
+.text-input {
+  width: 100%; margin-top: 10px; padding: 12px; min-height: 48px;
+  border: 1px solid var(--line); border-radius: 10px;
+  background: var(--surface-2); font-size: 16px;
+}

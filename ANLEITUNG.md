@@ -24,6 +24,7 @@ Wichtig: Die App funktioniert nur über eine Webadresse, nicht durch Doppelklick
 - Jedes Häkchen erhält die Zeit seit Einsatzbeginn (z. B. +03:12).
 - Bei xABCDE hat jeder Hauptpunkt Unterpunkte. Sind alle Unterpunkte abgehakt, hakt sich der Hauptpunkt automatisch ab.
 - Es gibt kein Punktesystem. «Zusammenfassung anzeigen» zeigt am Schluss, was erledigt bzw. nicht erledigt wurde (mit Zeiten) sowie die Notizen; als Text kopieren oder drucken / als PDF sichern.
+- **Neutrale Checkliste** (Startseite, «Freie Übung»): alle Standardphasen ohne Szenario, mit Feld für das Einsatzstichwort. Sie entsteht aus dem Eintrag `"neutral": true` in `faelle.json`.
 - Fortschritt wird nur auf dem jeweiligen Gerät gespeichert.
 
 ## 4. Fälle bearbeiten (`faelle.json`)

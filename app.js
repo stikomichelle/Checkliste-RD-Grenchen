@@ -192,8 +192,10 @@ function renderHome() {
         <div><span class="h3">Modus</span><p class="muted small" id="mode-desc">${esc(modeDesc())}</p></div>
         ${modeSwitch()}
       </section>
+      ${DATA.faelle.some((f) => f.neutral) ? `<h2 class="section-title">Freie Übung</h2>
+      <ul class="case-list">${DATA.faelle.filter((f) => f.neutral).map(caseCard).join('')}</ul>` : ''}
       <h2 class="section-title">Fallbeispiele</h2>
-      <ul class="case-list">${DATA.faelle.map(caseCard).join('')}</ul>
+      <ul class="case-list">${DATA.faelle.filter((f) => !f.neutral).map(caseCard).join('')}</ul>
       <p class="muted small footnote">${esc(DATA.hinweis || '')}</p>
     </div>`;
   applyMode();
@@ -213,7 +215,7 @@ function caseCard(f) {
       ${status}
     </div>
     <h3>${esc(f.titel)}</h3>
-    <p class="muted">${esc(f.meldung?.alarm || '')}</p>
+    <p class="muted">${esc(f.meldung?.alarm || f.beschreibung || '')}</p>
     <span class="chev" aria-hidden="true">›</span>
   </a></li>`;
 }
@@ -246,14 +248,18 @@ function renderCase(fall) {
         ${modeSwitch()}
       </div>
 
-      <section class="card meldung">
+      ${fall.neutral ? `<section class="card">
+        <label for="stichwort" class="h3">Einsatz / Stichwort</label>
+        <input id="stichwort" class="text-input" type="text" autocomplete="off" placeholder="z. B. Sturz Seniorin, Hypoglykämie …" value="${esc(cs.stichwort || '')}">
+        ${fall.beschreibung ? `<p class="muted small" style="margin:8px 0 0">${esc(fall.beschreibung)}</p>` : ''}
+      </section>` : (m.alarm || m.ort || m.situation) ? `<section class="card meldung">
         <h2 class="h3">Einsatzmeldung</h2>
         <dl>
           ${m.alarm ? `<dt>Alarm</dt><dd>${esc(m.alarm)}</dd>` : ''}
           ${m.ort ? `<dt>Ort</dt><dd>${esc(m.ort)}</dd>` : ''}
           ${m.situation ? `<dt>Situation</dt><dd>${esc(m.situation)}</dd>` : ''}
         </dl>
-      </section>
+      </section>` : ''}
 
       ${ins ? `<details class="card instruktor only-uebung">
         <summary>Instruktor-Infos</summary>
@@ -302,6 +308,8 @@ function renderCase(fall) {
     releaseWakeLock(); saveState(); renderTimer(cs);
   });
   document.getElementById('notes').addEventListener('input', (e) => { cs.notizen = e.target.value; saveState(); });
+  const sw = document.getElementById('stichwort');
+  if (sw) sw.addEventListener('input', (e) => { cs.stichwort = e.target.value; saveState(); });
   document.getElementById('case-reset').addEventListener('click', () => {
     if (!confirm(`Fall «${fall.titel}» zurücksetzen?\nAlle Häkchen, Zeiten und Notizen dieses Falls werden gelöscht.`)) return;
     delete state.faelle[fall.id];
@@ -429,7 +437,7 @@ function renderSummary(fall) {
       <div class="print-head"><h1>Zusammenfassung: ${esc(fall.titel)}</h1><p>RD Fallübungen · ${today}</p></div>
 
       <section class="card sum-meta">
-        <div><span class="muted small">Fallbeispiel</span><strong>${esc(fall.titel)}</strong></div>
+        <div><span class="muted small">${fall.neutral ? 'Einsatz / Stichwort' : 'Fallbeispiel'}</span><strong>${esc(fall.neutral ? (cs.stichwort || '–') : fall.titel)}</strong></div>
         <div><span class="muted small">Datum</span><strong>${today}</strong></div>
         <div><span class="muted small">Einsatzzeit</span><strong>${fmt(elapsed(cs))}</strong></div>
       </section>
@@ -467,6 +475,7 @@ function renderSummary(fall) {
 function summaryText(fall, cs) {
   const lines = [
     `ZUSAMMENFASSUNG – ${fall.titel}`,
+    ...(fall.neutral ? [`Einsatz / Stichwort: ${cs.stichwort || '–'}`] : []),
     `Datum: ${new Date().toLocaleDateString('de-CH')}`,
     `Einsatzzeit: ${fmt(elapsed(cs))}`,
     ''
