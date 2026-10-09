@@ -653,6 +653,134 @@
       }
     },
     {
+      "id": "rea-kind",
+      "titel": "Kreislaufstillstand Kind (Ertrinken)",
+      "kategorie": "Reanimation",
+      "dringlichkeit": "P1",
+      "algorithmen": [
+        "10.1",
+        "30.2",
+        "3.3"
+      ],
+      "meldung": {
+        "alarm": "Mädchen, 3 J., aus Pool gezogen, leblos",
+        "ort": "Einfamilienhaus mit Gartenpool",
+        "situation": "Mutter meldet: Ihre Tochter lag im Pool, der Vater hat sie herausgezogen. Sie atmet nicht, die Mutter macht Herzdruckmassage."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "Rhythmus",
+            "Asystolie"
+          ],
+          [
+            "AF",
+            "keine"
+          ],
+          [
+            "GCS",
+            "3"
+          ],
+          [
+            "Temp.",
+            "34.5 °C (ösophageal)"
+          ],
+          [
+            "BZ",
+            "6.2 mmol/l"
+          ],
+          [
+            "Gewicht",
+            "ca. 15 kg"
+          ]
+        ],
+        "befunde": "Zeit unter Wasser unbekannt (max. 5 min), Laien-CPR seit ca. 4 min. Keine sicheren Todeszeichen. Nasse Kleidung.",
+        "verlauf": [
+          "Nach 5 initialen Beatmungen, CPR 15:2 und Adrenalin: ROSC nach ca. 8 min.",
+          "Temperatur 34.5 °C → Medikamente im doppelten Zeitintervall.",
+          "Variante: kein ROSC nach 20 min – Hinweis Ertrinken → Transport in Zielspital unter Reanimation."
+        ]
+      },
+      "zusatzpunkte": {
+        "ersteindruck": [
+          {
+            "id": "rk-e1",
+            "text": "Sichere Todeszeichen / Patientenverfügung geprüft",
+            "info": "Sichere Todeszeichen → Alg. 3.1."
+          },
+          {
+            "id": "rk-e2",
+            "text": "Neugeborenes (1. Lebenstag) ausgeschlossen",
+            "info": "Sonst Alg. 60.2."
+          }
+        ],
+        "xabcde": [
+          {
+            "id": "rk-x1",
+            "text": "5 initiale Beatmungen",
+            "kritisch": true
+          },
+          {
+            "id": "rk-x2",
+            "text": "CPR 15:2 mit minimalen Unterbrüchen",
+            "kritisch": true
+          },
+          {
+            "id": "rk-x3",
+            "text": "Rhythmusanalyse alle 2 min: nicht defibrillierbar (Asystolie / PEA)",
+            "info": "Defibrillierbar: Kammerflimmern, pulslose VT. Im Zweifel: pro schockbar.",
+            "kritisch": true
+          },
+          {
+            "id": "rk-x4",
+            "text": "Nasse Kleidung entfernt, Körpertemperatur gemessen"
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "rk-m1",
+            "text": "Frühzeitiger i.o.-Zugang, falls i.v. frustran"
+          },
+          {
+            "id": "rk-m2",
+            "text": "Adrenalin 0,01 mg/kg so früh wie möglich (0,15 mg), dann alle 3–5 min",
+            "info": "30–35 °C: Medikamente im doppelten Zeitintervall. < 30 °C: keine i.v.-Medikamente, max. 3 Defibrillationen.",
+            "kritisch": true
+          },
+          {
+            "id": "rk-m3",
+            "text": "Reversible Ursachen (HITS) gesucht",
+            "info": "Hypoxie – beatmen · Hypovolämie – Volumenzufuhr · Hypothermie – Wärmeerhalt · Hypo-/Hyperkaliämie – keine Massnahme · Herzbeuteltamponade – punktieren · Intoxikation – Flumazenil 0,01 mg/kg, Naloxon 0,01 mg/kg · Thrombose (ACS / LE) – 100 IE/kg Heparin (danach REA mind. 60 min) · Spannungspneumothorax – bilateral entlasten."
+          },
+          {
+            "id": "rk-m4",
+            "text": "Bei defibrillierbarem Rhythmus: 4 J/kg (60 J), weitere schrittweise bis 8 J/kg",
+            "info": "Nach 3. Defibrillation Adrenalin 0,01 mg/kg (max. 1 mg) und Amiodaron 5 mg/kg (max. 300 mg); nach 5. Defibrillation Amiodaron 5 mg/kg (max. 150 mg)."
+          },
+          {
+            "id": "rk-m5",
+            "text": "Hinweis auf Ertrinken: Transport unter Reanimation erwogen"
+          },
+          {
+            "id": "rk-m6",
+            "text": "ROSC: BZ-Kontrolle; Fentanyl 1,5 mcg/kg (22,5 mcg), Midazolam 0,1–0,2 mg/kg (1,5–3 mg)",
+            "info": "Alg. 3.3, Dosierungen Kinder."
+          },
+          {
+            "id": "rk-m7",
+            "text": "Eltern betreut / Bezugsperson informiert"
+          }
+        ],
+        "transport": [
+          {
+            "id": "rk-t1",
+            "text": "Voranmeldung Schockraum / Kinderklinik mit Anästhesie",
+            "kritisch": true
+          }
+        ]
+      }
+    },
+    {
       "id": "thoraxschmerz",
       "titel": "Thoraxschmerz",
       "kategorie": "Internistisch",
@@ -4136,7 +4264,8 @@
       "kategorie": "Geburtshilfe",
       "dringlichkeit": "P1",
       "algorithmen": [
-        "6.1"
+        "6.1",
+        "60.2"
       ],
       "meldung": {
         "alarm": "Frau, 31 J., starke Wehen, Geburt steht bevor",
@@ -4213,6 +4342,11 @@
             "kritisch": true
           },
           {
+            "id": "gb-m4b",
+            "text": "Neugeborenes beurteilt: Atmung, Herzfrequenz, Tonus (Alg. 60.2)",
+            "info": "Apnoe, abnormale Atmung oder HF < 100/min → 5 initiale Beatmungen (FiO₂ 0,21)."
+          },
+          {
             "id": "gb-m5",
             "text": "Abgenabelt, Geburtszeit dokumentiert"
           },
@@ -4233,6 +4367,117 @@
           {
             "id": "gb-m9",
             "text": "Plazenta asserviert"
+          }
+        ]
+      }
+    },
+    {
+      "id": "neugeborenes",
+      "titel": "Neugeborenenversorgung",
+      "kategorie": "Geburtshilfe",
+      "dringlichkeit": "P1",
+      "algorithmen": [
+        "60.2",
+        "6.1"
+      ],
+      "meldung": {
+        "alarm": "Sturzgeburt im Auto, Neugeborenes atmet nicht",
+        "ort": "Parkplatz vor dem Spital Grenchen",
+        "situation": "Vater meldet: Seine Frau hat im Auto auf dem Weg zur Geburtsklinik geboren, das Baby ist ganz schlaff und bläulich."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "Atmung",
+            "keine"
+          ],
+          [
+            "HF",
+            "70/min"
+          ],
+          [
+            "Tonus",
+            "schlaff"
+          ],
+          [
+            "APGAR 1 min",
+            "2"
+          ],
+          [
+            "SSW",
+            "36"
+          ],
+          [
+            "Gewicht",
+            "ca. 2.8 kg"
+          ]
+        ],
+        "befunde": "Geburt vor ca. 1 min, Kind nass, nicht abgenabelt. Mutter wach, mässige Blutung.",
+        "verlauf": [
+          "Nach Abtrocknen und Stimulieren: keine Atmung, HF 70/min → 5 initiale Beatmungen (FiO₂ 0,21).",
+          "Nach Beatmung und Re-Evaluation der Ventilationstechnik: HF 50/min → CPR 3:1.",
+          "Nach 60 s CPR: HF 110/min, Eigenatmung; präduktale SpO₂ nach 4 min 80 %."
+        ]
+      },
+      "zusatzpunkte": {
+        "xabcde": [
+          {
+            "id": "nb-x1",
+            "text": "Erste 30 s: Wärmeerhalt, abtrocknen, stimulieren, Atemweg ggf. freimachen",
+            "kritisch": true
+          },
+          {
+            "id": "nb-x2",
+            "text": "Apnoe / abnormale Atmung / HF < 100/min erkannt",
+            "kritisch": true
+          },
+          {
+            "id": "nb-x3",
+            "text": "5 initiale Beatmungen mit FiO₂ 0,21; Pulsoxymetrie und EKG erwogen",
+            "kritisch": true
+          },
+          {
+            "id": "nb-x4",
+            "text": "Präduktale SpO₂ an der rechten Hand gemessen",
+            "info": "Akzeptable präduktale SpO₂: 2 min 65 % · 3 min 70 % · 4 min 80 % · 5 min 85 % · 10 min 90 %."
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "nb-m1",
+            "text": "HF < 100/min: Ventilationstechnik re-evaluiert (Atemwegshilfen erwogen)"
+          },
+          {
+            "id": "nb-m2",
+            "text": "HF < 60/min: CPR 3:1, Kompressionsfrequenz 120/min, FiO₂ 1,0",
+            "kritisch": true
+          },
+          {
+            "id": "nb-m3",
+            "text": "HF nach 30 s weiter < 60/min: Adrenalin 0,01 mg/kg (≈ 0,03 mg) alle 3–5 min"
+          },
+          {
+            "id": "nb-m4",
+            "text": "Erhöhte Atemarbeit / persistierende Zyanose: zusätzlich O₂ (FiO₂ 1,0) nach präduktalem Zielwert"
+          },
+          {
+            "id": "nb-m5",
+            "text": "Expertenunterstützung und Isolette angefordert"
+          },
+          {
+            "id": "nb-m6",
+            "text": "Abgenabelt, Geburtszeit dokumentiert, APGAR nach 1, 5 und 10 min"
+          },
+          {
+            "id": "nb-m7",
+            "text": "Mutter als zweite Patientin versorgt (Nachblutung)"
+          }
+        ],
+        "transport": [
+          {
+            "id": "nb-t1",
+            "text": "Neonatologie / Kinderklinik mit Voranmeldung",
+            "kritisch": true
           }
         ]
       }
@@ -4473,6 +4718,10 @@
           [
             "GCS",
             "15"
+          ],
+          [
+            "Gewicht",
+            "ca. 12 kg"
           ]
         ],
         "befunde": "Bellender Husten, Heiserkeit, inspiratorischer Stridor in Ruhe, leichte Einziehungen am Hals. Sitzt auf dem Schoss der Mutter. Erkältet seit 2 Tagen. Kein Speichelfluss.",
@@ -4485,8 +4734,8 @@
         "ersteindruck": [
           {
             "id": "pat",
-            "text": "Pädiatrisches Beurteilungsdreieck (Aussehen, Atemarbeit, Hautdurchblutung)",
-            "info": "Erster Blick aus Distanz, bevor das Kind berührt wird.",
+            "text": "Pädiatrisches Beurteilungsdreieck (PAT): Aussehen, Atemarbeit, Kreislauf",
+            "info": "Erster Blick aus Distanz. A – Aussehen (TICLS: Tonus, Interaktivität, Tröstbarkeit, Blick, Sprache / Weinen) · B – Atemarbeit (Kutschersitz, Schnüffelposition, Einziehungen, Nasenflügeln, Stridor / Giemen) · C – Kreislauf (Hautfarbe: blass, marmoriert, Zyanose, Hämatome, Petechien, Blutungen). Danach Abfolge x-A-B-C-D.",
             "kritisch": true
           }
         ],
@@ -4499,15 +4748,20 @@
           {
             "id": "pk-x1",
             "text": "Rachen nicht inspiziert",
-            "info": "Aufregung kann die Atemwege weiter verengen.",
+            "info": "Aufregung kann die Atemwege weiter verengen. Bei Verdacht auf Epiglottitis Racheninspektion unbedingt vermeiden.",
             "kritisch": true
+          },
+          {
+            "id": "pk-x2",
+            "text": "Respiratorische Erschöpfung beurteilt",
+            "info": "Falls ja: NIV / assistierte Beatmung, falls toleriert / möglich; Aufgebot NA."
           }
         ],
         "anamnese": [
           {
             "id": "pk-a1",
             "text": "Differenzialdiagnosen bedacht",
-            "info": "Epiglottitis (Speichelfluss, kein Husten, hohes Fieber, sehr krank), Fremdkörper."
+            "info": "Epiglottitis (Speichelfluss, kein Husten, hohes Fieber, sehr krank), Fremdkörper, allergische Reaktion (Alg. 20.2)."
           }
         ],
         "massnahmen": [
@@ -4518,7 +4772,23 @@
           },
           {
             "id": "pk-m2",
-            "text": "Medikamente gemäss pädiatrischem Algorithmus"
+            "text": "Hochdosiert O₂ – Vertrauensperson hält die Maske vor"
+          },
+          {
+            "id": "pk-m3",
+            "text": "Bei Bedarf Adrenalin inhalativ: > 1 J 5 mg",
+            "info": "< 1 J: 0,5 mg/kg KG.",
+            "kritisch": true
+          },
+          {
+            "id": "pk-m4",
+            "text": "Keine Besserung: Aufgebot NA",
+            "kritisch": true
+          },
+          {
+            "id": "pk-m5",
+            "text": "Bei gelungener Infusion erwägen: Methylprednisolon 2 mg/kg (24 mg), Magnesium 50 mg/kg (600 mg), Esketamin 0,125–0,25 mg/kg (1,5–3 mg)",
+            "info": "Werte in Klammern für 12 kg."
           }
         ],
         "transport": [
@@ -4527,7 +4797,11 @@
             "text": "Kinderklinik, Bezugsperson begleitet"
           }
         ]
-      }
+      },
+      "algorithmen": [
+        "10.1",
+        "20.1"
+      ]
     },
     {
       "id": "fieberkrampf",
@@ -4564,11 +4838,15 @@
           [
             "BZ",
             "5.1 mmol/l"
+          ],
+          [
+            "Gewicht",
+            "ca. 11 kg"
           ]
         ],
         "befunde": "Generalisierter Anfall ca. 3 Minuten, bei Eintreffen vorbei. Postiktal schläfrig, Infekt der oberen Atemwege. Keine Nackensteife, keine Petechien. Erster Anfall. Eltern stark verängstigt.",
         "verlauf": [
-          "Variante: erneuter Anfall über 5 Minuten → Antikonvulsivum gemäss pädiatrischem Algorithmus.",
+          "Variante: erneuter Anfall → Diazepam Rektiole 5 mg; persistiert → NA, Repetition, danach Midazolam 0,2–0,4 mg/kg i.n.",
           "Sonst nach 20 Minuten wach und weinerlich."
         ]
       },
@@ -4576,8 +4854,8 @@
         "ersteindruck": [
           {
             "id": "pat",
-            "text": "Pädiatrisches Beurteilungsdreieck (Aussehen, Atemarbeit, Hautdurchblutung)",
-            "info": "Erster Blick aus Distanz, bevor das Kind berührt wird.",
+            "text": "Pädiatrisches Beurteilungsdreieck (PAT): Aussehen, Atemarbeit, Kreislauf",
+            "info": "Erster Blick aus Distanz. A – Aussehen (TICLS: Tonus, Interaktivität, Tröstbarkeit, Blick, Sprache / Weinen) · B – Atemarbeit (Kutschersitz, Schnüffelposition, Einziehungen, Nasenflügeln, Stridor / Giemen) · C – Kreislauf (Hautfarbe: blass, marmoriert, Zyanose, Hämatome, Petechien, Blutungen). Danach Abfolge x-A-B-C-D.",
             "kritisch": true
           }
         ],
@@ -4589,11 +4867,13 @@
           },
           {
             "id": "fk-x1",
-            "text": "Blutzucker gemessen"
+            "text": "Blutzucker gemessen (< 3,3 mmol/l = Hypoglykämie)",
+            "kritisch": true
           },
           {
             "id": "fk-x2",
-            "text": "Meningitis-Zeichen gesucht (Petechien, Nackensteife, vorgewölbte Fontanelle)",
+            "text": "Meningitis- / Sepsiszeichen gesucht (Petechien, Nackensteife, vorgewölbte Fontanelle)",
+            "info": "Falls ja: Alg. 3.10.",
             "kritisch": true
           }
         ],
@@ -4601,21 +4881,44 @@
           {
             "id": "fk-a1",
             "text": "Anfallsdauer, Ablauf, frühere Anfälle, Fieberbeginn, Impfstatus erfragt"
+          },
+          {
+            "id": "fk-a2",
+            "text": "Differenzialdiagnosen bedacht",
+            "info": "Hypoxie, Intoxikation (Tox Info Suisse 145), Entzug, Elektrounfall, Elektrolytstörung, Meningoenzephalitis, Hirndruck."
           }
         ],
         "massnahmen": [
           {
+            "id": "fk-m0",
+            "text": "Hochdosiert O₂, Schutz vor Verletzungen"
+          },
+          {
             "id": "fk-m1",
-            "text": "Antikonvulsivum bei Anfall > 5 Minuten gemäss pädiatrischem Algorithmus",
+            "text": "Krampf persistiert: Diazepam Rektiole 5 mg",
             "kritisch": true
           },
           {
             "id": "fk-m2",
-            "text": "Fieber senken / leicht entkleiden"
+            "text": "BZ < 3,3 mmol/l: Glucose i.v. 0,5 g/kg (5,5 g)",
+            "info": "Neugeborene 0,25 g/kg. Erwäge Glukagon s.c.: < 25 kg 0,5 mg (halbe Spritze)."
           },
           {
             "id": "fk-m3",
-            "text": "Eltern beruhigt und informiert"
+            "text": "Weiter Krampf: Aufgebot NA, Diazepam Rektiole 5 mg wiederholen"
+          },
+          {
+            "id": "fk-m4",
+            "text": "Weiter Krampf: Midazolam 0,2–0,4 mg/kg i.n. (2,2–4,4 mg)"
+          },
+          {
+            "id": "fk-m5",
+            "text": "Weiter Krampf: erwäge Clonazepam 0,03 mg/kg i.v. (0,33 mg) oder Midazolam 0,1–0,2 mg/kg i.v. (1,1–2,2 mg)",
+            "info": "Status (> 5 min): erwäge Thiopental 1–5 mg/kg und Atemwegssicherung."
+          },
+          {
+            "id": "fk-m6",
+            "text": "Fieber senken / leicht entkleiden, Eltern beruhigt und informiert"
           }
         ],
         "transport": [
@@ -4624,7 +4927,12 @@
             "text": "Kinderklinik (erster Anfall), Bezugsperson begleitet"
           }
         ]
-      }
+      },
+      "algorithmen": [
+        "10.1",
+        "40.1",
+        "40.2"
+      ]
     },
     {
       "id": "fremdkoerper",
@@ -4653,6 +4961,10 @@
           [
             "GCS",
             "15"
+          ],
+          [
+            "Gewicht",
+            "ca. 14 kg"
           ]
         ],
         "befunde": "Hustet kräftig, keuchend. Atemgeräusch rechts abgeschwächt, Giemen. Ansprechbar und weint.",
@@ -4665,8 +4977,8 @@
         "ersteindruck": [
           {
             "id": "pat",
-            "text": "Pädiatrisches Beurteilungsdreieck (Aussehen, Atemarbeit, Hautdurchblutung)",
-            "info": "Erster Blick aus Distanz, bevor das Kind berührt wird.",
+            "text": "Pädiatrisches Beurteilungsdreieck (PAT): Aussehen, Atemarbeit, Kreislauf",
+            "info": "Erster Blick aus Distanz. A – Aussehen (TICLS: Tonus, Interaktivität, Tröstbarkeit, Blick, Sprache / Weinen) · B – Atemarbeit (Kutschersitz, Schnüffelposition, Einziehungen, Nasenflügeln, Stridor / Giemen) · C – Kreislauf (Hautfarbe: blass, marmoriert, Zyanose, Hämatome, Petechien, Blutungen). Danach Abfolge x-A-B-C-D.",
             "kritisch": true
           }
         ],
@@ -4678,23 +4990,28 @@
           },
           {
             "id": "fr-x1",
-            "text": "Hustenstoss beurteilt: effektiv oder ineffektiv",
+            "text": "Hustenstoss beurteilt: effektiv oder ineffektiv / komplett verlegt",
             "kritisch": true
           }
         ],
         "massnahmen": [
+          {
+            "id": "fr-m0",
+            "text": "Hochdosiert O₂"
+          },
           {
             "id": "fr-m1",
             "text": "Effektiver Husten: zum Husten ermutigen, keine Manöver"
           },
           {
             "id": "fr-m2",
-            "text": "Ineffektiver Husten: Rückenschläge / Oberbauchkompressionen gemäss Algorithmus",
+            "text": "Komplett verlegt (> 1 J): Heimlichmanöver erwägen, Aufgebot NA",
+            "info": "< 1 J: 5 Rückenschläge, gefolgt von 5 Thoraxkompressionen. Danach Alg. 8.1 Schwieriger Atemweg.",
             "kritisch": true
           },
           {
             "id": "fr-m3",
-            "text": "Bei Bewusstlosigkeit: Reanimation, Mund inspizieren, keine blinde Fingerauswischung"
+            "text": "Bei Bewusstlosigkeit: Reanimation nach Alg. 30.2"
           }
         ],
         "transport": [
@@ -4704,7 +5021,11 @@
             "kritisch": true
           }
         ]
-      }
+      },
+      "algorithmen": [
+        "10.1",
+        "20.1"
+      ]
     },
     {
       "id": "meningokokken",
@@ -4712,6 +5033,8 @@
       "kategorie": "Pädiatrie",
       "dringlichkeit": "P1",
       "algorithmen": [
+        "10.1",
+        "40.1",
         "3.10"
       ],
       "meldung": {
@@ -4768,8 +5091,8 @@
         "ersteindruck": [
           {
             "id": "pat",
-            "text": "Pädiatrisches Beurteilungsdreieck (Aussehen, Atemarbeit, Hautdurchblutung)",
-            "info": "Erster Blick aus Distanz, bevor das Kind berührt wird.",
+            "text": "Pädiatrisches Beurteilungsdreieck (PAT): Aussehen, Atemarbeit, Kreislauf",
+            "info": "Erster Blick aus Distanz. A – Aussehen (TICLS: Tonus, Interaktivität, Tröstbarkeit, Blick, Sprache / Weinen) · B – Atemarbeit (Kutschersitz, Schnüffelposition, Einziehungen, Nasenflügeln, Stridor / Giemen) · C – Kreislauf (Hautfarbe: blass, marmoriert, Zyanose, Hämatome, Petechien, Blutungen). Danach Abfolge x-A-B-C-D.",
             "kritisch": true
           }
         ],
@@ -4822,6 +5145,610 @@
           }
         ]
       }
+    },
+    {
+      "id": "anaphylaxie-kind",
+      "titel": "Anaphylaxie Kind",
+      "kategorie": "Pädiatrie",
+      "dringlichkeit": "P1",
+      "algorithmen": [
+        "10.1",
+        "20.2"
+      ],
+      "meldung": {
+        "alarm": "Knabe, 6 J., Atemnot und Ausschlag an Kindergeburtstag",
+        "ort": "Gemeinschaftsraum eines Mehrfamilienhauses",
+        "situation": "Mutter des Gastgebers meldet: Ein Kind hat Kuchen mit Nüssen gegessen, jetzt ist es überall rot, hustet und atmet laut."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "34/min"
+          ],
+          [
+            "SpO₂",
+            "90 %"
+          ],
+          [
+            "HF",
+            "150/min"
+          ],
+          [
+            "BD",
+            "70/40 mmHg"
+          ],
+          [
+            "Rekap.",
+            "3 s"
+          ],
+          [
+            "GCS",
+            "14"
+          ],
+          [
+            "Gewicht",
+            "ca. 20 kg"
+          ]
+        ],
+        "befunde": "Generalisierte Urtikaria, Lippenschwellung, inspiratorischer Stridor, Giemen. Bekannte Nussallergie, Notfallset bei der Mutter (nicht vor Ort).",
+        "verlauf": [
+          "Ohne Adrenalin nach 5 min: BD 60/35 mmHg, GCS 11.",
+          "Nach Adrenalin i.m. und Volumen: HF 125/min, BD 90/55 mmHg, Stridor regredient.",
+          "Lehrpunkt: Mindest-Systole für 6 J = 70 + 12 = 82 mmHg → Stadium 3."
+        ]
+      },
+      "zusatzpunkte": {
+        "ersteindruck": [
+          {
+            "id": "pat",
+            "text": "Pädiatrisches Beurteilungsdreieck (PAT): Aussehen, Atemarbeit, Kreislauf",
+            "info": "Erster Blick aus Distanz. A – Aussehen (TICLS: Tonus, Interaktivität, Tröstbarkeit, Blick, Sprache / Weinen) · B – Atemarbeit (Kutschersitz, Schnüffelposition, Einziehungen, Nasenflügeln, Stridor / Giemen) · C – Kreislauf (Hautfarbe: blass, marmoriert, Zyanose, Hämatome, Petechien, Blutungen). Danach Abfolge x-A-B-C-D.",
+            "kritisch": true
+          }
+        ],
+        "xabcde": [
+          {
+            "id": "norm",
+            "text": "Altersentsprechende Normwerte berücksichtigt",
+            "info": "AF, HF und BD je nach Alter unterschiedlich – Tabelle / Kinder-Notfallband nutzen."
+          },
+          {
+            "id": "ak-x1",
+            "text": "Stadium bestimmt (Stadium 3: Kreislaufreaktion)",
+            "info": "Stadium 1 Haut · 2 Dyspnoe · 3 Kreislaufreaktion · 4 Kreislaufstillstand → Alg. 30.2. Mindest-Systole bei nicht ansprechbarem Kind: < 1 J > 60 mmHg · bis 10 J 70 mmHg + (2 × Alter) · > 10 J > 90 mmHg.",
+            "kritisch": true
+          }
+        ],
+        "anamnese": [
+          {
+            "id": "ak-a1",
+            "text": "Auslöser, bekannte Allergien und Notfallset erfragt"
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "ak-m0",
+            "text": "Hochdosiert O₂"
+          },
+          {
+            "id": "ak-m1",
+            "text": "Allergenzufuhr gestoppt"
+          },
+          {
+            "id": "ak-m2",
+            "text": "Adrenalin 0,01 mg/kg i.m., max. 0,5 mg (0,2 mg)",
+            "kritisch": true
+          },
+          {
+            "id": "ak-m3",
+            "text": "Adrenalin inhalativ: > 1 J 5 mg",
+            "info": "< 1 J: 0,5 mg/kg KG."
+          },
+          {
+            "id": "ak-m4",
+            "text": "Frühzeitiger i.o.-Zugang, falls i.v. frustran"
+          },
+          {
+            "id": "ak-m5",
+            "text": "Adrenalin 0,001–0,01 mg/kg i.v. / i.o. (0,02–0,2 mg)"
+          },
+          {
+            "id": "ak-m6",
+            "text": "Ringerfundin 20 ml/kg als Bolus (400 ml), ggf. repetitiv",
+            "kritisch": true
+          },
+          {
+            "id": "ak-m7",
+            "text": "Clemastin 0,03 mg/kg (0,6 mg) und Methylprednisolon 2 mg/kg (40 mg)",
+            "info": "> 12 J: Clemastin 2 mg."
+          },
+          {
+            "id": "ak-m8",
+            "text": "Aufgebot NA erwogen; vitale Bedrohung: Intubation – CAVE schwierige Intubation"
+          }
+        ],
+        "transport": [
+          {
+            "id": "ak-t1",
+            "text": "Kinderklinik, Hospitalisation auch bei rascher Besserung (Rebound)",
+            "kritisch": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "blutung-kind",
+      "titel": "Blutung Kind (Glasverletzung)",
+      "kategorie": "Pädiatrie",
+      "dringlichkeit": "P1",
+      "algorithmen": [
+        "10.1",
+        "30.9",
+        "50.5"
+      ],
+      "meldung": {
+        "alarm": "Knabe, 8 J., durch Glastür gestürzt, starke Blutung",
+        "ort": "Schulhaus, Eingangsbereich",
+        "situation": "Lehrerin meldet: Ein Schüler ist in eine Glastür gefallen, am Oberarm spritzt es Blut. Sie drückt ein Tuch darauf."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "28/min"
+          ],
+          [
+            "SpO₂",
+            "97 %"
+          ],
+          [
+            "HF",
+            "148/min"
+          ],
+          [
+            "BD",
+            "88/50 mmHg"
+          ],
+          [
+            "Rekap.",
+            "3 s"
+          ],
+          [
+            "GCS",
+            "15"
+          ],
+          [
+            "Gewicht",
+            "ca. 25 kg"
+          ]
+        ],
+        "befunde": "Tiefe Schnittwunde Innenseite rechter Oberarm, spritzende Blutung, durchgeblutetes Tuch, Blutlache. Kind ansprechbar, weinend, blass.",
+        "verlauf": [
+          "Ohne Blutstillung nach 3 min: HF 165/min, BD 70/40 mmHg, schläfrig.",
+          "Nach Tourniquet: Blutung steht.",
+          "Lehrpunkt: Mindest-Systole bei nicht ansprechbarem 8-Jährigem = 70 + 16 = 86 mmHg."
+        ]
+      },
+      "zusatzpunkte": {
+        "ersteindruck": [
+          {
+            "id": "pat",
+            "text": "Pädiatrisches Beurteilungsdreieck (PAT): Aussehen, Atemarbeit, Kreislauf",
+            "info": "Erster Blick aus Distanz. A – Aussehen (TICLS: Tonus, Interaktivität, Tröstbarkeit, Blick, Sprache / Weinen) · B – Atemarbeit (Kutschersitz, Schnüffelposition, Einziehungen, Nasenflügeln, Stridor / Giemen) · C – Kreislauf (Hautfarbe: blass, marmoriert, Zyanose, Hämatome, Petechien, Blutungen). Danach Abfolge x-A-B-C-D.",
+            "kritisch": true
+          }
+        ],
+        "xabcde": [
+          {
+            "id": "norm",
+            "text": "Altersentsprechende Normwerte berücksichtigt",
+            "info": "AF, HF und BD je nach Alter unterschiedlich – Tabelle / Kinder-Notfallband nutzen."
+          },
+          {
+            "id": "bk-x1",
+            "text": "Blutung gestoppt: Druckverband, ggf. Tourniquet (Zeit notiert), blutstillende Gaze",
+            "kritisch": true
+          },
+          {
+            "id": "bk-x2",
+            "text": "Hochdosiert O₂"
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "bk-m1",
+            "text": "Zugang; frühzeitig i.o., falls i.v. frustran"
+          },
+          {
+            "id": "bk-m2",
+            "text": "Ringerfundin max. 10 ml/kg als Bolus (250 ml)",
+            "info": "Permissive Hypotonie bei ansprechbarem Kind tolerieren. Mindest-Systole bei nicht ansprechbarem Kind: < 1 J > 60 mmHg · bis 10 J 70 mmHg + (2 × Alter) · > 10 J > 90 mmHg. Zurückhaltend mit Vasopressoren: Phenylephrin 0,001 mg/kg.",
+            "kritisch": true
+          },
+          {
+            "id": "bk-m3",
+            "text": "Tranexamsäure 15 mg/kg, max. 1 g (375 mg)",
+            "kritisch": true
+          },
+          {
+            "id": "bk-m4",
+            "text": "Analgesie: Fentanyl 1,5 mcg/kg i.v. oder MAD (≈ 37 mcg)",
+            "info": "MAD zugelassen: Fentanyl 1,5 mcg/kg · Morphin < 5 kg 0,05 mg/kg, > 5 kg 0,1 mg/kg · Midazolam 0,1–0,2 mg/kg · Esketamin 0,125–0,25 mg/kg. KI MAD: Gesichtstrauma, schweres SHT."
+          },
+          {
+            "id": "bk-m5",
+            "text": "Bei Übelkeit: Ondansetron 0,1 mg/kg (2,5 mg)"
+          },
+          {
+            "id": "bk-m6",
+            "text": "Eltern informiert"
+          }
+        ],
+        "transport": [
+          {
+            "id": "bk-t1",
+            "text": "Trauma Center mit Kinderchirurgie, Voranmeldung",
+            "kritisch": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "intox-kind",
+      "titel": "Opioid-Ingestion Kleinkind",
+      "kategorie": "Pädiatrie",
+      "dringlichkeit": "P1",
+      "algorithmen": [
+        "10.1",
+        "40.1"
+      ],
+      "meldung": {
+        "alarm": "Mädchen, 2 J., kaum weckbar",
+        "ort": "Wohnung der Grosseltern, 1. OG",
+        "situation": "Grossmutter meldet: Die Enkelin war alleine im Schlafzimmer, jetzt ist sie kaum wach und atmet komisch. Am Boden liegt die offene Medikamentenschachtel des Grossvaters."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "6/min"
+          ],
+          [
+            "SpO₂",
+            "80 %"
+          ],
+          [
+            "HF",
+            "92/min"
+          ],
+          [
+            "GCS",
+            "6"
+          ],
+          [
+            "BZ",
+            "4.9 mmol/l"
+          ],
+          [
+            "Pupillen",
+            "stecknadelkopfgross"
+          ],
+          [
+            "Gewicht",
+            "ca. 12 kg"
+          ]
+        ],
+        "befunde": "Methadon-Tropfen des Grossvaters, Fläschchen offen, Menge unklar. Keine Verletzungen.",
+        "verlauf": [
+          "Nach Beutel-Masken-Beatmung: SpO₂ 95 %.",
+          "Nach Naloxon (titriert): AF 18/min, weint.",
+          "Nach 30 min: erneute Atemdepression – Methadon wirkt länger als Naloxon."
+        ]
+      },
+      "zusatzpunkte": {
+        "ersteindruck": [
+          {
+            "id": "pat",
+            "text": "Pädiatrisches Beurteilungsdreieck (PAT): Aussehen, Atemarbeit, Kreislauf",
+            "info": "Erster Blick aus Distanz. A – Aussehen (TICLS: Tonus, Interaktivität, Tröstbarkeit, Blick, Sprache / Weinen) · B – Atemarbeit (Kutschersitz, Schnüffelposition, Einziehungen, Nasenflügeln, Stridor / Giemen) · C – Kreislauf (Hautfarbe: blass, marmoriert, Zyanose, Hämatome, Petechien, Blutungen). Danach Abfolge x-A-B-C-D.",
+            "kritisch": true
+          }
+        ],
+        "xabcde": [
+          {
+            "id": "norm",
+            "text": "Altersentsprechende Normwerte berücksichtigt",
+            "info": "AF, HF und BD je nach Alter unterschiedlich – Tabelle / Kinder-Notfallband nutzen."
+          },
+          {
+            "id": "ik-x1",
+            "text": "Hypoventilation erkannt, Beutel-Masken-Beatmung",
+            "kritisch": true
+          },
+          {
+            "id": "ik-x2",
+            "text": "Blutzucker gemessen (Kind < 3,3 mmol/l: Glucose 0,5 g/kg)",
+            "kritisch": true
+          }
+        ],
+        "anamnese": [
+          {
+            "id": "ik-a1",
+            "text": "Substanz, Menge und Zeitpunkt erfragt, Verpackung mitgenommen",
+            "info": "Giftnotruf Tox Info Suisse: 145."
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "ik-m0",
+            "text": "Hochdosiert O₂"
+          },
+          {
+            "id": "ik-m1",
+            "text": "Naloxon 0,01 mg/kg weise (0,12 mg), auftitrieren bis 0,1 mg/kg (1,2 mg)",
+            "info": "Kind > 20 kg: 0,01 mg/kg weise auftitrieren bis max. 2 mg.",
+            "kritisch": true
+          },
+          {
+            "id": "ik-m2",
+            "text": "Benzodiazepin-Intoxikation mit Atemdepression: Flumazenil 0,01 mg/kg weise"
+          },
+          {
+            "id": "ik-m3",
+            "text": "Aspirationsgefahr (AVPU «U»): Atemwegssicherung erwägen, Aufgebot NA"
+          }
+        ],
+        "transport": [
+          {
+            "id": "ik-t1",
+            "text": "Kinderklinik, Überwachung wegen Rebound",
+            "kritisch": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "verbrueh-kind",
+      "titel": "Verbrühung Kleinkind",
+      "kategorie": "Pädiatrie",
+      "dringlichkeit": "P2",
+      "algorithmen": [
+        "10.1",
+        "70.1",
+        "50.5",
+        "5.2"
+      ],
+      "meldung": {
+        "alarm": "Knabe, 18 Monate, Verbrühung mit heissem Tee",
+        "ort": "Einfamilienhaus, Küche",
+        "situation": "Vater meldet: Sein Sohn hat eine Tasse heissen Tee vom Tisch gezogen. Brust und Arm sind rot mit Blasen, er schreit fürchterlich."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "34/min"
+          ],
+          [
+            "SpO₂",
+            "98 %"
+          ],
+          [
+            "HF",
+            "160/min"
+          ],
+          [
+            "GCS",
+            "15"
+          ],
+          [
+            "Temp.",
+            "36.4 °C"
+          ],
+          [
+            "KUSS",
+            "9/10"
+          ],
+          [
+            "Gewicht",
+            "ca. 11 kg"
+          ]
+        ],
+        "befunde": "Verbrühung Grad 2a an Brust und linkem Arm, ca. 8 % KOF. Vater hat 10 min mit lauwarmem Wasser gekühlt. Hergang plausibel.",
+        "verlauf": [
+          "Nach Fentanyl über MAD: KUSS 3/10.",
+          "Wird weiter gekühlt: Temperatur 35.3 °C."
+        ]
+      },
+      "zusatzpunkte": {
+        "ersteindruck": [
+          {
+            "id": "pat",
+            "text": "Pädiatrisches Beurteilungsdreieck (PAT): Aussehen, Atemarbeit, Kreislauf",
+            "info": "Erster Blick aus Distanz. A – Aussehen (TICLS: Tonus, Interaktivität, Tröstbarkeit, Blick, Sprache / Weinen) · B – Atemarbeit (Kutschersitz, Schnüffelposition, Einziehungen, Nasenflügeln, Stridor / Giemen) · C – Kreislauf (Hautfarbe: blass, marmoriert, Zyanose, Hämatome, Petechien, Blutungen). Danach Abfolge x-A-B-C-D.",
+            "kritisch": true
+          }
+        ],
+        "xabcde": [
+          {
+            "id": "norm",
+            "text": "Altersentsprechende Normwerte berücksichtigt",
+            "info": "AF, HF und BD je nach Alter unterschiedlich – Tabelle / Kinder-Notfallband nutzen."
+          },
+          {
+            "id": "vk-x1",
+            "text": "Schmerz mit KUSS-Skala erfasst",
+            "info": "KUSS (Kindliche Unbehagens- und Schmerzskala), je 0–2 Punkte: Weinen (nicht / Stöhnen, Wimmern / Schreien) · Gesichtsausdruck (entspannt / Mund verzerrt / Mund und Augen grimassieren) · Rumpfhaltung (neutral / unstet / Aufbäumen, Krümmen) · Beinhaltung (neutral / strampelnd, tretend / an den Körper gezogen) · motorische Unruhe (nicht / mässig / ruhelos). Summe 0–10.",
+            "kritisch": true
+          },
+          {
+            "id": "vk-x2",
+            "text": "Kühlung gestoppt, Normothermie angestrebt",
+            "kritisch": true
+          },
+          {
+            "id": "vk-x3",
+            "text": "Verbrühungsausmass geschätzt (% KOF, Grad)",
+            "info": "1 % = Hand des Kindes inkl. Finger. Kinder: Kopf proportional grösser."
+          }
+        ],
+        "anamnese": [
+          {
+            "id": "vk-a1",
+            "text": "Hergang plausibel? (Alg. 70.2)",
+            "info": "Passen Verletzungsmuster und Entwicklungsstand zum geschilderten Hergang?"
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "vk-m1",
+            "text": "Analgesie über MAD: Fentanyl 1,5 mcg/kg (≈ 16 mcg)",
+            "info": "MAD zugelassen: Fentanyl 1,5 mcg/kg · Morphin < 5 kg 0,05 mg/kg, > 5 kg 0,1 mg/kg · Midazolam 0,1–0,2 mg/kg · Esketamin 0,125–0,25 mg/kg. KI MAD: Gesichtstrauma, schweres SHT.",
+            "kritisch": true
+          },
+          {
+            "id": "vk-m2",
+            "text": "Mit i.v.-Zugang erwägen: Fentanyl 1,5 mcg/kg, Esketamin 0,125–0,25 mg/kg, Paracetamol i.v. 15 mg/kg / Supp 20 mg/kg, Ketorolac 0,5–1 mg/kg",
+            "info": "Morphin < 5 kg 0,05 mg/kg, > 5 kg 0,1 mg/kg. Kolikartig / abdominell zusätzlich Butylscopolamin > 6 J 0,3–0,6 mg/kg."
+          },
+          {
+            "id": "vk-m3",
+            "text": "Wirkung nach 5 min (KUSS) beurteilt, ggf. repetiert"
+          },
+          {
+            "id": "vk-m4",
+            "text": "Bei Übelkeit: Ondansetron 0,1 mg/kg (1,1 mg)"
+          },
+          {
+            "id": "vk-m5",
+            "text": "Warme Ringerfundin 10 ml/kg (110 ml)",
+            "info": "Alg. 5.2, Kinder."
+          },
+          {
+            "id": "vk-m6",
+            "text": "Sterile Wundversorgung mit Metaline, Wärmeerhalt"
+          }
+        ],
+        "transport": [
+          {
+            "id": "vk-t1",
+            "text": "Verbrennungszentrum: Kind Grad 2 > 5 % KOF",
+            "kritisch": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "misshandlung",
+      "titel": "Verdacht auf Kindsmisshandlung",
+      "kategorie": "Pädiatrie",
+      "dringlichkeit": "P2",
+      "algorithmen": [
+        "10.1",
+        "70.2"
+      ],
+      "meldung": {
+        "alarm": "Säugling, 4 Monate, schläfrig, trinkt schlecht",
+        "ort": "Mehrfamilienhaus, 3. OG",
+        "situation": "Vater meldet: Sein Sohn sei vom Sofa gefallen und seither sehr ruhig. Er trinke nicht mehr richtig."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "40/min"
+          ],
+          [
+            "SpO₂",
+            "97 %"
+          ],
+          [
+            "HF",
+            "152/min"
+          ],
+          [
+            "AVPU",
+            "V"
+          ],
+          [
+            "Temp.",
+            "36.8 °C"
+          ],
+          [
+            "Gewicht",
+            "ca. 6 kg"
+          ]
+        ],
+        "befunde": "Hämatome unterschiedlichen Alters an beiden Oberarmen und am Rücken, gespannte Fontanelle. Ein 4 Monate alter Säugling kann sich kaum selbständig vom Sofa drehen – Hergang passt nicht zu den Befunden. Angaben des Vaters wechseln.",
+        "verlauf": [
+          "Nach ruhigem, einfühlendem Gespräch willigt der Vater in den Transport ein → Kinderspital, Meldung an den Arzt.",
+          "Variante: Vater verweigert den Transport → akute Gefahr: sofortige Meldung an KESB vor Ort, deren Anweisungen befolgen, Meldung an ärztliche Leitung."
+        ]
+      },
+      "zusatzpunkte": {
+        "ersteindruck": [
+          {
+            "id": "pat",
+            "text": "Pädiatrisches Beurteilungsdreieck (PAT): Aussehen, Atemarbeit, Kreislauf",
+            "info": "Erster Blick aus Distanz. A – Aussehen (TICLS: Tonus, Interaktivität, Tröstbarkeit, Blick, Sprache / Weinen) · B – Atemarbeit (Kutschersitz, Schnüffelposition, Einziehungen, Nasenflügeln, Stridor / Giemen) · C – Kreislauf (Hautfarbe: blass, marmoriert, Zyanose, Hämatome, Petechien, Blutungen). Danach Abfolge x-A-B-C-D.",
+            "kritisch": true
+          }
+        ],
+        "xabcde": [
+          {
+            "id": "norm",
+            "text": "Altersentsprechende Normwerte berücksichtigt",
+            "info": "AF, HF und BD je nach Alter unterschiedlich – Tabelle / Kinder-Notfallband nutzen."
+          },
+          {
+            "id": "mh-x1",
+            "text": "Verletzungsmuster erkannt, das nicht zum Hergang passt",
+            "info": "Jede Art von Misshandlung: körperlich, sexuelle Ausbeutung, Vernachlässigung / Verwahrlosung, psychisch. Auch bei nicht primär betroffenen Kindern (gleiche Familie, Nachbarschaft) beachten.",
+            "kritisch": true
+          },
+          {
+            "id": "mh-x2",
+            "text": "Neurologie beurteilt (Bewusstsein, Fontanelle, Pupillen)",
+            "kritisch": true
+          }
+        ],
+        "anamnese": [
+          {
+            "id": "mh-a1",
+            "text": "Hergang und Beobachtungen sachlich dokumentiert"
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "mh-m1",
+            "text": "Bei Unsicherheit: telefonische Rücksprache NA oder Aufgebot NA"
+          },
+          {
+            "id": "mh-m2",
+            "text": "Mitnahme ins Kinderspital durch einfühlendes Überzeugen",
+            "kritisch": true
+          },
+          {
+            "id": "mh-m3",
+            "text": "Akute Gefahr und kein Transport möglich: sofortige Meldung an KESB vor Ort, Anweisungen befolgen; Meldung an ärztliche Leitung",
+            "info": "KESB Region Solothurn 032 627 75 90 · Thal-Gäu 062 311 91 77 · Olten-Gösgen 062 311 86 77. Ausserhalb der Öffnungszeiten Pikett KESB via Alarmzentrale KAPO Solothurn 032 627 71 11. Meldung an Polizei / Staatsanwaltschaft nur durch den behandelnden Arzt. Entbindung der ärztlichen Schweigepflicht durch das Departement des Innern (schriftlich an den Kantonsarzt, gesundheitsamt@ddi.so.ch).",
+            "kritisch": true
+          },
+          {
+            "id": "mh-m4",
+            "text": "Keine akute Gefahr, kein Transport: nachträgliche Information an KESB",
+            "info": "KESB Region Solothurn 032 627 75 90 · Thal-Gäu 062 311 91 77 · Olten-Gösgen 062 311 86 77. Ausserhalb der Öffnungszeiten Pikett KESB via Alarmzentrale KAPO Solothurn 032 627 71 11. Meldung an Polizei / Staatsanwaltschaft nur durch den behandelnden Arzt. Entbindung der ärztlichen Schweigepflicht durch das Departement des Innern (schriftlich an den Kantonsarzt, gesundheitsamt@ddi.so.ch)."
+          }
+        ],
+        "transport": [
+          {
+            "id": "mh-t1",
+            "text": "Kinderspital, Übergabe mit Meldung an den Arzt",
+            "kritisch": true
+          }
+        ]
+      }
     }
   ],
   "quelle": "Medikamente, Dosierungen und Grenzwerte gemäss Algorithmen RD Grenchen 2023 (FG Medical RD soH, Stand 12.07.2023).",
@@ -4848,6 +5775,17 @@
     "5.5": "5.5 Schmerzen nicht kardialer Ursache",
     "6.1": "6.1 Geburt / APGAR",
     "6.3": "6.3 Peripartale Blutung",
-    "8.11": "8.11 Indikation zur Wirbelsäulenimmobilisation"
+    "8.11": "8.11 Indikation zur Wirbelsäulenimmobilisation",
+    "10.1": "10.1 PAT – Pediatric Assessment Triangle, Erster Eindruck",
+    "20.1": "20.1 Dyspnoe (Kinder)",
+    "20.2": "20.2 Allergische Reaktion (Kinder)",
+    "30.2": "30.2 Kreislaufstillstand (Kinder)",
+    "30.9": "30.9 Hämorrhagischer Schock (Kinder)",
+    "40.1": "40.1 Bewusstseinsstörung (Kinder)",
+    "40.2": "40.2 Krampfanfall (Kinder)",
+    "50.5": "50.5 Schmerzen nicht kardialer Ursache (Kinder)",
+    "60.2": "60.2 Neugeborenenversorgung",
+    "70.1": "70.1 KUSS-Schema",
+    "70.2": "70.2 Kindsmisshandlung"
   }
 }
