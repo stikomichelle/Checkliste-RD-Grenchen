@@ -796,6 +796,97 @@
       ]
     },
     {
+      "id": "allergie-haut",
+      "titel": "Allergische Reaktion (Hautreaktion)",
+      "kategorie": "Internistisch",
+      "dringlichkeit": "P2",
+      "algorithmen": [
+        "2.2"
+      ],
+      "meldung": {
+        "alarm": "Mann, 38 J., Wespenstich, Ausschlag am ganzen Körper",
+        "ort": "Gartenrestaurant am Stadtrand",
+        "situation": "Serviceangestellte meldet: Gast wurde in den Hals gestochen, hat jetzt überall rote, juckende Quaddeln und ist beunruhigt."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "16/min"
+          ],
+          [
+            "SpO₂",
+            "98 %"
+          ],
+          [
+            "HF",
+            "96/min"
+          ],
+          [
+            "BD",
+            "135/85 mmHg"
+          ],
+          [
+            "GCS",
+            "15"
+          ]
+        ],
+        "befunde": "Generalisierte Urtikaria, Juckreiz, keine Atemnot, keine Schwellung von Lippen oder Zunge, Stimme normal. Erste bekannte Reaktion. Stich am Hals.",
+        "verlauf": [
+          "Nach 10 min: Engegefühl im Hals, leichte Heiserkeit → Stadium 2: Adrenalin 0,5 mg i.m.",
+          "Lehrpunkt: Stich am Hals – Schwellung der Atemwege möglich, engmaschig beurteilen."
+        ]
+      },
+      "zusatzpunkte": {
+        "xabcde": [
+          {
+            "id": "ah-x1",
+            "text": "Stadium der allergischen Reaktion bestimmt",
+            "info": "Stadium 1: Hautreaktion · Stadium 2: Dyspnoe · Stadium 3: Kreislaufreaktion (BD syst. < 90 mmHg) · Stadium 4: Kreislaufstillstand → Alg. 3.2.",
+            "kritisch": true
+          },
+          {
+            "id": "ah-x2",
+            "text": "Atemwege engmaschig beurteilt (Stich am Hals)",
+            "kritisch": true
+          }
+        ],
+        "anamnese": [
+          {
+            "id": "ah-a1",
+            "text": "Auslöser, frühere Reaktionen, Allergien und Notfallset erfragt"
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "ah-m0",
+            "text": "Hochdosiert O₂"
+          },
+          {
+            "id": "ah-m1",
+            "text": "Allergenzufuhr gestoppt (Stachel entfernt, Kühlung)"
+          },
+          {
+            "id": "ah-m2",
+            "text": "Clemastin 2 mg und Methylprednisolon 125 mg",
+            "kritisch": true
+          },
+          {
+            "id": "ah-m3",
+            "text": "Progression erkannt: ab Stadium 2 Adrenalin 0,5 mg i.m.",
+            "info": "Zusätzlich / alternativ: 3–5 mg inhalativ oder 10–100 mcg."
+          }
+        ],
+        "transport": [
+          {
+            "id": "ah-t1",
+            "text": "Hospitalisation auch bei rascher Besserung (Rebound)",
+            "kritisch": true
+          }
+        ]
+      }
+    },
+    {
       "id": "anaphylaxie",
       "titel": "Anaphylaxie",
       "kategorie": "Internistisch",
@@ -847,8 +938,8 @@
         "xabcde": [
           {
             "id": "an-x1",
-            "text": "Anaphylaxie erkannt (Haut, Atmung, Kreislauf, Magen-Darm)",
-            "info": "Plötzlicher Beginn nach Allergenkontakt, mehrere Organsysteme betroffen.",
+            "text": "Stadium der allergischen Reaktion bestimmt",
+            "info": "Stadium 1: Hautreaktion · Stadium 2: Dyspnoe · Stadium 3: Kreislaufreaktion (BD syst. < 90 mmHg) · Stadium 4: Kreislaufstillstand → Alg. 3.2.",
             "kritisch": true
           }
         ],
@@ -860,38 +951,49 @@
         ],
         "massnahmen": [
           {
+            "id": "an-m0",
+            "text": "Hochdosiert O₂"
+          },
+          {
             "id": "an-m1",
-            "text": "Adrenalin i.m. frühzeitig gemäss Algorithmus",
-            "info": "Medikament der ersten Wahl – nicht durch Antihistaminika oder Steroide verzögern.",
-            "kritisch": true
+            "text": "Allergenzufuhr wenn möglich gestoppt"
           },
           {
             "id": "an-m2",
-            "text": "Allergenzufuhr gestoppt"
+            "text": "Adrenalin 0,5 mg i.m.",
+            "info": "Stadium 2 und 3. Zusätzlich / alternativ: 3–5 mg inhalativ oder 10–100 mcg.",
+            "kritisch": true
           },
           {
             "id": "an-m3",
-            "text": "Lagerung nach Leitsymptom",
-            "info": "Atemnot: sitzend. Schock: flach, Beine hoch. Patientin nicht aufstehen lassen.",
+            "text": "Stadium 3: schnelle Volumenzufuhr",
             "kritisch": true
           },
           {
             "id": "an-m4",
-            "text": "O₂, Volumen und weitere Medikamente gemäss Algorithmus"
+            "text": "Lagerung nach Leitsymptom",
+            "info": "Atemnot: sitzend. Schock: flach, Beine hoch. Patientin nicht aufstehen lassen."
           },
           {
             "id": "an-m5",
-            "text": "Schwellung der Atemwege: Notarzt / Atemwegsmanagement früh geplant"
+            "text": "Clemastin 2 mg und Methylprednisolon 125 mg"
+          },
+          {
+            "id": "an-m6",
+            "text": "Vitale Bedrohung: Intubation erwägen – CAVE schwierige Intubation"
           }
         ],
         "transport": [
           {
             "id": "an-t1",
-            "text": "Spitaleinweisung auch bei Besserung",
-            "info": "Biphasischer Verlauf möglich – Überwachung im Spital."
+            "text": "Hospitalisation auch bei rascher Besserung (Rebound)",
+            "kritisch": true
           }
         ]
-      }
+      },
+      "algorithmen": [
+        "2.2"
+      ]
     },
     {
       "id": "asthma",
@@ -940,8 +1042,8 @@
         "xabcde": [
           {
             "id": "as-x1",
-            "text": "Schweregrad beurteilt (Sprechdyspnoe, «silent chest», Erschöpfung)",
-            "info": "Leises Atemgeräusch und Erschöpfung sind Alarmzeichen – keine Besserung!",
+            "text": "Respiratorische Erschöpfung beurteilt (Sprechdyspnoe, «silent chest», Bewusstsein)",
+            "info": "Assistierte Beatmung / NIV, Intubation erwägen (Alg. 2.3). Ohne Besserung: rascher Transport.",
             "kritisch": true
           }
         ],
@@ -949,28 +1051,49 @@
           {
             "id": "as-a1",
             "text": "Bisherige Anfälle, Intensivstation / Intubation, Spray-Anwendung heute erfragt"
+          },
+          {
+            "id": "as-a2",
+            "text": "Hinweis auf allergisches Asthma (Auslöser, Pollen) gesucht"
           }
         ],
         "massnahmen": [
           {
             "id": "as-m1",
-            "text": "Bronchodilatatoren und Steroide gemäss Algorithmus",
-            "kritisch": true
+            "text": "Sitzende Lagerung, ruhig begleiten, O₂ nach SpO₂"
           },
           {
             "id": "as-m2",
-            "text": "O₂ mit Ziel-SpO₂ gemäss Algorithmus"
+            "text": "Vd. a. allergisches Asthma: Clemastin 2 mg"
           },
           {
             "id": "as-m3",
-            "text": "Sitzende Lagerung, ruhig begleiten"
+            "text": "Dospir – 1 repetitive Gabe, wenn keine Besserung",
+            "kritisch": true
           },
           {
             "id": "as-m4",
-            "text": "Lebensbedrohlicher Anfall: Notarzt nachgefordert"
+            "text": "Methylprednisolon 125 mg"
+          },
+          {
+            "id": "as-m5",
+            "text": "Adrenalin 3–5 mg inhalativ"
+          },
+          {
+            "id": "as-m6",
+            "text": "Keine Besserung: erwäge Adrenalin 10–50 mcg, Magnesium 2 g als Kurzinfusion, Ketamin 0,25–1 mg/kg KG"
+          },
+          {
+            "id": "as-m7",
+            "text": "Respiratorische Erschöpfung: assistierte Beatmung / NIV, Intubation erwägen",
+            "info": "Alg. 2.3. Ohne Besserung: rascher Transport.",
+            "kritisch": true
           }
         ]
-      }
+      },
+      "algorithmen": [
+        "2.1"
+      ]
     },
     {
       "id": "atemnot",
@@ -1045,7 +1168,7 @@
         "massnahmen": [
           {
             "id": "at-m1",
-            "text": "O₂-Gabe mit SpO₂-Zielbereich bei COPD (88–92 %)",
+            "text": "O₂ mit SpO₂-Zielbereich bei COPD (88–92 %)",
             "info": "Hyperoxie vermeiden – Gefahr der Hyperkapnie.",
             "kritisch": true
           },
@@ -1055,12 +1178,27 @@
           },
           {
             "id": "at-m3",
-            "text": "Inhalationstherapie gemäss Algorithmus",
-            "info": "Bronchodilatatoren, ggf. Steroide – nach lokalen Vorgaben."
+            "text": "Dospir – 1 repetitive Gabe, wenn keine Besserung",
+            "kritisch": true
           },
           {
             "id": "at-m4",
-            "text": "Indikation für NIV / Notarzt geprüft"
+            "text": "Methylprednisolon 125 mg"
+          },
+          {
+            "id": "at-m5",
+            "text": "NIV als Therapie der Wahl: Air Mix oder FiO₂ 0,4, ggf. eigenes CPAP-Gerät",
+            "info": "Alg. 2.3 NIV.",
+            "kritisch": true
+          },
+          {
+            "id": "at-m6",
+            "text": "Erwäge Magnesium 2 g als Kurzinfusion, Ketamin 0,25–1 mg/kg KG"
+          },
+          {
+            "id": "at-m7",
+            "text": "Respiratorische Erschöpfung: assistierte Beatmung, Intubation erwägen",
+            "info": "Ohne Besserung: rascher Transport."
           }
         ],
         "transport": [
@@ -1070,7 +1208,10 @@
             "info": "Patientin nicht selber gehen lassen – Belastung verschlechtert die Atemnot."
           }
         ]
-      }
+      },
+      "algorithmen": [
+        "2.1"
+      ]
     },
     {
       "id": "lungenoedem",
@@ -1158,7 +1299,8 @@
           },
           {
             "id": "lo-m6",
-            "text": "CPAP / NIV erwogen"
+            "text": "CPAP / NIV erwogen",
+            "info": "Bei respiratorischer Erschöpfung: assistierte Beatmung / NIV, Intubation erwägen (Alg. 2.1 / 2.3)."
           },
           {
             "id": "lo-m7",
@@ -1174,7 +1316,8 @@
         ]
       },
       "algorithmen": [
-        "3.4"
+        "3.4",
+        "2.1"
       ]
     },
     {
@@ -1229,7 +1372,7 @@
           {
             "id": "hv-x1",
             "text": "Somatische Ursachen ausgeschlossen",
-            "info": "Hypoxie, Lungenembolie, Asthma, Hypoglykämie, Ketoazidose. Hyperventilationssyndrom ist eine Ausschlussdiagnose.",
+            "info": "Hypoxie, Lungenembolie, Lungenödem, obere Atemwegsverlegung, Trauma, Pneumonie, Asthma, Hypoglykämie, Ketoazidose. Hyperventilationssyndrom ist eine Ausschlussdiagnose.",
             "kritisch": true
           }
         ],
@@ -1250,7 +1393,10 @@
             "text": "Transportentscheid gemeinsam mit Patientin, Verzicht gemäss Vorgaben dokumentiert"
           }
         ]
-      }
+      },
+      "algorithmen": [
+        "2.1"
+      ]
     },
     {
       "id": "tachykardie",
@@ -1295,8 +1441,9 @@
         ],
         "befunde": "Palpitationen, leichter Schwindel, kein Thoraxschmerz. Ähnliche Episoden früher, jeweils spontan vorbei. EKG: regelmässige Schmalkomplextachykardie 190/min.",
         "verlauf": [
-          "Unter Vagusreiz (Pressen): Konversion in Sinusrhythmus 84/min.",
-          "Variante: BD 75/40 mmHg, Synkope → instabil, Kardioversion SVT 70–120 J."
+          "Stabil – unter Vagusreiz (Pressen): Konversion in Sinusrhythmus 84/min.",
+          "Lehrpunkt: Bei stabiler Patientin keine Medikamente.",
+          "Variante: BD 75/40 mmHg, Synkope → instabil, elektrische Kardioversion SVT 70–120 J."
         ]
       },
       "zusatzpunkte": {
@@ -1335,22 +1482,20 @@
           },
           {
             "id": "ta-m2",
-            "text": "Keine Instabilität: Überwachung / Transport"
+            "text": "Stabil: maximal Vagusreiz, keine Medikamente",
+            "info": "Vagusreiz: Pressen / Husten. Keine Karotismassage bei Patienten > 60 J. Danach Überwachung / Transport.",
+            "kritisch": true
           },
           {
             "id": "ta-m3",
-            "text": "Vagusreiz erwogen (Pressen / Husten)",
-            "info": "Keine Karotismassage bei Patienten > 60 J."
+            "text": "Instabil: elektrische Kardioversion SVT 70–120 J, Analgosedation erwägen",
+            "info": "Nach 3 Versuchen pharmakologische Intervention, danach erneute Kardioversion.",
+            "kritisch": true
           },
           {
             "id": "ta-m4",
-            "text": "Schmal / regelmässig: Krenosin 6 mg rasch i.v., ohne Erfolg 12 mg",
-            "info": "Mit 20 ml Flush. Alternativ Amiodaron 300 mg als Kurzinfusion."
-          },
-          {
-            "id": "ta-m5",
-            "text": "Instabil: Kardioversion SVT 70–120 J, Analgosedation erwägen",
-            "info": "Nach 3 Versuchen pharmakologische Intervention, danach erneute Kardioversion."
+            "text": "Instabil, schmal / regelmässig: Krenosin erwägen – 6 mg rasch i.v., ohne Erfolg 12 mg",
+            "info": "Mit 20 ml Flush. Meist aber elektrische Kardioversion. Alternativ Amiodaron 300 mg als Kurzinfusion."
           }
         ]
       },
@@ -4609,6 +4754,8 @@
   ],
   "quelle": "Medikamente, Dosierungen und Grenzwerte gemäss Algorithmen RD Grenchen 2023 (FG Medical RD soH, Stand 12.07.2023).",
   "algorithmen": {
+    "2.1": "2.1 Dyspnoe",
+    "2.2": "2.2 Allergische Reaktion",
     "3.2": "3.2 Kreislaufstillstand",
     "3.3": "3.3 ROSC",
     "3.4": "3.4 Akuter Thoraxschmerz inkl. Links- und Rechtsherzinsuffizienz",
