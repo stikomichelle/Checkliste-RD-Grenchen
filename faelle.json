@@ -1139,7 +1139,8 @@
         "befunde": "Kutschersitz, Lippenbremse, Atemhilfsmuskulatur aktiv, Sprechdyspnoe (nur 2–3 Wörter). Auskultation: Giemen und Brummen beidseits, verlängertes Exspirium. Bekannte COPD, Heimsauerstoff 2 l/min.",
         "verlauf": [
           "Bei hochdosierter O₂-Gabe ohne Zielwert: nach ca. 8 Minuten zunehmend schläfrig (GCS 12), AF 12/min.",
-          "Bei korrekter Therapie: AF sinkt auf 22/min, SpO₂ 90 %, Patientin spricht ganze Sätze."
+          "Unter Dospir und Methylprednisolon nur wenig Besserung: AF 28/min, SpO₂ 86 %, Sprechdyspnoe → NIV-Indikation.",
+          "Unter NIV (FiO₂ 0,4, PEEP 5, ASB schrittweise auf 5): AF 22/min, SpO₂ 90 %, Patientin spricht ganze Sätze."
         ]
       },
       "zusatzpunkte": {
@@ -1186,19 +1187,38 @@
             "text": "Methylprednisolon 125 mg"
           },
           {
-            "id": "at-m5",
-            "text": "NIV als Therapie der Wahl: Air Mix oder FiO₂ 0,4, ggf. eigenes CPAP-Gerät",
-            "info": "Alg. 2.3 NIV.",
-            "kritisch": true
-          },
-          {
             "id": "at-m6",
             "text": "Erwäge Magnesium 2 g als Kurzinfusion, Ketamin 0,25–1 mg/kg KG"
           },
           {
-            "id": "at-m7",
-            "text": "Respiratorische Erschöpfung: assistierte Beatmung, Intubation erwägen",
-            "info": "Ohne Besserung: rascher Transport."
+            "id": "at-n1",
+            "text": "NIV-Indikation geprüft: Sprechdyspnoe, AF > 30/min, SpO₂ < 88 %, Atemhilfsmuskulatur",
+            "info": "Wenn trotz Therapie nach entsprechendem Algorithmus keine Besserung.",
+            "kritisch": true
+          },
+          {
+            "id": "at-n2",
+            "text": "Kontraindikationen für NIV ausgeschlossen",
+            "info": "Absolute Kontraindikationen: Bewusstseinseintrübung, Erbrechen, fehlende Schutzreflexe, Verlegung der Atemwege, gastrointestinale Blutung, Gesichtsfrakturen, Ileus.",
+            "kritisch": true
+          },
+          {
+            "id": "at-n3",
+            "text": "Oberkörper hoch, NIV-Maske abgemessen"
+          },
+          {
+            "id": "at-n4",
+            "text": "Eagle-Starteinstellung: FiO₂ 0,4 / Air Mix, PEEP 5, ASB / Psupp 1",
+            "info": "Steigerung: in den ersten 5 min ASB / Psupp in 1-mbar-Schritten bis 5 mbar; ohne Besserung PEEP langsam auf 8 mbar; danach ASB / Psupp bis max. 10 mbar und PEEP bis max. 10 mbar. Reicht das nicht: Rücksprache oder Aufgebot NA.",
+            "kritisch": true
+          },
+          {
+            "id": "at-n5",
+            "text": "Ggf. Morphin 1–2 mg weise"
+          },
+          {
+            "id": "at-n6",
+            "text": "Engmaschige Überwachung; bei Verschlechterung Intubation erwägen"
           }
         ],
         "transport": [
@@ -1210,7 +1230,8 @@
         ]
       },
       "algorithmen": [
-        "2.1"
+        "2.1",
+        "2.3"
       ]
     },
     {
@@ -1257,7 +1278,8 @@
         "befunde": "Orthopnoe, schaumig-rötliches Sputum, feuchte Rasselgeräusche beidseits bis Mitte Thorax, kaltschweissig, Beinödeme. Bekannte Herzinsuffizienz, Entwässerungstablette seit 3 Tagen vergessen.",
         "verlauf": [
           "Wird der Patient flach hingelegt: SpO₂ 75 %, starke Unruhe.",
-          "Unter Therapie (Lagerung, Nitrat, CPAP/NIV): AF 24/min, SpO₂ 92 %, BD 160/90 mmHg."
+          "Nach Lagerung, Nitrat und Furosemid weiterhin AF 32/min, SpO₂ 85 % → NIV-Indikation.",
+          "Unter NIV (FiO₂ 1,0, PEEP 5 → 8): AF 24/min, SpO₂ 92 %, BD 160/90 mmHg."
         ]
       },
       "zusatzpunkte": {
@@ -1298,14 +1320,35 @@
             "text": "Furosemid 40–60 mg"
           },
           {
-            "id": "lo-m6",
-            "text": "CPAP / NIV erwogen",
-            "info": "Bei respiratorischer Erschöpfung: assistierte Beatmung / NIV, Intubation erwägen (Alg. 2.1 / 2.3)."
-          },
-          {
             "id": "lo-m7",
             "text": "Auslöser gesucht",
             "info": "ACS, Rhythmusstörung, hypertensive Krise, Medikamenten-Compliance."
+          },
+          {
+            "id": "lo-n1",
+            "text": "NIV-Indikation geprüft: Sprechdyspnoe, AF > 30/min, SpO₂ < 88 %, Atemhilfsmuskulatur",
+            "info": "Wenn trotz Therapie nach entsprechendem Algorithmus keine Besserung.",
+            "kritisch": true
+          },
+          {
+            "id": "lo-n2",
+            "text": "Kontraindikationen für NIV ausgeschlossen",
+            "info": "Absolute Kontraindikationen: Bewusstseinseintrübung, Erbrechen, fehlende Schutzreflexe, Verlegung der Atemwege, gastrointestinale Blutung, Gesichtsfrakturen, Ileus.",
+            "kritisch": true
+          },
+          {
+            "id": "lo-n3",
+            "text": "Oberkörper hoch, NIV-Maske abgemessen"
+          },
+          {
+            "id": "lo-n4",
+            "text": "Eagle-Starteinstellung: FiO₂ 1,0, PEEP 5, ASB / Psupp 1",
+            "info": "Steigerung: in den ersten 5 min ASB / Psupp in 1-mbar-Schritten bis 5 mbar; ohne Besserung PEEP langsam auf 8 mbar; danach ASB / Psupp bis max. 10 mbar und PEEP bis max. 10 mbar. Reicht das nicht: Rücksprache oder Aufgebot NA.",
+            "kritisch": true
+          },
+          {
+            "id": "lo-n6",
+            "text": "Engmaschige Überwachung; bei Verschlechterung Intubation erwägen"
           }
         ],
         "transport": [
@@ -1317,7 +1360,8 @@
       },
       "algorithmen": [
         "3.4",
-        "2.1"
+        "2.1",
+        "2.3"
       ]
     },
     {
@@ -3079,8 +3123,9 @@
         "befunde": "Kopfschmerz, Übelkeit, Verwirrtheit. Ehefrau mit Kopfschmerz und Schwindel. Der CO-Warner des Teams schlägt beim Betreten des Hauses an.",
         "verlauf": [
           "Bleibt das Team im Gebäude: eigene Symptome (Kopfschmerz, Schwindel).",
+          "Lehrpunkt: GCS 12 = Bewusstseinseintrübung → absolute Kontraindikation für NIV. Hochdosiert O₂ über Maske, Aufgebot NA.",
           "Unter 100 % O₂: GCS 14 nach 20 Minuten.",
-          "Ehefrau: SpCO 14 %, Kopfschmerzen → ebenfalls Patientin."
+          "Ehefrau: SpCO 14 %, Kopfschmerzen → ebenfalls Patientin; NIV bei ihr möglich, falls Dyspnoe-Kriterien erfüllt."
         ]
       },
       "zusatzpunkte": {
@@ -3126,6 +3171,32 @@
           {
             "id": "co-m3",
             "text": "SpCO ≤ 10 % und symptomfrei: Aufklärung, dass Beschwerden bis 72 h später auftreten können"
+          },
+          {
+            "id": "co-n1",
+            "text": "NIV-Indikation geprüft: Sprechdyspnoe, AF > 30/min, SpO₂ < 88 %, Atemhilfsmuskulatur",
+            "info": "Wenn trotz Therapie nach entsprechendem Algorithmus keine Besserung.",
+            "kritisch": true
+          },
+          {
+            "id": "co-n2",
+            "text": "Kontraindikationen für NIV ausgeschlossen",
+            "info": "Absolute Kontraindikationen: Bewusstseinseintrübung, Erbrechen, fehlende Schutzreflexe, Verlegung der Atemwege, gastrointestinale Blutung, Gesichtsfrakturen, Ileus.",
+            "kritisch": true
+          },
+          {
+            "id": "co-n3",
+            "text": "Oberkörper hoch, NIV-Maske abgemessen"
+          },
+          {
+            "id": "co-n4",
+            "text": "Eagle-Starteinstellung: FiO₂ 1,0, PEEP 5, ASB / Psupp 1",
+            "info": "Steigerung: in den ersten 5 min ASB / Psupp in 1-mbar-Schritten bis 5 mbar; ohne Besserung PEEP langsam auf 8 mbar; danach ASB / Psupp bis max. 10 mbar und PEEP bis max. 10 mbar. Reicht das nicht: Rücksprache oder Aufgebot NA.",
+            "kritisch": true
+          },
+          {
+            "id": "co-n6",
+            "text": "Engmaschige Überwachung; bei Verschlechterung Intubation erwägen"
           }
         ],
         "transport": [
@@ -3136,7 +3207,8 @@
         ]
       },
       "algorithmen": [
-        "5.3"
+        "5.3",
+        "2.3"
       ]
     },
     {
@@ -4756,6 +4828,7 @@
   "algorithmen": {
     "2.1": "2.1 Dyspnoe",
     "2.2": "2.2 Allergische Reaktion",
+    "2.3": "2.3 NIV",
     "3.2": "3.2 Kreislaufstillstand",
     "3.3": "3.3 ROSC",
     "3.4": "3.4 Akuter Thoraxschmerz inkl. Links- und Rechtsherzinsuffizienz",
