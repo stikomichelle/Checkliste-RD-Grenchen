@@ -20,8 +20,8 @@ Wichtig: Die App funktioniert nur über eine Webadresse, nicht durch Doppelklick
 ## 3. Bedienung
 - **Übung**: Hinweise («?»), rote Markierung kritischer Punkte und Instruktor-Infos sind sichtbar.
 - **Prüfung**: Nur die Checkliste, alle Hilfen ausgeblendet.
-- Der Timer startet automatisch beim ersten Häkchen (oder manuell mit ▶).
-- Jedes Häkchen erhält die Zeit seit Einsatzbeginn (z. B. +03:12).
+- Der Timer startet automatisch beim ersten Häkchen ab Punkt 2 (= Patientenkontakt) oder manuell mit ▶. Haken in Punkt 1 vor dem Start werden mit «vor Kontakt» markiert.
+- Jedes Häkchen erhält die Zeit seit Patientenkontakt (z. B. +03:12).
 - Bei xABCDE hat jeder Hauptpunkt Unterpunkte. Sind alle Unterpunkte abgehakt, hakt sich der Hauptpunkt automatisch ab.
 - Es gibt kein Punktesystem. «Zusammenfassung anzeigen» zeigt am Schluss, was erledigt bzw. nicht erledigt wurde (mit Zeiten) sowie die Notizen; als Text kopieren oder drucken / als PDF sichern.
 - **Neutrale Checkliste** (Startseite, «Freie Übung»): alle Standardphasen ohne Szenario, mit Feld für das Einsatzstichwort. Sie entsteht aus dem Eintrag `"neutral": true` in `faelle.json`.

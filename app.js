@@ -362,7 +362,8 @@ function itemHtml(it, cs, isSub) {
     ${subs}
   </li>`;
 }
-function stampText(c) { return `+${fmt(c.t)}`; }
+// Haken vor Patientenkontakt (Punkt 1, Timer noch nicht gestartet) haben keine Laufzeit
+function stampText(c) { return c.vor ? 'vor Kontakt' : `+${fmt(c.t)}`; }
 
 function findItem(fall, key) {
   for (const p of phasesFor(fall)) for (const it of flatItems(p)) if (it.key === key) return { item: it, phase: p };
@@ -374,9 +375,13 @@ function toggleItem(fall, cs, key) {
   if (cs.checked[key]) {
     delete cs.checked[key];
   } else {
-    // Timer startet automatisch beim ersten Häkchen
-    if (!cs.timer.running && elapsed(cs) === 0) { startTimer(cs); renderTimer(cs); }
+    // Timer startet automatisch beim ersten Häkchen ab Punkt 2 (Patientenkontakt)
+    const firstPhase = phasesFor(fall)[0];
+    const istVorbereitung = found && found.phase.id === firstPhase.id;
+    const nochNichtGestartet = !cs.timer.running && elapsed(cs) === 0;
+    if (nochNichtGestartet && !istVorbereitung) { startTimer(cs); renderTimer(cs); }
     cs.checked[key] = { t: elapsed(cs), at: new Date().toISOString() };
+    if (istVorbereitung && nochNichtGestartet) cs.checked[key].vor = true;
   }
 
   // Hauptpunkt automatisch abhaken, wenn alle Unterpunkte erledigt sind
@@ -386,6 +391,7 @@ function toggleItem(fall, cs, key) {
     const allDone = parent.unterpunkte.every((u) => cs.checked[u.key]);
     if (allDone && !cs.checked[parentKey]) {
       cs.checked[parentKey] = { t: elapsed(cs), at: new Date().toISOString(), auto: true };
+      if (!cs.timer.running && elapsed(cs) === 0) cs.checked[parentKey].vor = true;
     } else if (!allDone && cs.checked[parentKey] && cs.checked[parentKey].auto) {
       delete cs.checked[parentKey];
     }
@@ -428,7 +434,7 @@ function updateProgress(fall, cs) {
 function sumItemHtml(it, cs, isSub) {
   const ch = cs.checked[it.key];
   const cls = ch ? 'ok' : (it.kritisch ? 'miss miss-crit' : 'miss');
-  const when = ch ? `+${fmt(ch.t)} · ${clockTime(ch.at)}` : 'nicht erledigt';
+  const when = ch ? `${stampText(ch)} · ${clockTime(ch.at)}` : 'nicht erledigt';
   const subs = (it.unterpunkte || []).map((u) => sumItemHtml(u, cs, true)).join('');
   return `<li class="${cls}${isSub ? ' sub' : ''}"><span class="mark">${ch ? '✓' : '–'}</span><span>${esc(it.text)}</span><span class="when">${when}</span></li>${subs}`;
 }
@@ -494,7 +500,7 @@ function summaryText(fall, cs) {
   ];
   const line = (it, indent) => {
     const ch = cs.checked[it.key];
-    lines.push(ch ? `${indent}[x] ${it.text}  (+${fmt(ch.t)})` : `${indent}[ ] ${it.text}${it.kritisch ? '  – KRITISCH' : ''}`);
+    lines.push(ch ? `${indent}[x] ${it.text}  (${stampText(ch)})` : `${indent}[ ] ${it.text}${it.kritisch ? '  – KRITISCH' : ''}`);
     (it.unterpunkte || []).forEach((u) => line(u, indent + '    '));
   };
   phasesFor(fall).forEach((p, i) => {
