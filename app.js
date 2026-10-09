@@ -197,9 +197,19 @@ function renderHome() {
       ${groupByCategory(DATA.faelle.filter((f) => !f.neutral)).map(([kat, list]) => `
       <h2 class="section-title">${esc(kat)}</h2>
       <ul class="case-list">${list.map(caseCard).join('')}</ul>`).join('')}
-      <p class="muted small footnote">${esc(DATA.hinweis || '')}</p>
+      <p class="muted small footnote">${esc(DATA.hinweis || '')}${DATA.quelle ? '<br>' + esc(DATA.quelle) : ''}</p>
     </div>`;
   applyMode();
+}
+
+// Grundlage: verwendete Algorithmen eines Falls
+function algorithmenHtml(fall, extraClass) {
+  const list = (fall.algorithmen || []).map((a) => (DATA.algorithmen && DATA.algorithmen[a]) || a);
+  if (!list.length) return '';
+  return `<section class="card quelle ${extraClass || ''}">
+    <h2 class="h3">Grundlage</h2>
+    <p class="small">Algorithmen RD Grenchen 2023: ${list.map(esc).join(' · ')}</p>
+  </section>`;
 }
 
 // Fälle nach Kategorie gruppieren (Reihenfolge wie in faelle.json)
@@ -272,6 +282,8 @@ function renderCase(fall) {
           ${m.situation ? `<dt>Situation</dt><dd>${esc(m.situation)}</dd>` : ''}
         </dl>
       </section>` : ''}
+
+      ${algorithmenHtml(fall, 'only-uebung')}
 
       ${ins ? `<details class="card instruktor only-uebung">
         <summary>Instruktor-Infos</summary>
@@ -470,6 +482,8 @@ function renderSummary(fall) {
           <ul class="sum-list">${p.punkte.map((it) => sumItemHtml(it, cs)).join('')}</ul>
         </section>`).join('')}
 
+      ${algorithmenHtml(fall)}
+
       <section class="card">
         <h2 class="h3">Notizen / Feedback</h2>
         <p class="notes-out">${cs.notizen ? esc(cs.notizen) : '<span class="muted">Keine Notizen erfasst.</span>'}</p>
@@ -508,6 +522,9 @@ function summaryText(fall, cs) {
     p.punkte.forEach((it) => line(it, '  '));
     lines.push('');
   });
+  if (fall.algorithmen && fall.algorithmen.length) {
+    lines.push('Grundlage: Algorithmen RD Grenchen 2023 – ' + fall.algorithmen.map((a) => (DATA.algorithmen && DATA.algorithmen[a]) || a).join(', '), '');
+  }
   lines.push('Notizen / Feedback:', cs.notizen || '–');
   return lines.join('\n');
 }

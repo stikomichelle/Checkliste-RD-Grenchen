@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "hinweis": "Übungsinhalte – medizinische Angaben vor dem Einsatz durch die Berufsbildung prüfen und an die Algorithmen des eigenen Rettungsdienstes anpassen.",
+  "hinweis": "Übungsinhalte. Medikamente und Dosierungen gemäss Algorithmen RD Grenchen 2023. Inhalte vor dem Einsatz durch die Berufsbildung prüfen.",
   "phasen": [
     {
       "id": "vorbereitung",
@@ -343,7 +343,7 @@
         {
           "id": "m2",
           "text": "Massnahmen gemäss Algorithmus eingeleitet",
-          "info": "Nach den Vorgaben des eigenen Rettungsdienstes."
+          "info": "Nach den Algorithmen RD Grenchen 2023 (Dosierungen siehe fallspezifische Punkte)."
         },
         {
           "id": "m3",
@@ -418,6 +418,241 @@
       "beschreibung": "Alle Standardphasen ohne vorgegebenes Szenario – für eigene oder mündlich gestellte Fälle."
     },
     {
+      "id": "kammerflimmern",
+      "titel": "Kreislaufstillstand – Kammerflimmern",
+      "kategorie": "Reanimation",
+      "dringlichkeit": "P1",
+      "algorithmen": [
+        "3.2",
+        "3.3"
+      ],
+      "meldung": {
+        "alarm": "Mann, 58 J., bewusstlos, atmet nicht",
+        "ort": "Fitnesscenter, Erdgeschoss",
+        "situation": "Trainer meldet: Mann ist auf dem Laufband zusammengebrochen. Kollegen machen Herzdruckmassage, der AED hat 1× geschockt."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "Rhythmus",
+            "Kammerflimmern"
+          ],
+          [
+            "AF",
+            "keine"
+          ],
+          [
+            "GCS",
+            "3"
+          ],
+          [
+            "BZ",
+            "6.5 mmol/l"
+          ],
+          [
+            "Temp.",
+            "36.4 °C"
+          ]
+        ],
+        "befunde": "Laien-CPR seit ca. 6 Minuten, AED 1 Schock. Keine sicheren Todeszeichen, keine Patientenverfügung bekannt. Ca. 85 kg.",
+        "verlauf": [
+          "Nach dem 3. Schock weiterhin Kammerflimmern → Adrenalin 1 mg und Amiodaron 300 mg.",
+          "Nach dem 4. Schock: ROSC – HF 110/min, BD 85/50 mmHg, SpO₂ 92 %, etCO₂ 52 mmHg.",
+          "12-Kanal-EKG nach ROSC: ST-Hebungen V1–V4 (Vorderwandinfarkt)."
+        ]
+      },
+      "zusatzpunkte": {
+        "ersteindruck": [
+          {
+            "id": "rea-e1",
+            "text": "Sichere Todeszeichen / Patientenverfügung geprüft",
+            "info": "Sichere Todeszeichen → Alg. 3.1. Patientenverfügung / palliative Situation → REA-Abbruch erwägen."
+          }
+        ],
+        "xabcde": [
+          {
+            "id": "kf-x1",
+            "text": "CPR 30:2 mit minimalen Unterbrüchen",
+            "info": "Ggf. mechanische Reanimationshilfe (Autopuls: > 18 J, < 136 kg KG).",
+            "kritisch": true
+          },
+          {
+            "id": "kf-x2",
+            "text": "Rhythmusanalyse alle 2 min, defibrillierbaren Rhythmus erkannt",
+            "info": "Defibrillierbar: Kammerflimmern, pulslose VT, Torsade de pointes.",
+            "kritisch": true
+          },
+          {
+            "id": "kf-x3",
+            "text": "Defibrillation 120–150 J (oder gerätespezifisch), danach sofort 2 min CPR",
+            "kritisch": true
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "kf-m1",
+            "text": "Adrenalin 1 mg nach der 3. Defibrillation, dann alle 3–5 min",
+            "kritisch": true
+          },
+          {
+            "id": "kf-m2",
+            "text": "Amiodaron 300 mg nach der 3. Defibrillation"
+          },
+          {
+            "id": "kf-m3",
+            "text": "Amiodaron 150 mg nach der 5. Defibrillation"
+          },
+          {
+            "id": "kf-m4",
+            "text": "Reversible Ursachen (HITS) gesucht",
+            "info": "Hypoxie – beatmen · Hypovolämie – Volumenzufuhr · Hypothermie – Wärmeerhalt · Hypo-/Hyperkaliämie – keine Massnahme · Herzbeuteltamponade · Intoxikation – Flumazenil 0,5 mg / Naloxon 0,4 mg · Thrombose (ACS / LE) – 5000 IE Heparin nach Rücksprache · Spannungspneumothorax – bilateral entlasten."
+          },
+          {
+            "id": "kf-m5",
+            "text": "Support erwogen (NA, Partnerorganisationen)"
+          },
+          {
+            "id": "kf-r1",
+            "text": "ROSC – A: Narkoseeinleitung / Atemwegssicherung erwogen"
+          },
+          {
+            "id": "kf-r2",
+            "text": "ROSC – B: Normoventilation, SpO₂ 94–98 %, etCO₂ 34–42 mmHg (4,5–5,7 kPa), Aspiration vermeiden",
+            "kritisch": true
+          },
+          {
+            "id": "kf-r3",
+            "text": "ROSC – C: Ringer Acetat, Adrenalin 10 mcg weise, Noradrenalin-Perfusor erwägen"
+          },
+          {
+            "id": "kf-r4",
+            "text": "ROSC – C: 12-Kanal-EKG, ACS / Rhythmusstörungen behandeln (Alg. 3.4 / 3.6)",
+            "kritisch": true
+          },
+          {
+            "id": "kf-r5",
+            "text": "ROSC – D: BZ-Kontrolle; Fentanyl 0,05 mg weise (Tubustoleranz), Midazolam 1–2,5 mg weise"
+          },
+          {
+            "id": "kf-r6",
+            "text": "ROSC – E: milde Hypothermie in Kauf nehmen (Fahrzeug nicht heizen, Klimaanlage)"
+          }
+        ],
+        "transport": [
+          {
+            "id": "kf-t1",
+            "text": "Kontinuierliche Überwachung, Voranmeldung Schockraum mit Anästhesie",
+            "kritisch": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "pea-le",
+      "titel": "Kreislaufstillstand – PEA",
+      "kategorie": "Reanimation",
+      "dringlichkeit": "P1",
+      "algorithmen": [
+        "3.2"
+      ],
+      "meldung": {
+        "alarm": "Frau, 45 J., kollabiert, reagiert nicht",
+        "ort": "Einfamilienhaus, Badezimmer im 1. OG",
+        "situation": "Ehemann meldet: Seine Frau hatte seit gestern Atemnot, jetzt ist sie im Bad zusammengebrochen. Er hat mit Herzdruckmassage begonnen."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "Rhythmus",
+            "PEA (Sinusrhythmus 120/min, kein Puls)"
+          ],
+          [
+            "etCO₂",
+            "18 mmHg"
+          ],
+          [
+            "GCS",
+            "3"
+          ],
+          [
+            "BZ",
+            "7.1 mmol/l"
+          ],
+          [
+            "Temp.",
+            "36.6 °C"
+          ]
+        ],
+        "befunde": "Vor 2 Wochen Kniearthroskopie, rechter Unterschenkel geschwollen. Nimmt die Pille, raucht. Gestaute Halsvenen. Organisierter Rhythmus am Monitor ohne tastbaren Puls.",
+        "verlauf": [
+          "Nach 20 min ohne ROSC und ohne Rhythmuswechsel: Heparin nach Rücksprache → Reanimationsdauer danach mind. 60 min.",
+          "Variante: ROSC nach 25 min → Versorgung nach Alg. 3.3."
+        ]
+      },
+      "zusatzpunkte": {
+        "ersteindruck": [
+          {
+            "id": "rea-e1",
+            "text": "Sichere Todeszeichen / Patientenverfügung geprüft",
+            "info": "Sichere Todeszeichen → Alg. 3.1. Patientenverfügung / palliative Situation → REA-Abbruch erwägen."
+          }
+        ],
+        "xabcde": [
+          {
+            "id": "pe-x1",
+            "text": "CPR 30:2 mit minimalen Unterbrüchen",
+            "kritisch": true
+          },
+          {
+            "id": "pe-x2",
+            "text": "Nicht defibrillierbaren Rhythmus erkannt (Asystolie / PEA)",
+            "info": "2 min CPR, Analyse alle 2 min.",
+            "kritisch": true
+          }
+        ],
+        "anamnese": [
+          {
+            "id": "pe-a1",
+            "text": "Fremdanamnese: Risikofaktoren für Thrombose / Lungenembolie erfragt",
+            "info": "Operation, Immobilisation, hormonelle Verhütung, Rauchen, frühere Thrombosen."
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "pe-m1",
+            "text": "Adrenalin 1 mg so früh wie möglich, dann alle 3–5 min",
+            "kritisch": true
+          },
+          {
+            "id": "pe-m2",
+            "text": "Reversible Ursachen (HITS) gesucht – Thrombose / Lungenembolie erkannt",
+            "info": "Hypoxie – beatmen · Hypovolämie – Volumenzufuhr · Hypothermie – Wärmeerhalt · Hypo-/Hyperkaliämie – keine Massnahme · Herzbeuteltamponade · Intoxikation – Flumazenil 0,5 mg / Naloxon 0,4 mg · Thrombose (ACS / LE) – 5000 IE Heparin nach Rücksprache · Spannungspneumothorax – bilateral entlasten.",
+            "kritisch": true
+          },
+          {
+            "id": "pe-m3",
+            "text": "Nach 20 min ohne ROSC und ohne Rhythmuswechsel: Heparin 5000 IE nach Rücksprache",
+            "info": "Nach Heparin-Gabe Reanimationsdauer mind. 60 min."
+          },
+          {
+            "id": "pe-m4",
+            "text": "REA-Abbruch bzw. Transport unter REA situativ abgewogen",
+            "info": "Transport unter REA bei Hinweisen auf Schwangerschaft > 24 SSW oder Ertrinken. Hypothermie bedenken."
+          },
+          {
+            "id": "pe-m5",
+            "text": "Support erwogen (NA, Partnerorganisationen)"
+          }
+        ],
+        "transport": [
+          {
+            "id": "pe-t1",
+            "text": "Bei ROSC: Voranmeldung Schockraum mit Anästhesie"
+          }
+        ]
+      }
+    },
+    {
       "id": "thoraxschmerz",
       "titel": "Thoraxschmerz",
       "kategorie": "Internistisch",
@@ -465,7 +700,9 @@
         "befunde": "Kaltschweissig, blass, ängstlich. 12-Kanal-EKG: ST-Hebungen in II, III, aVF.",
         "verlauf": [
           "Nach ca. 10 Minuten: HF 48/min, BD 85/50 mmHg, Patient schwindlig.",
-          "Hinweis Rechtsherzbeteiligung: rechtspräkordiale Ableitungen (V4R) zeigen ST-Hebung."
+          "Rechtspräkordiale Ableitungen (V4R) zeigen ST-Hebung → Rechtsherzbeteiligung.",
+          "Wird trotzdem Nitrat gegeben: BD 70/40 mmHg, Patient trübt ein.",
+          "SpO₂ 95 % ohne Dyspnoe → kein O₂ nötig (Alg. 3.4)."
         ]
       },
       "zusatzpunkte": {
@@ -477,54 +714,86 @@
           },
           {
             "id": "th-a2",
-            "text": "Einnahme von PDE-5-Hemmern erfragt",
-            "info": "Vor jeder Nitrat-Gabe abklären.",
+            "text": "PDE-5-Hemmer / Poppers erfragt",
+            "info": "Keine Nitrat-Gabe nach Viagra (24 h), Levitra (48 h), Cialis (72 h) oder Poppers.",
             "kritisch": true
           }
         ],
         "secondary": [
           {
             "id": "th-s1",
-            "text": "12-Kanal-EKG innert 10 Minuten nach Patientenkontakt",
-            "info": "Früh ableiten und beurteilen, bei Bedarf übermitteln.",
+            "text": "12-Kanal-EKG abgeleitet, ggf. übermittelt",
+            "info": "Früh ableiten und beurteilen.",
             "kritisch": true
           },
           {
             "id": "th-s2",
-            "text": "Bei inferiorem Infarkt: rechtspräkordiale Ableitungen",
-            "info": "V4R – Rechtsherzbeteiligung hat Konsequenzen für Nitrate und Volumen."
+            "text": "Infarktlokalisation bestimmt",
+            "info": "Inferior: II, III, aVF · Anterior: V3, V4 · Lateral: I, aVL, V5, V6 · Posterior: V1, V2."
+          },
+          {
+            "id": "th-s3",
+            "text": "Bei inferiorem Infarkt: Hinweis auf Rechtsherzinfarkt gesucht (V4R)",
+            "info": "Rechtsherzinfarkt = Kontraindikation für Nitrat.",
+            "kritisch": true
           }
         ],
         "massnahmen": [
           {
-            "id": "th-s3",
-            "text": "Differenzialdiagnosen bedacht",
-            "info": "Lungenembolie, Aortendissektion, Pneumothorax, Perikarditis."
+            "id": "th-m0",
+            "text": "Andere Ursachen thorakaler Schmerzen bedacht",
+            "info": "Lungenembolie, hypertensiver Notfall, Spannungspneumothorax, Aortendissektion, Rippenfraktur / Kontusion, Perikarditis / Pleuritis."
           },
           {
             "id": "th-m1",
-            "text": "Defibrillationsbereitschaft hergestellt (Pads geklebt)",
+            "text": "Defibrillationsbereitschaft (Pads geklebt)",
             "kritisch": true
           },
           {
             "id": "th-m2",
-            "text": "Medikamente gemäss ACS-Algorithmus",
-            "info": "Analgesie, Thrombozytenaggregationshemmung, Antikoagulation – nach lokalen Vorgaben und Kontraindikationen."
+            "text": "O₂ nur bei SpO₂ < 90 % oder Dyspnoe"
           },
           {
             "id": "th-m3",
             "text": "Venöser Zugang gelegt"
+          },
+          {
+            "id": "th-m4",
+            "text": "Glyceroltrinitrat 2 Hübe – nur ohne Kontraindikation",
+            "info": "Keine Nitrat-Gabe bei: Viagra (24 h), Levitra (48 h), Cialis (72 h), Poppers, BD syst. < 90 mmHg, Hinweis auf Rechtsherzinfarkt.",
+            "kritisch": true
+          },
+          {
+            "id": "th-m5",
+            "text": "Morphin 2 mg weise"
+          },
+          {
+            "id": "th-m6",
+            "text": "Acetylsalicylsäure und Heparin auf Verordnung"
+          },
+          {
+            "id": "th-m7",
+            "text": "Hypotonie bei Rechtsherzinsuffizienz: Bolus Ringerfundin 250 ml",
+            "info": "Herzinsuffizienz hypoton – rechts: Ringerfundin 250 ml; links: je nach Symptomatik Ephedrin, Noradrenalin, Adrenalin. Hyperton: Glyceroltrinitrat, Morphin 2 mg weise, Furosemid 40–60 mg."
+          },
+          {
+            "id": "th-m8",
+            "text": "Bradykardie mit Instabilität: Atropin 0,5–1 mg (max. 3 mg)",
+            "info": "Alg. 3.6.2 – bei bedrohlichen Symptomen sofort transkutanes Pacing."
           }
         ],
         "transport": [
           {
             "id": "th-t1",
-            "text": "Bei STEMI: Direkttransport in Zentrum mit Herzkatheterlabor",
-            "info": "Voranmeldung beim Kardiologen, EKG übermitteln.",
+            "text": "STEMI: Transport ins nächste Coro-Zentrum, Voranmeldung",
             "kritisch": true
           }
         ]
-      }
+      },
+      "algorithmen": [
+        "3.4",
+        "3.6.2"
+      ]
     },
     {
       "id": "anaphylaxie",
@@ -857,6 +1126,12 @@
             "text": "Feuchte Rasselgeräusche / schaumiges Sputum erkannt"
           }
         ],
+        "secondary": [
+          {
+            "id": "lo-s1",
+            "text": "12-Kanal-EKG: ACS als Auslöser gesucht"
+          }
+        ],
         "massnahmen": [
           {
             "id": "lo-m1",
@@ -865,15 +1140,28 @@
           },
           {
             "id": "lo-m2",
-            "text": "Medikamente gemäss Algorithmus",
-            "info": "z. B. Nitrate bei hohem Blutdruck, Diuretikum – Kontraindikationen beachten."
+            "text": "O₂-Gabe (SpO₂ < 90 % / Dyspnoe)"
           },
           {
             "id": "lo-m3",
-            "text": "CPAP / NIV erwogen"
+            "text": "Glyceroltrinitrat – nur ohne Kontraindikation",
+            "info": "Herzinsuffizienz hyperton (Alg. 3.4): Glyceroltrinitrat, Morphin 2 mg weise, Furosemid 40–60 mg. Nitrat-KI: PDE-5-Hemmer, Poppers, BD syst. < 90 mmHg, Rechtsherzinfarkt.",
+            "kritisch": true
           },
           {
             "id": "lo-m4",
+            "text": "Morphin 2 mg weise"
+          },
+          {
+            "id": "lo-m5",
+            "text": "Furosemid 40–60 mg"
+          },
+          {
+            "id": "lo-m6",
+            "text": "CPAP / NIV erwogen"
+          },
+          {
+            "id": "lo-m7",
             "text": "Auslöser gesucht",
             "info": "ACS, Rhythmusstörung, hypertensive Krise, Medikamenten-Compliance."
           }
@@ -884,7 +1172,10 @@
             "text": "Patient nicht selber gehen lassen, sitzend transportiert"
           }
         ]
-      }
+      },
+      "algorithmen": [
+        "3.4"
+      ]
     },
     {
       "id": "hyperventilation",
@@ -1004,43 +1295,162 @@
         ],
         "befunde": "Palpitationen, leichter Schwindel, kein Thoraxschmerz. Ähnliche Episoden früher, jeweils spontan vorbei. EKG: regelmässige Schmalkomplextachykardie 190/min.",
         "verlauf": [
-          "Unter vagalen Manövern (modifiziertes Valsalva): Konversion in Sinusrhythmus 84/min.",
-          "Variante: BD 75/40 mmHg, Bewusstseinsstörung → instabil, Kardioversion gemäss Algorithmus."
+          "Unter Vagusreiz (Pressen): Konversion in Sinusrhythmus 84/min.",
+          "Variante: BD 75/40 mmHg, Synkope → instabil, Kardioversion SVT 70–120 J."
         ]
       },
       "zusatzpunkte": {
         "xabcde": [
           {
             "id": "ta-x1",
-            "text": "Instabilitätszeichen geprüft",
-            "info": "Schock, Synkope, Myokardischämie, Herzinsuffizienz.",
+            "text": "Zeichen von Instabilität geprüft",
+            "info": "Schock, Synkope, Brustschmerz.",
             "kritisch": true
+          }
+        ],
+        "anamnese": [
+          {
+            "id": "ta-a1",
+            "text": "Bedarfstachykardie ausgeschlossen",
+            "info": "Bedarfstachykardien sind nur ein Symptom: Ursache erkennen und beheben (Fieber, Volumenmangel, Schmerz, Angst …)."
           }
         ],
         "secondary": [
           {
             "id": "ta-s1",
-            "text": "Rhythmus beurteilt: QRS schmal / breit, regelmässig / unregelmässig",
+            "text": "12-Kanal-EKG abgeleitet, ggf. übermittelt",
+            "kritisch": true
+          },
+          {
+            "id": "ta-s2",
+            "text": "Kammerkomplex beurteilt: schmal / breit, regelmässig / unregelmässig",
             "kritisch": true
           }
         ],
         "massnahmen": [
           {
             "id": "ta-m1",
-            "text": "Defibrillator angeschlossen, Pads geklebt",
+            "text": "Pads geklebt (Kardioversionsbereitschaft)",
             "kritisch": true
           },
           {
             "id": "ta-m2",
-            "text": "Vagale Manöver bei stabiler Schmalkomplextachykardie"
+            "text": "Keine Instabilität: Überwachung / Transport"
           },
           {
             "id": "ta-m3",
-            "text": "Medikamente / Kardioversion gemäss Algorithmus"
+            "text": "Vagusreiz erwogen (Pressen / Husten)",
+            "info": "Keine Karotismassage bei Patienten > 60 J."
           },
           {
             "id": "ta-m4",
-            "text": "12-Kanal-EKG vor und nach Konversion"
+            "text": "Schmal / regelmässig: Krenosin 6 mg rasch i.v., ohne Erfolg 12 mg",
+            "info": "Mit 20 ml Flush. Alternativ Amiodaron 300 mg als Kurzinfusion."
+          },
+          {
+            "id": "ta-m5",
+            "text": "Instabil: Kardioversion SVT 70–120 J, Analgosedation erwägen",
+            "info": "Nach 3 Versuchen pharmakologische Intervention, danach erneute Kardioversion."
+          }
+        ]
+      },
+      "algorithmen": [
+        "3.6.1"
+      ]
+    },
+    {
+      "id": "breitkomplex",
+      "titel": "Tachykardie mit breitem QRS",
+      "kategorie": "Internistisch",
+      "dringlichkeit": "P1",
+      "algorithmen": [
+        "3.6.1"
+      ],
+      "meldung": {
+        "alarm": "Mann, 66 J., Herzrasen und Brustschmerzen",
+        "ort": "Einfamilienhaus, Wohnzimmer",
+        "situation": "Ehefrau meldet: Ihr Mann hat plötzlich starkes Herzrasen und Druck auf der Brust, er ist ganz grau im Gesicht."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "24/min"
+          ],
+          [
+            "SpO₂",
+            "93 %"
+          ],
+          [
+            "HF",
+            "180/min, regelmässig"
+          ],
+          [
+            "BD",
+            "80/50 mmHg"
+          ],
+          [
+            "GCS",
+            "15"
+          ],
+          [
+            "BZ",
+            "6.9 mmol/l"
+          ]
+        ],
+        "befunde": "Kaltschweissig, Brustschmerz NRS 6/10. Herzinfarkt vor 3 Jahren. EKG: regelmässige Breitkomplextachykardie 180/min (VT).",
+        "verlauf": [
+          "Nach 1. und 2. Kardioversion: weiterhin VT.",
+          "Nach 3 erfolglosen Versuchen: Amiodaron 300 mg als Kurzinfusion, danach erneute Kardioversion → Sinusrhythmus 92/min, BD 110/70 mmHg.",
+          "Variante: Patient wird pulslos → Alg. 3.2."
+        ]
+      },
+      "zusatzpunkte": {
+        "xabcde": [
+          {
+            "id": "bt-x1",
+            "text": "Zeichen von Instabilität erkannt (Schock, Synkope, Brustschmerz)",
+            "kritisch": true
+          }
+        ],
+        "secondary": [
+          {
+            "id": "bt-s1",
+            "text": "12-Kanal-EKG abgeleitet, ggf. übermittelt"
+          },
+          {
+            "id": "bt-s2",
+            "text": "Kammerkomplex breit / regelmässig erkannt",
+            "kritisch": true
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "bt-m1",
+            "text": "Pads geklebt",
+            "kritisch": true
+          },
+          {
+            "id": "bt-m2",
+            "text": "Kardioversion VT 120–150 J",
+            "kritisch": true
+          },
+          {
+            "id": "bt-m3",
+            "text": "Analgosedation erwogen"
+          },
+          {
+            "id": "bt-m4",
+            "text": "Nach 3 Versuchen: Amiodaron 300 mg als Kurzinfusion, erneute Kardioversion"
+          },
+          {
+            "id": "bt-m5",
+            "text": "Breit / unregelmässig, Torsade de pointes: Magnesium 2 g als Kurzinfusion"
+          },
+          {
+            "id": "bt-m6",
+            "text": "Pulslos: Reanimation nach Alg. 3.2",
+            "kritisch": true
           }
         ]
       }
@@ -1096,8 +1506,8 @@
         "xabcde": [
           {
             "id": "br-x1",
-            "text": "Instabilitätszeichen geprüft",
-            "info": "Schock, Synkope, Myokardischämie, Herzinsuffizienz.",
+            "text": "Zeichen von Instabilität geprüft",
+            "info": "Schock, Synkope, Brustschmerz.",
             "kritisch": true
           }
         ],
@@ -1108,13 +1518,14 @@
           },
           {
             "id": "br-a2",
-            "text": "Hyperkaliämie als Ursache bedacht (Niereninsuffizienz)"
+            "text": "Reversible Ursachen gesucht (4 H / 4 T)",
+            "info": "z. B. Hyperkaliämie bei Niereninsuffizienz."
           }
         ],
         "secondary": [
           {
             "id": "br-s1",
-            "text": "Art der Bradykardie im EKG bestimmt (Sinus, AV-Block I–III)",
+            "text": "12-Kanal-EKG abgeleitet, ggf. übermittelt",
             "kritisch": true
           }
         ],
@@ -1126,14 +1537,32 @@
           },
           {
             "id": "br-m2",
-            "text": "Atropin / Katecholamin / externes Pacing gemäss Algorithmus"
+            "text": "Atropin 0,5–1 mg i.v., max. 3 mg",
+            "info": "Bei bedrohlichen Symptomen sofort transkutanes Pacing.",
+            "kritisch": true
           },
           {
             "id": "br-m3",
+            "text": "Atropin erfolglos: transkutanes Pacing",
+            "kritisch": true
+          },
+          {
+            "id": "br-m4",
+            "text": "Analgosedation: Fentanyl 0,05 mg i.v. (wiederholend) oder Ketalar 0,25 mg/kg i.v.; erwäge Dormicum 1–2 mg i.v."
+          },
+          {
+            "id": "br-m5",
+            "text": "Adrenalin 10 mcg weise"
+          },
+          {
+            "id": "br-m6",
             "text": "Notarzt nachgefordert"
           }
         ]
-      }
+      },
+      "algorithmen": [
+        "3.6.2"
+      ]
     },
     {
       "id": "synkope",
@@ -1217,6 +1646,302 @@
             "id": "sy-t1",
             "text": "Monitorüberwachung und Defi-Bereitschaft während Transport"
           }
+        ],
+        "massnahmen": [
+          {
+            "id": "sy-m1",
+            "text": "Synkope als Instabilitätszeichen erkannt",
+            "info": "Alg. 3.6.2: Zeichen von Instabilität = Schock, Synkope, Brustschmerz.",
+            "kritisch": true
+          },
+          {
+            "id": "sy-m2",
+            "text": "Pads geklebt, Atropin 0,5–1 mg (max. 3 mg) bereit",
+            "info": "Bei bedrohlichen Symptomen sofort transkutanes Pacing."
+          }
+        ]
+      },
+      "algorithmen": [
+        "3.6.2"
+      ]
+    },
+    {
+      "id": "icd",
+      "titel": "ICD-Fehlfunktion",
+      "kategorie": "Internistisch",
+      "dringlichkeit": "P1",
+      "algorithmen": [
+        "3.7"
+      ],
+      "meldung": {
+        "alarm": "Mann, 61 J., wiederholte Stromschläge vom Defibrillator",
+        "ort": "Wohnung, 3. OG mit Lift",
+        "situation": "Ehefrau meldet: Sein implantierter Defibrillator hat in 20 Minuten schon 4× ausgelöst. Er ist wach und hat grosse Angst."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "24/min"
+          ],
+          [
+            "SpO₂",
+            "96 %"
+          ],
+          [
+            "HF",
+            "108/min, Sinustachykardie"
+          ],
+          [
+            "BD",
+            "140/85 mmHg"
+          ],
+          [
+            "GCS",
+            "15"
+          ],
+          [
+            "BZ",
+            "6.1 mmol/l"
+          ]
+        ],
+        "befunde": "ICD links infraklavikulär. Während der Untersuchung erneuter Schock bei Sinusrhythmus (nicht indizierter Schock, Verdacht auf Sondenbruch). ICD-Ausweis in der Schublade.",
+        "verlauf": [
+          "Nach Magnetauflage: keine weiteren Schocks (Signalton kann ertönen).",
+          "Variante: Kammerflimmern → Alg. 3.2."
+        ]
+      },
+      "zusatzpunkte": {
+        "anamnese": [
+          {
+            "id": "ic-a1",
+            "text": "ICD-Ausweis mitgenommen (Indikation, Alter, Gerätetyp, Programmierung)"
+          }
+        ],
+        "secondary": [
+          {
+            "id": "ic-s1",
+            "text": "EKG interpretiert: indizierter (VF / pulslose VT) oder nicht indizierter Schock?",
+            "kritisch": true
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "ic-m1",
+            "text": "Pads anterior-posterior geklebt, nicht über dem Aggregat",
+            "kritisch": true
+          },
+          {
+            "id": "ic-m2",
+            "text": "Anhaltende nicht indizierte Schocks: Magnetauflage",
+            "info": "Unterbindet die Schockabgabe nach spätestens 30 s; ein Signalton kann ertönen. Ohne Besserung: Alg. 3.6.",
+            "kritisch": true
+          },
+          {
+            "id": "ic-m3",
+            "text": "Patient beruhigt und begleitet"
+          }
+        ],
+        "transport": [
+          {
+            "id": "ic-t1",
+            "text": "Überwachung, Transport mit Voranmeldung (ansonsten BSS / KSO)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "pacer",
+      "titel": "Pacer-Fehlfunktion",
+      "kategorie": "Internistisch",
+      "dringlichkeit": "P1",
+      "algorithmen": [
+        "3.7",
+        "3.6.2"
+      ],
+      "meldung": {
+        "alarm": "Frau, 84 J., mehrmals kurz bewusstlos",
+        "ort": "Altersheim, Zimmer im 2. OG",
+        "situation": "Pflegefachfrau meldet: Bewohnerin hatte heute zwei kurze Bewusstlosigkeiten, der Puls ist sehr langsam. Sie hat einen Herzschrittmacher."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "18/min"
+          ],
+          [
+            "SpO₂",
+            "95 %"
+          ],
+          [
+            "HF",
+            "34/min, Pausen bis 4 s"
+          ],
+          [
+            "BD",
+            "80/45 mmHg"
+          ],
+          [
+            "GCS",
+            "14"
+          ],
+          [
+            "BZ",
+            "6.0 mmol/l"
+          ]
+        ],
+        "befunde": "Pacer-Ausweis im Nachttisch (VVI, Implantation vor 9 Jahren). Im EKG Schrittmacherspikes ohne nachfolgenden Kammerkomplex.",
+        "verlauf": [
+          "Nach Magnetauflage: starrfrequente Stimulation, aber weiterhin Spikes ohne Antwort.",
+          "Atropin ohne Wirkung → transkutanes Pacing unter Analgosedation: HF 70/min, BD 110/60 mmHg.",
+          "Cave: Unter Pacing Puls tasten – EKG nicht verwertbar."
+        ]
+      },
+      "zusatzpunkte": {
+        "anamnese": [
+          {
+            "id": "pc-a1",
+            "text": "Pacer-Ausweis mitgenommen (Indikation, Alter, Gerätetyp, Programmierung)",
+            "info": "NBG-Code: 1. Stimulationsort, 2. Wahrnehmungsort (0 / A / V / D / S), 3. Betriebsart (0 / T / I / D), 4. Frequenzadaptation (R), 5. multifokale Stimulation."
+          }
+        ],
+        "secondary": [
+          {
+            "id": "pc-s1",
+            "text": "EKG interpretiert (Pausen, Spikes ohne Antwort)",
+            "kritisch": true
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "pc-m1",
+            "text": "Pads anterior-posterior geklebt, nicht über dem Aggregat",
+            "kritisch": true
+          },
+          {
+            "id": "pc-m2",
+            "text": "Instabile Bradykardie / rezidivierende Pausen: Magnetauflage"
+          },
+          {
+            "id": "pc-m3",
+            "text": "Atropin 0,5–1 mg, max. 3 mg erwogen"
+          },
+          {
+            "id": "pc-m4",
+            "text": "Transkutanes Pacing, Analgosedation (Fentanyl / Midazolam) erwogen",
+            "kritisch": true
+          },
+          {
+            "id": "pc-m5",
+            "text": "Unter Pacing Pulskontrolle (EKG nicht verwertbar)",
+            "kritisch": true
+          },
+          {
+            "id": "pc-m6",
+            "text": "Asystolie: Reanimation nach Alg. 3.2, transkutanes Pacing versuchen"
+          }
+        ],
+        "transport": [
+          {
+            "id": "pc-t1",
+            "text": "Überwachung, Transport mit Voranmeldung (ansonsten BSS / KSO)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "hypertensiv",
+      "titel": "Hypertensiver Notfall",
+      "kategorie": "Internistisch",
+      "dringlichkeit": "P2",
+      "algorithmen": [
+        "3.8"
+      ],
+      "meldung": {
+        "alarm": "Frau, 63 J., starke Kopfschmerzen und Sehstörungen",
+        "ort": "Mehrfamilienhaus, 2. OG",
+        "situation": "Tochter meldet: Mutter hat seit einer Stunde heftige Kopfschmerzen und sieht verschwommen. Ihr Blutdruck sei «über 220»."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "20/min"
+          ],
+          [
+            "SpO₂",
+            "97 %"
+          ],
+          [
+            "HF",
+            "92/min"
+          ],
+          [
+            "BD",
+            "228/124 mmHg"
+          ],
+          [
+            "GCS",
+            "15"
+          ],
+          [
+            "BZ",
+            "6.3 mmol/l"
+          ],
+          [
+            "Temp.",
+            "36.7 °C"
+          ]
+        ],
+        "befunde": "Hat ihre Blutdrucktabletten seit einer Woche nicht genommen. Übelkeit. Keine Halbseitensymptomatik, kein Thoraxschmerz, Lunge frei.",
+        "verlauf": [
+          "Nach Urapidil: BD 205/115 mmHg (ca. 10 % Senkung), Kopfschmerz etwas besser.",
+          "Wird der BD zu stark gesenkt: Schwindel, Verwirrtheit (Minderperfusion).",
+          "Variante: neu Armschwäche rechts → Alg. 4.3."
+        ]
+      },
+      "zusatzpunkte": {
+        "xabcde": [
+          {
+            "id": "hn-x1",
+            "text": "Endorganstörung gesucht",
+            "info": "Kopfschmerzen, Bewusstseinsstörung, Sehstörungen, Atemnot, Lungenödem, thorakale Schmerzen. Die absolute BD-Höhe ist KEIN Entscheidungskriterium zur Intervention.",
+            "kritisch": true
+          },
+          {
+            "id": "hn-x2",
+            "text": "Kardiale Ursache, Stroke und Bewusstseinsstörung ausgeschlossen",
+            "info": "Falls vorhanden: Alg. 3.4 / 4.3 / 4.1."
+          }
+        ],
+        "anamnese": [
+          {
+            "id": "hn-a1",
+            "text": "Blutdruckmedikamente und Einnahme erfragt"
+          }
+        ],
+        "secondary": [
+          {
+            "id": "hn-s1",
+            "text": "12-Kanal-EKG abgeleitet"
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "hn-m0",
+            "text": "Ggf. O₂"
+          },
+          {
+            "id": "hn-m1",
+            "text": "Urapidil 5–10 mg weise",
+            "kritisch": true
+          },
+          {
+            "id": "hn-m2",
+            "text": "BD-Senkung max. 10 % vom Ausgangswert, keine Senkung bei syst. < 180 mmHg",
+            "kritisch": true
+          }
         ]
       }
     },
@@ -1271,7 +1996,8 @@
         "xabcde": [
           {
             "id": "hy-x1",
-            "text": "Blutzucker früh gemessen (bei jeder Bewusstseinsstörung)",
+            "text": "Blutzucker früh gemessen",
+            "info": "Normbereich 3,3–6,6 mmol/l; < 3,3 mmol/l = Hypoglykämie.",
             "kritisch": true
           }
         ],
@@ -1287,9 +2013,13 @@
         ],
         "massnahmen": [
           {
+            "id": "hy-m0",
+            "text": "Hochdosiert O₂"
+          },
+          {
             "id": "hy-m1",
-            "text": "Glukose gemäss Algorithmus",
-            "info": "Oral nur bei erhaltenem Schluckreflex, sonst i.v. oder Glukagon.",
+            "text": "Glucose 20 % i.v. nach Wirkung",
+            "info": "Ohne i.v.-Zugang: Glukagon 1 mg s.c. erwägen (Alg. 4.2).",
             "kritisch": true
           },
           {
@@ -1302,6 +2032,98 @@
             "id": "hy-t1",
             "text": "Transportentscheid begründet",
             "info": "Langwirksames Insulin oder Sulfonylharnstoffe → Rückfallgefahr, Transport empfohlen."
+          }
+        ]
+      },
+      "algorithmen": [
+        "4.1",
+        "4.2"
+      ]
+    },
+    {
+      "id": "hyperglykaemie",
+      "titel": "Hyperglykämie",
+      "kategorie": "Internistisch",
+      "dringlichkeit": "P2",
+      "algorithmen": [
+        "4.1"
+      ],
+      "meldung": {
+        "alarm": "Mann, 23 J., zunehmend schläfrig",
+        "ort": "Studentenwohnung, 2. OG",
+        "situation": "Mitbewohner meldet: Er hat seit Tagen viel Durst, erbricht seit gestern und ist jetzt kaum noch wach."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "30/min, tief"
+          ],
+          [
+            "SpO₂",
+            "98 %"
+          ],
+          [
+            "HF",
+            "124/min"
+          ],
+          [
+            "BD",
+            "98/60 mmHg"
+          ],
+          [
+            "GCS",
+            "12"
+          ],
+          [
+            "BZ",
+            "> 33 mmol/l («HI»)"
+          ],
+          [
+            "Temp.",
+            "37.2 °C"
+          ]
+        ],
+        "befunde": "Tiefe, schnelle Atmung (Kussmaul), Azetongeruch, trockene Schleimhäute. Typ-1-Diabetes, Insulinpumpe seit 2 Tagen defekt.",
+        "verlauf": [
+          "Nach Ringerfundin: HF 108/min, BD 110/70 mmHg, GCS 13."
+        ]
+      },
+      "zusatzpunkte": {
+        "xabcde": [
+          {
+            "id": "hg-x1",
+            "text": "Blutzucker gemessen (> 22 mmol/l = Hyperglykämie)",
+            "kritisch": true
+          },
+          {
+            "id": "hg-x2",
+            "text": "Kussmaul-Atmung / Azetongeruch erkannt"
+          }
+        ],
+        "anamnese": [
+          {
+            "id": "hg-a1",
+            "text": "Insulintherapie / Pumpe, Infekt, Erbrechen erfragt"
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "hg-m0",
+            "text": "Hochdosiert O₂"
+          },
+          {
+            "id": "hg-m1",
+            "text": "Ringerfundin nach Wirkung",
+            "kritisch": true
+          },
+          {
+            "id": "hg-m2",
+            "text": "BZ überprüft, Therapie ggf. wiederholt"
+          },
+          {
+            "id": "hg-m3",
+            "text": "Aspirationsgefahr (AVPU «U»): Atemwegssicherung erwägen, Aufgebot NA"
           }
         ]
       }
@@ -1361,23 +2183,39 @@
         "xabcde": [
           {
             "id": "se-x1",
-            "text": "Sepsis-Verdacht erkannt (Screening gemäss Vorgaben, z. B. qSOFA)",
-            "info": "AF ≥ 22/min, veränderter Bewusstseinszustand, systolischer BD ≤ 100 mmHg.",
+            "text": "Sepsis-Verdacht: Infekt + mind. 2 qSOFA-Punkte",
+            "info": "qSOFA: GCS < 15, BD syst. < 100 mmHg, AF > 22/min.",
             "kritisch": true
           },
           {
             "id": "se-x2",
             "text": "Infektfokus gesucht (Lunge, Urin, Haut, Abdomen)"
+          },
+          {
+            "id": "se-x3",
+            "text": "Petechien / Meningitiszeichen gesucht",
+            "info": "Falls ja: Aufgebot NA erwägen, schneller Transport."
           }
         ],
         "massnahmen": [
           {
+            "id": "se-m0",
+            "text": "Infektionsschutz",
+            "info": "Bluthusten / Vd. a. TBC: chirurgische Maske für Patient, FFP2 für Team.",
+            "kritisch": true
+          },
+          {
             "id": "se-m1",
-            "text": "O₂ und Volumen gemäss Algorithmus"
+            "text": "BD syst. < 100 / MAP < 65 mmHg: Ringer Acetat 30 ml/kg KG",
+            "kritisch": true
           },
           {
             "id": "se-m2",
-            "text": "Hygienemassnahmen (Maske für Patient und Team)"
+            "text": "Vasopressoren erwägen: Phenylephrin 50–200 mcg weise, Adrenalin 10–100 mcg weise, Noradrenalin-Perfusor"
+          },
+          {
+            "id": "se-m3",
+            "text": "Temperatur > 40 °C: physikalische Kühlung, Paracetamol erwägen"
           }
         ],
         "transport": [
@@ -1388,7 +2226,10 @@
             "kritisch": true
           }
         ]
-      }
+      },
+      "algorithmen": [
+        "3.10"
+      ]
     },
     {
       "id": "akutes-abdomen",
@@ -1460,13 +2301,27 @@
         "massnahmen": [
           {
             "id": "aa-m1",
-            "text": "Schockzeichen erkannt, Volumen gemäss Algorithmus",
+            "text": "Schockzeichen erkannt, Volumengabe",
             "kritisch": true
           },
           {
-            "id": "aa-m2",
-            "text": "Schmerztherapie gemäss Algorithmus",
-            "info": "Analgesie erschwert die Diagnose im Spital nicht."
+            "id": "aa-an1",
+            "text": "Analgesie bei VAS > 3 (i.v.)",
+            "info": "Kolikartig / abdominell: Novalgin, Morphin, Fentanyl, Butylscopolamin erwägen. Kontraindikationen beachten. Situationsangepasste Lagerung / Immobilisation / Kühlung, ggf. O₂.",
+            "kritisch": true
+          },
+          {
+            "id": "aa-an2",
+            "text": "Kein i.v.-Zugang: Medikamentengabe über MAD",
+            "info": "MAD zugelassen: Fentanyl, Morphin, Midazolam, Ketamin; off label: Naloxon, Anexate. Kontraindikationen MAD: Gesichtstrauma, schweres SHT, Rhinitis."
+          },
+          {
+            "id": "aa-an3",
+            "text": "Wirkung nach 5 min beurteilt, Analgesie ggf. repetiert"
+          },
+          {
+            "id": "aa-an4",
+            "text": "Bei Übelkeit / Erbrechen: Ondansetron 4 mg"
           },
           {
             "id": "aa-m3",
@@ -1480,7 +2335,10 @@
             "kritisch": true
           }
         ]
-      }
+      },
+      "algorithmen": [
+        "5.5"
+      ]
     },
     {
       "id": "unklares-abdomen",
@@ -1559,15 +2417,24 @@
             "text": "Nicht-abdominelle Ursachen bedacht",
             "info": "Herzinfarkt, Pneumonie, Ketoazidose, Aortenaneurysma, Mesenterialischämie.",
             "kritisch": true
+          },
+          {
+            "id": "ua-m2",
+            "text": "Inferiorer STEMI: Nitrat-Kontraindikation Rechtsherzinfarkt geprüft",
+            "info": "Glyceroltrinitrat 2 Hübe nur ohne KI, Morphin 2 mg weise, ASS / Heparin auf Verordnung."
           }
         ],
         "transport": [
           {
             "id": "ua-t1",
-            "text": "Zielspital gemäss Arbeitsdiagnose gewählt (z. B. Herzkatheter bei STEMI)"
+            "text": "STEMI: Transport ins nächste Coro-Zentrum",
+            "kritisch": true
           }
         ]
-      }
+      },
+      "algorithmen": [
+        "3.4"
+      ]
     },
     {
       "id": "krampfanfall",
@@ -1628,30 +2495,56 @@
             "id": "kr-x1",
             "text": "Anfallsdauer bestimmt (> 5 Minuten = Status epilepticus)",
             "kritisch": true
+          },
+          {
+            "id": "kr-x2",
+            "text": "Blutzucker gemessen",
+            "kritisch": true
           }
         ],
         "anamnese": [
           {
             "id": "kr-a1",
             "text": "Fremdanamnese: Beginn, Ablauf, Dauer, Epilepsie, Medikamente, Trauma, Alkohol"
+          },
+          {
+            "id": "kr-a2",
+            "text": "Differenzialdiagnosen bedacht",
+            "info": "Hypoxie, Intoxikation (Tox Info Suisse 145), Entzug, Elektrounfall, zerebrales Ereignis, Eklampsie, Elektrolytstörung, Meningoenzephalitis, Hirndruck."
           }
         ],
         "massnahmen": [
           {
+            "id": "kr-m0",
+            "text": "Hochdosiert O₂"
+          },
+          {
             "id": "kr-m1",
-            "text": "Antikonvulsive Therapie gemäss Algorithmus",
-            "kritisch": true
+            "text": "BZ < 3 mmol/l: Glucose 20 % i.v., erwäge Glukagon 1 mg s.c."
           },
           {
             "id": "kr-m2",
-            "text": "Atemweg in der postiktalen Phase gesichert (Seitenlage, Absaugbereitschaft)"
+            "text": "Clonazepam 1–2 mg i.v. oder Midazolam 1 mg weise i.v. oder Midazolam 10 mg i.n.",
+            "kritisch": true
           },
           {
             "id": "kr-m3",
+            "text": "Krampf persistiert: weitere Therapie mit Clonazepam / Midazolam; Status → Atemwegssicherung erwägen, Aufgebot NA"
+          },
+          {
+            "id": "kr-m4",
+            "text": "Atemweg in der postiktalen Phase gesichert (Seitenlage, Absaugbereitschaft)"
+          },
+          {
+            "id": "kr-m5",
             "text": "Verletzungen gesucht (Kopf, Zunge, Schulter)"
           }
         ]
-      }
+      },
+      "algorithmen": [
+        "4.2",
+        "4.1"
+      ]
     },
     {
       "id": "stroke",
@@ -1704,45 +2597,74 @@
         "xabcde": [
           {
             "id": "st-x1",
-            "text": "Stroke-Zeichen strukturiert erhoben (z. B. BE-FAST)",
+            "text": "Neurologische Beurteilung inkl. Pupillenkontrolle (z. B. BE-FAST)",
             "kritisch": true
           },
           {
             "id": "st-x2",
-            "text": "Hypoglykämie als Differenzialdiagnose ausgeschlossen",
+            "text": "Hypoglykämie ausgeschlossen",
             "kritisch": true
           }
         ],
         "anamnese": [
           {
             "id": "st-a1",
-            "text": "Symptombeginn bzw. «zuletzt gesund gesehen» exakt erhoben",
+            "text": "Zeitpunkt Symptombeginn bzw. «zuletzt gesund gesehen» exakt erhoben",
             "kritisch": true
           },
           {
             "id": "st-a2",
-            "text": "Antikoagulation, kürzliche Operationen / Blutungen erfragt"
+            "text": "Aggregationshemmer / Antikoagulanzien: letzte Einnahme erfragt"
+          },
+          {
+            "id": "st-a3",
+            "text": "Relevante Vorerkrankungen, Herzschrittmacher / künstliche Klappen erfragt"
+          },
+          {
+            "id": "st-a4",
+            "text": "Telefonnummer von Zeugen / Angehörigen notiert"
           }
         ],
         "massnahmen": [
           {
+            "id": "st-m0",
+            "text": "SpO₂ < 92 %: O₂ über Nasenbrille"
+          },
+          {
             "id": "st-m1",
-            "text": "Kurze Zeit vor Ort («time is brain»)",
+            "text": "BD-Ziel syst. < 220 / dia. < 120 mmHg",
+            "info": "Darüber: Urapidil 5–10 mg weise. Keine Senkung bei syst. < 185 mmHg. Volumengabe bei Exsikkose.",
             "kritisch": true
           },
           {
             "id": "st-m2",
-            "text": "Nüchtern lassen, Oberkörper leicht hoch"
+            "text": "BZ < 3 mmol/l: Glucose 20 % i.v."
+          },
+          {
+            "id": "st-m3",
+            "text": "Temperatur > 38 °C: physikalische Senkung, erwäge Paracetamol 500 mg"
+          },
+          {
+            "id": "st-m4",
+            "text": "Oberkörperhochlagerung 0–30°"
+          },
+          {
+            "id": "st-m5",
+            "text": "Kurze Zeit vor Ort («time is brain»)",
+            "kritisch": true
           }
         ],
         "transport": [
           {
             "id": "st-t1",
-            "text": "Stroke Unit / Stroke Center mit Voranmeldung",
+            "text": "Stroke Unit / Stroke Center mit Voranmeldung (Alg. 4.4)",
             "kritisch": true
           }
         ]
-      }
+      },
+      "algorithmen": [
+        "4.3"
+      ]
     },
     {
       "id": "opioid",
@@ -1816,14 +2738,23 @@
         ],
         "massnahmen": [
           {
+            "id": "op-m0",
+            "text": "Hochdosiert O₂"
+          },
+          {
             "id": "op-m1",
-            "text": "Naloxon titriert gemäss Algorithmus",
-            "info": "Ziel: ausreichende Spontanatmung, nicht vollständiges Erwachen – Entzug und Agitation vermeiden.",
+            "text": "Naloxon bei Atemdepression: 0,1 mg weise i.v. oder 0,4 mg nasal",
+            "info": "Ziel: ausreichende Spontanatmung, nicht vollständiges Erwachen. Nasal über MAD (off label).",
             "kritisch": true
           },
           {
             "id": "op-m2",
-            "text": "Mischintoxikation bedacht (Benzodiazepine, Alkohol)"
+            "text": "Mischintoxikation bedacht",
+            "info": "Klare Benzodiazepin-Intoxikation mit Atemdepression: Flumazenil 0,1 mg weise. Giftnotruf Tox Info Suisse: 145."
+          },
+          {
+            "id": "op-m3",
+            "text": "Aspirationsgefahr (AVPU «U»): Atemwegssicherung erwägen, Aufgebot NA"
           }
         ],
         "transport": [
@@ -1833,7 +2764,11 @@
             "info": "Bei Transportverweigerung Urteilsfähigkeit prüfen und dokumentieren."
           }
         ]
-      }
+      },
+      "algorithmen": [
+        "4.1",
+        "5.5"
+      ]
     },
     {
       "id": "alkohol",
@@ -1869,11 +2804,11 @@
           ],
           [
             "BZ",
-            "3.4 mmol/l"
+            "3.0 mmol/l"
           ],
           [
             "Temp.",
-            "35.1 °C"
+            "34.6 °C"
           ],
           [
             "Pupillen",
@@ -1906,14 +2841,40 @@
           },
           {
             "id": "al-x3",
-            "text": "Blutzucker und Temperatur gemessen, Wärmeerhalt",
+            "text": "Blutzucker und Körpertemperatur gemessen",
             "kritisch": true
+          },
+          {
+            "id": "al-x4",
+            "text": "WS-Immobilisation geprüft",
+            "info": "Intoxikation ist bei entsprechendem Mechanismus eine Indikation. Stumpfes Trauma mit entsprechendem Mechanismus: GCS < 15 → Immobilisation. GCS 15: Druckschmerz über WS, neurologisches Defizit oder Fehlstellung → Immobilisation. Sonst: Intoxikation, ablenkende Verletzung oder Kommunikationsbarriere → Immobilisation; keines davon → nicht indiziert. Penetrierendes Trauma an Kopf, Hals oder Rumpf → keine Immobilisation, zügiger Transport."
           }
         ],
         "anamnese": [
           {
             "id": "al-a1",
-            "text": "Mischintoxikation erfragt (Medikamente, Drogen)"
+            "text": "Mischintoxikation erfragt (Medikamente, Drogen)",
+            "info": "Giftnotruf Tox Info Suisse: 145."
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "al-m0",
+            "text": "Hochdosiert O₂"
+          },
+          {
+            "id": "al-m1",
+            "text": "BZ < 3,3 mmol/l: Glucose 20 % i.v. nach Wirkung",
+            "kritisch": true
+          },
+          {
+            "id": "al-m2",
+            "text": "Temperatur < 35 °C: Hypothermie-Massnahmen",
+            "info": "Bewegungen vermeiden, nasse Kleidung entfernen, vor weiterem Auskühlen schützen. ≥ 30 °C: aktive externe Erwärmung des Körperstamms, warme Infusion."
+          },
+          {
+            "id": "al-m3",
+            "text": "Aspirationsgefahr (AVPU «U»): Atemwegssicherung erwägen, Aufgebot NA"
           }
         ],
         "transport": [
@@ -1922,7 +2883,12 @@
             "text": "Spital mit CT bei Verdacht auf SHT"
           }
         ]
-      }
+      },
+      "algorithmen": [
+        "4.1",
+        "5.4",
+        "8.11"
+      ]
     },
     {
       "id": "co-intoxikation",
@@ -1968,7 +2934,8 @@
         "befunde": "Kopfschmerz, Übelkeit, Verwirrtheit. Ehefrau mit Kopfschmerz und Schwindel. Der CO-Warner des Teams schlägt beim Betreten des Hauses an.",
         "verlauf": [
           "Bleibt das Team im Gebäude: eigene Symptome (Kopfschmerz, Schwindel).",
-          "Unter 100 % O₂: GCS 14 nach 20 Minuten."
+          "Unter 100 % O₂: GCS 14 nach 20 Minuten.",
+          "Ehefrau: SpCO 14 %, Kopfschmerzen → ebenfalls Patientin."
         ]
       },
       "zusatzpunkte": {
@@ -1980,7 +2947,7 @@
           },
           {
             "id": "co-s2",
-            "text": "Feuerwehr aufgeboten, Rettung nur unter Eigenschutz",
+            "text": "Selbstschutz, Aufgebot Feuerwehr / Polizei",
             "kritisch": true
           },
           {
@@ -1993,22 +2960,39 @@
             "id": "co-x1",
             "text": "SpO₂ als unzuverlässig erkannt, SpCO gemessen",
             "kritisch": true
+          },
+          {
+            "id": "co-x2",
+            "text": "Atemwegsprobleme / verrusste Atemwege / Hinweis auf Cyanid-Intox geprüft",
+            "info": "Falls ja: Aufgebot NA erwägen, Adrenalin oder Dospir inhalativ, Methylprednisolon i.v."
           }
         ],
         "massnahmen": [
           {
             "id": "co-m1",
-            "text": "Hochdosiert O₂ (100 %) unabhängig von der SpO₂",
+            "text": "Hochdosiert O₂ unabhängig von der SpO₂",
             "kritisch": true
+          },
+          {
+            "id": "co-m2",
+            "text": "SpCO > 10 %: Symptomatik oft schwerwiegender als der gemessene Wert",
+            "info": "Aufgebot NA erwägen: NIV, Intubation, Flugrettung / Druckkammer. CO-Hb: 5–10 % psychomotorische Störungen · 10–20 % Kopfschmerzen, Müdigkeit, Schwindel · 20–30 % Erbrechen, Gesichtsfeldeinschränkung, AP-Beschwerden · 30–40 % Verwirrtheit, Bewusstseinsverlust, Tachykardie · 40–50 % Kollaps, Koma, Krämpfe · 50–70 % Atemdepression, Bradykardie, Hypotonie · 70–80 % Atemstillstand, Tod."
+          },
+          {
+            "id": "co-m3",
+            "text": "SpCO ≤ 10 % und symptomfrei: Aufklärung, dass Beschwerden bis 72 h später auftreten können"
           }
         ],
         "transport": [
           {
             "id": "co-t1",
-            "text": "Indikation für Überdruckkammer (HBO) abgeklärt"
+            "text": "Indikation für Druckkammer (HBO) abgeklärt"
           }
         ]
-      }
+      },
+      "algorithmen": [
+        "5.3"
+      ]
     },
     {
       "id": "polytrauma",
@@ -2071,14 +3055,14 @@
           {
             "id": "pt-s2",
             "text": "Unfallmechanismus als Hochrasanztrauma eingestuft",
-            "info": "Konsequenz: Notarzt / REGA, Traumazentrum, kurze Zeit vor Ort."
+            "info": "Konsequenz: NA / Flugrettung, Trauma Center, kurze Zeit vor Ort."
           }
         ],
         "xabcde": [
           {
             "id": "pt-x1",
-            "text": "Tourniquet am Oberschenkel angelegt, Zeit notiert",
-            "info": "Proximal der Blutung, so fest wie nötig, Uhrzeit dokumentieren.",
+            "text": "Blutung gestoppt: Tourniquet am Oberschenkel, Zeit notiert",
+            "info": "Weitere Optionen: Druckverband / Israeli-Verband, blutstillende Gaze.",
             "kritisch": true
           },
           {
@@ -2095,43 +3079,204 @@
           {
             "id": "pt-x4",
             "text": "Beckenschlinge bei Verdacht auf Beckenverletzung",
-            "info": "Becken nicht wiederholt prüfen («Federn» vermeiden).",
+            "info": "Becken nicht wiederholt prüfen.",
             "kritisch": true
           },
           {
             "id": "pt-x5",
+            "text": "Hochdosiert O₂"
+          },
+          {
+            "id": "pt-x6",
             "text": "Wärmeerhalt (Hypothermie verhindern)"
           }
         ],
         "massnahmen": [
           {
             "id": "pt-m1",
-            "text": "Notarzt / REGA nachgefordert"
+            "text": "Aufgebot NA / Flugrettung erwogen"
           },
           {
             "id": "pt-m2",
-            "text": "Kurze Zeit vor Ort angestrebt («Load and go»)",
-            "info": "Nur lebensrettende Massnahmen vor Ort, Rest während Transport.",
+            "text": "Sofortiger Transport ins Trauma Center, Zeit vor Ort < 10 min",
             "kritisch": true
           },
           {
             "id": "pt-m3",
-            "text": "Volumen / Blutdruckziel gemäss Traumaprotokoll",
-            "info": "Permissive Hypotension, Tranexamsäure – nach lokalen Vorgaben."
+            "text": "1–2 Zugänge, ggf. während der Fahrt; bei frustranem i.v. frühzeitig i.o."
           },
           {
             "id": "pt-m4",
-            "text": "Ganzkörperimmobilisation nach Bedarf (Vakuummatratze)"
+            "text": "Ringer Acetat 250 ml als Bolus, max. 1000 ml",
+            "info": "Permissive Hypotonie bei ansprechbarem Patienten tolerieren, sonst Ziel BD syst. ≥ 80 mmHg; in Kombination mit SHT ≥ 90 mmHg. Zurückhaltendes BD-Management mit Vasopressoren."
           },
           {
             "id": "pt-m5",
-            "text": "Offene Fraktur steril abgedeckt"
+            "text": "Tranexamsäure 1 g",
+            "kritisch": true
+          },
+          {
+            "id": "pt-m6",
+            "text": "Analgesie erwogen (Alg. 5.5)",
+            "info": "i.v.: Paracetamol, Novalgin, Morphin, Fentanyl, Ketamin; ohne i.v.: Methoxyfluran oder MAD. Kontraindikationen beachten."
+          },
+          {
+            "id": "pt-m7",
+            "text": "WS-Immobilisation (GCS < 15 → indiziert)",
+            "info": "Stumpfes Trauma mit entsprechendem Mechanismus: GCS < 15 → Immobilisation. GCS 15: Druckschmerz über WS, neurologisches Defizit oder Fehlstellung → Immobilisation. Sonst: Intoxikation, ablenkende Verletzung oder Kommunikationsbarriere → Immobilisation; keines davon → nicht indiziert. Penetrierendes Trauma an Kopf, Hals oder Rumpf → keine Immobilisation, zügiger Transport."
+          },
+          {
+            "id": "pt-m8",
+            "text": "Offene Fraktur steril abgedeckt, Immobilisation"
+          },
+          {
+            "id": "pt-m9",
+            "text": "Zurückhaltende Indikation zur Atemwegssicherung",
+            "info": "Auch bei relevanter Bewusstseinsstörung (Alg. 3.9)."
           }
         ],
         "transport": [
           {
             "id": "pt-t1",
-            "text": "Transport in Traumazentrum, Schockraum vorangemeldet",
+            "text": "Trauma Center, Schockraum vorangemeldet",
+            "kritisch": true
+          }
+        ]
+      },
+      "algorithmen": [
+        "3.9",
+        "5.1",
+        "5.5",
+        "8.11"
+      ]
+    },
+    {
+      "id": "amputation",
+      "titel": "Amputationsverletzung",
+      "kategorie": "Trauma",
+      "dringlichkeit": "P1",
+      "algorithmen": [
+        "3.9",
+        "5.1",
+        "5.5"
+      ],
+      "meldung": {
+        "alarm": "Mann, 52 J., Handverletzung mit Kreissäge, starke Blutung",
+        "ort": "Schreinerei im Industriegebiet",
+        "situation": "Arbeitskollege meldet: Daumen und Zeigefinger sind abgetrennt, es blutet stark. Er drückt ein Tuch darauf, der Mann ist sehr blass."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "24/min"
+          ],
+          [
+            "SpO₂",
+            "96 %"
+          ],
+          [
+            "HF",
+            "124/min"
+          ],
+          [
+            "BD",
+            "92/60 mmHg"
+          ],
+          [
+            "Rekap.",
+            "3 s"
+          ],
+          [
+            "GCS",
+            "15"
+          ],
+          [
+            "NRS",
+            "8/10"
+          ]
+        ],
+        "befunde": "Amputation von Daumen und Zeigefinger rechts, spritzende Blutung. Amputate liegen in den Sägespänen. Rechtshänder.",
+        "verlauf": [
+          "Ohne Blutstillung nach 5 min: HF 140/min, BD 75/45 mmHg, unruhig.",
+          "Nach Druckverband / Tourniquet: Blutung steht, HF 110/min."
+        ]
+      },
+      "zusatzpunkte": {
+        "szene": [
+          {
+            "id": "am-s1",
+            "text": "Maschine gestoppt, Eigenschutz",
+            "kritisch": true
+          }
+        ],
+        "xabcde": [
+          {
+            "id": "am-x1",
+            "text": "Blutung gestoppt: Druckverband / Israeli-Verband, blutstillende Gaze, ggf. Tourniquet (Zeit notiert)",
+            "kritisch": true
+          },
+          {
+            "id": "am-x2",
+            "text": "Hochdosiert O₂"
+          },
+          {
+            "id": "am-x3",
+            "text": "Schockzeichen erkannt"
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "am-m1",
+            "text": "Tranexamsäure 1 g",
+            "kritisch": true
+          },
+          {
+            "id": "am-m2",
+            "text": "Zugang gelegt; bei frustranem i.v. frühzeitig i.o."
+          },
+          {
+            "id": "am-m3",
+            "text": "Ringer Acetat 250 ml als Bolus (max. 1000 ml), permissive Hypotonie bei ansprechbarem Patienten"
+          },
+          {
+            "id": "am-an1",
+            "text": "Analgesie bei VAS > 3 (i.v.)",
+            "info": "Paracetamol, Novalgin, Morphin, Fentanyl, Ketamin erwägen. Kontraindikationen beachten. Situationsangepasste Lagerung / Immobilisation / Kühlung, ggf. O₂.",
+            "kritisch": true
+          },
+          {
+            "id": "am-an2",
+            "text": "Kein i.v.-Zugang: Methoxyfluran (bei Trauma) oder MAD",
+            "info": "MAD zugelassen: Fentanyl, Morphin, Midazolam, Ketamin; off label: Naloxon, Anexate. Kontraindikationen MAD: Gesichtstrauma, schweres SHT, Rhinitis."
+          },
+          {
+            "id": "am-an3",
+            "text": "Wirkung nach 5 min beurteilt, Analgesie ggf. repetiert"
+          },
+          {
+            "id": "am-an4",
+            "text": "Bei Übelkeit / Erbrechen: Ondansetron 4 mg"
+          },
+          {
+            "id": "am-m5",
+            "text": "Ringe / Uhr an der verletzten Hand entfernt"
+          },
+          {
+            "id": "am-m6",
+            "text": "Amputate versorgt und mitgenommen",
+            "info": "Trocken in sterile Kompresse, in Beutel; diesen in zweiten Beutel mit Wasser und Eis 1:1. Nie direkt auf Eis.",
+            "kritisch": true
+          },
+          {
+            "id": "am-m7",
+            "text": "Immobilisation und lokale Kühlung"
+          }
+        ],
+        "transport": [
+          {
+            "id": "am-t1",
+            "text": "Trauma Center wegen Amputationsverletzung, Voranmeldung",
             "kritisch": true
           }
         ]
@@ -2187,7 +3332,9 @@
         "xabcde": [
           {
             "id": "sh-x1",
-            "text": "HWS-Immobilisation bei entsprechendem Unfallmechanismus"
+            "text": "WS-Immobilisation: GCS < 15 nach stumpfem Trauma → indiziert",
+            "info": "Stumpfes Trauma mit entsprechendem Mechanismus: GCS < 15 → Immobilisation. GCS 15: Druckschmerz über WS, neurologisches Defizit oder Fehlstellung → Immobilisation. Sonst: Intoxikation, ablenkende Verletzung oder Kommunikationsbarriere → Immobilisation; keines davon → nicht indiziert. Penetrierendes Trauma an Kopf, Hals oder Rumpf → keine Immobilisation, zügiger Transport.",
+            "kritisch": true
           },
           {
             "id": "sh-x2",
@@ -2197,7 +3344,7 @@
           {
             "id": "sh-x3",
             "text": "Hypoxie und Hypotonie vermieden",
-            "info": "Sekundäre Hirnschädigung verhindern – Zielwerte gemäss Vorgaben.",
+            "info": "Sekundäre Hirnschädigung verhindern. Bei Blutungsschock mit SHT: Ziel BD syst. ≥ 90 mmHg (Alg. 3.9).",
             "kritisch": true
           }
         ],
@@ -2216,12 +3363,122 @@
           {
             "id": "sh-m1",
             "text": "Oberkörper 30° hoch (wenn kein Schock)"
+          },
+          {
+            "id": "sh-m2",
+            "text": "Analgesie: kein MAD bei schwerem SHT oder Gesichtstrauma"
+          },
+          {
+            "id": "sh-m3",
+            "text": "Bei Übelkeit / Erbrechen: Ondansetron 4 mg"
           }
         ],
         "transport": [
           {
             "id": "sh-t1",
             "text": "Spital mit CT und Neurochirurgie, Voranmeldung",
+            "kritisch": true
+          }
+        ]
+      },
+      "algorithmen": [
+        "8.11",
+        "5.5"
+      ]
+    },
+    {
+      "id": "velosturz",
+      "titel": "Velosturz – WS-Immobilisation",
+      "kategorie": "Trauma",
+      "dringlichkeit": "P2",
+      "algorithmen": [
+        "8.11",
+        "5.1",
+        "5.5"
+      ],
+      "meldung": {
+        "alarm": "Frau, 41 J., Sturz mit dem Velo",
+        "ort": "Radweg entlang der Aare",
+        "situation": "Passant meldet: Velofahrerin ist über den Lenker gestürzt, sitzt am Boden und hält sich den Arm."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "18/min"
+          ],
+          [
+            "SpO₂",
+            "98 %"
+          ],
+          [
+            "HF",
+            "96/min"
+          ],
+          [
+            "BD",
+            "130/80 mmHg"
+          ],
+          [
+            "GCS",
+            "15"
+          ],
+          [
+            "NRS",
+            "8/10"
+          ]
+        ],
+        "befunde": "Helm getragen, Helm gerissen. Geschlossene Fehlstellung am rechten Unterarm, DMS intakt. Kein Druckschmerz über der Wirbelsäule, keine neurologischen Ausfälle. Nicht alkoholisiert, spricht gut Deutsch.",
+        "verlauf": [
+          "Lehrpunkt: Die schmerzhafte Unterarmfraktur ist eine ablenkende Verletzung → WS-Immobilisation indiziert.",
+          "Variante: nur Schürfungen, keine ablenkende Verletzung → Immobilisation nicht indiziert."
+        ]
+      },
+      "zusatzpunkte": {
+        "xabcde": [
+          {
+            "id": "vs-x1",
+            "text": "Indikation zur WS-Immobilisation geprüft",
+            "info": "Stumpfes Trauma mit entsprechendem Mechanismus: GCS < 15 → Immobilisation. GCS 15: Druckschmerz über WS, neurologisches Defizit oder Fehlstellung → Immobilisation. Sonst: Intoxikation, ablenkende Verletzung oder Kommunikationsbarriere → Immobilisation; keines davon → nicht indiziert. Penetrierendes Trauma an Kopf, Hals oder Rumpf → keine Immobilisation, zügiger Transport.",
+            "kritisch": true
+          },
+          {
+            "id": "vs-x2",
+            "text": "Ablenkende Verletzung erkannt",
+            "info": "Jede Verletzung, welche die Wahrnehmung anderer Verletzungen beeinflussen kann: z. B. Frakturen langer Röhrenknochen, Verletzungen der Eingeweide, grosse RQW, grossflächige Verbrennungen."
+          },
+          {
+            "id": "vs-x3",
+            "text": "DMS am verletzten Arm geprüft"
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "vs-an1",
+            "text": "Analgesie bei VAS > 3 (i.v.)",
+            "info": "Paracetamol, Novalgin, Morphin, Fentanyl, Ketamin erwägen. Kontraindikationen beachten. Situationsangepasste Lagerung / Immobilisation / Kühlung, ggf. O₂.",
+            "kritisch": true
+          },
+          {
+            "id": "vs-an2",
+            "text": "Kein i.v.-Zugang: Methoxyfluran (bei Trauma) oder MAD",
+            "info": "MAD zugelassen: Fentanyl, Morphin, Midazolam, Ketamin; off label: Naloxon, Anexate. Kontraindikationen MAD: Gesichtstrauma, schweres SHT, Rhinitis."
+          },
+          {
+            "id": "vs-an3",
+            "text": "Wirkung nach 5 min beurteilt, Analgesie ggf. repetiert"
+          },
+          {
+            "id": "vs-an4",
+            "text": "Bei Übelkeit / Erbrechen: Ondansetron 4 mg"
+          },
+          {
+            "id": "vs-m1",
+            "text": "Ringe / Schmuck entfernt, Immobilisation und lokale Kühlung"
+          },
+          {
+            "id": "vs-m2",
+            "text": "WS-Immobilisation durchgeführt",
             "kritisch": true
           }
         ]
@@ -2264,10 +3521,10 @@
             "9/10"
           ]
         ],
-        "befunde": "Deutliche Fehlstellung des rechten Sprunggelenks, Haut über dem Innenknöchel gespannt und blass, Fusspulse schwach tastbar, Sensibilität erhalten. Keine weiteren Verletzungen.",
+        "befunde": "Deutliche Fehlstellung des rechten Sprunggelenks, Haut über dem Innenknöchel gespannt und blass. Fusspulse nicht tastbar, Fuss kühl, Sensibilität erhalten. Keine weiteren Verletzungen.",
         "verlauf": [
-          "Ohne Reposition: Haut über dem Knöchel wird weisser, Fuss kühl.",
-          "Nach Analgesie und achsengerechtem Zug: Pulse gut tastbar, Haut rosig."
+          "Ohne Reposition: Haut über dem Knöchel wird weisser, Fuss kalt.",
+          "Nach Analgosedation und achsengerechtem Längszug: Pulse tastbar, Haut rosig."
         ]
       },
       "zusatzpunkte": {
@@ -2280,35 +3537,58 @@
         "massnahmen": [
           {
             "id": "os-m1",
-            "text": "DMS vor und nach jeder Manipulation geprüft",
-            "info": "Durchblutung, Motorik, Sensibilität.",
+            "text": "Durchblutung, Motorik, Sensibilität (DMS) vor und nach jeder Manipulation geprüft",
             "kritisch": true
           },
           {
             "id": "os-m2",
-            "text": "Schmerztherapie gemäss Algorithmus",
+            "text": "Ringe / Schmuck an der betroffenen Extremität entfernt"
+          },
+          {
+            "id": "os-an1",
+            "text": "Analgesie bei VAS > 3 (i.v.)",
+            "info": "Paracetamol, Novalgin, Morphin, Fentanyl, Ketamin erwägen. Kontraindikationen beachten. Situationsangepasste Lagerung / Immobilisation / Kühlung, ggf. O₂.",
             "kritisch": true
           },
           {
-            "id": "os-m3",
-            "text": "Achsengerechte Reposition bei gefährdeter Durchblutung / Haut, gemäss Kompetenz"
+            "id": "os-an2",
+            "text": "Kein i.v.-Zugang: Methoxyfluran (bei Trauma) oder MAD",
+            "info": "MAD zugelassen: Fentanyl, Morphin, Midazolam, Ketamin; off label: Naloxon, Anexate. Kontraindikationen MAD: Gesichtstrauma, schweres SHT, Rhinitis."
+          },
+          {
+            "id": "os-an3",
+            "text": "Wirkung nach 5 min beurteilt, Analgesie ggf. repetiert"
+          },
+          {
+            "id": "os-an4",
+            "text": "Bei Übelkeit / Erbrechen: Ondansetron 4 mg"
           },
           {
             "id": "os-m4",
-            "text": "Schienung inkl. benachbarter Gelenke (z. B. Vakuumschiene)"
+            "text": "OSG-Luxationsfraktur mit Pulslosigkeit: Reposition unter Analgosedation erwägen",
+            "info": "Reposition unter achsengerechtem Längszug.",
+            "kritisch": true
           },
           {
             "id": "os-m5",
-            "text": "Schuh und Schmuck entfernt, offene Wunden steril abgedeckt"
+            "text": "Offene Fraktur: steriler Verband"
+          },
+          {
+            "id": "os-m6",
+            "text": "Immobilisation und lokale Kühlung"
           }
         ],
         "transport": [
           {
             "id": "os-t1",
-            "text": "Rettung aus unwegsamem Gelände geplant (Feuerwehr, REGA)"
+            "text": "Rettung aus unwegsamem Gelände geplant (Feuerwehr, Flugrettung)"
           }
         ]
-      }
+      },
+      "algorithmen": [
+        "5.1",
+        "5.5"
+      ]
     },
     {
       "id": "schenkelhals",
@@ -2381,13 +3661,31 @@
         ],
         "massnahmen": [
           {
-            "id": "sc-m1",
-            "text": "Schmerztherapie vor Umlagerung",
+            "id": "sc-an1",
+            "text": "Analgesie bei VAS > 3 (i.v.)",
+            "info": "Paracetamol, Novalgin, Morphin, Fentanyl, Ketamin erwägen. Kontraindikationen beachten. Situationsangepasste Lagerung / Immobilisation / Kühlung, ggf. O₂.",
             "kritisch": true
           },
           {
+            "id": "sc-an2",
+            "text": "Kein i.v.-Zugang: Methoxyfluran (bei Trauma) oder MAD",
+            "info": "MAD zugelassen: Fentanyl, Morphin, Midazolam, Ketamin; off label: Naloxon, Anexate. Kontraindikationen MAD: Gesichtstrauma, schweres SHT, Rhinitis."
+          },
+          {
+            "id": "sc-an3",
+            "text": "Wirkung nach 5 min beurteilt, Analgesie ggf. repetiert"
+          },
+          {
+            "id": "sc-an4",
+            "text": "Bei Übelkeit / Erbrechen: Ondansetron 4 mg"
+          },
+          {
+            "id": "sc-m1",
+            "text": "Hüfte: keine Reposition"
+          },
+          {
             "id": "sc-m2",
-            "text": "Schonende Umlagerung (Schaufeltrage, Vakuummatratze)"
+            "text": "Schonende Umlagerung (Schaufeltrage, Vakuummatratze), Immobilisation"
           },
           {
             "id": "sc-m3",
@@ -2396,6 +3694,533 @@
           {
             "id": "sc-m4",
             "text": "Medikamentenliste mitgenommen"
+          }
+        ]
+      },
+      "algorithmen": [
+        "5.1",
+        "5.5"
+      ]
+    },
+    {
+      "id": "verbrennung",
+      "titel": "Verbrennung",
+      "kategorie": "Trauma",
+      "dringlichkeit": "P1",
+      "algorithmen": [
+        "5.2",
+        "5.3",
+        "5.5"
+      ],
+      "meldung": {
+        "alarm": "Mann, 34 J., Verbrennungen beim Grillieren",
+        "ort": "Garten eines Einfamilienhauses",
+        "situation": "Ehefrau meldet: Er hat Brennsprit in den Grill nachgegossen, es gab eine Stichflamme. Sie hat ihn mit dem Gartenschlauch gelöscht und kühlt seit 15 Minuten."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "22/min"
+          ],
+          [
+            "SpO₂",
+            "97 %"
+          ],
+          [
+            "HF",
+            "112/min"
+          ],
+          [
+            "BD",
+            "135/85 mmHg"
+          ],
+          [
+            "GCS",
+            "15"
+          ],
+          [
+            "Temp.",
+            "35.8 °C"
+          ],
+          [
+            "NRS",
+            "9/10"
+          ]
+        ],
+        "befunde": "Verbrennungen Grad 2a/2b an Gesicht, Hals, Brust und beiden Unterarmen inkl. Händen, ca. 18 % KOF. Augenbrauen versengt, Stimme normal, kein Russ im Mund. Ca. 80 kg.",
+        "verlauf": [
+          "Wird weiter gekühlt: Temperatur 34.9 °C, Kältezittern.",
+          "Nach 20 min: zunehmende Heiserkeit → Inhalationstrauma (Alg. 5.3)."
+        ]
+      },
+      "zusatzpunkte": {
+        "szene": [
+          {
+            "id": "vb-s1",
+            "text": "Selbstschutz, Ursache beseitigt (Grill, Brennsprit)"
+          }
+        ],
+        "xabcde": [
+          {
+            "id": "vb-x1",
+            "text": "Inhalationstrauma gesucht (Russ, Heiserkeit, Verbrennung im Gesicht)",
+            "info": "Falls ja: Alg. 5.3 – hochdosiert O₂, Aufgebot NA erwägen.",
+            "kritisch": true
+          },
+          {
+            "id": "vb-x2",
+            "text": "Initiale Kühlung gestoppt, nicht haftende Kleidung entfernt, Normothermie angestrebt",
+            "kritisch": true
+          },
+          {
+            "id": "vb-x3",
+            "text": "Ausmass geschätzt (% KOF und Grad)",
+            "info": "1 % = Hand des Patienten inkl. Finger; Neunerregel. Grad 1: Rötung, wie Sonnenbrand · 2a: Blasen, Wundgrund rosig, rekapillarisierend, starker Schmerz · 2b: Blasen, Wundgrund blasser, kaum rekapillarisierend, reduzierter Schmerz · 3: weiss, lederartig, schmerzlos · 4: Verkohlung."
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "vb-m1",
+            "text": "Warme Ringerfundin: Erwachsene max. 500 ml in der 1. Stunde",
+            "info": "Kinder: 10 ml/kg KG.",
+            "kritisch": true
+          },
+          {
+            "id": "vb-m2",
+            "text": "Analgosedation bei Schmerzen"
+          },
+          {
+            "id": "vb-m3",
+            "text": "Sterile Wundversorgung mit Metaline"
+          },
+          {
+            "id": "vb-m4",
+            "text": "Wärmeerhalt"
+          }
+        ],
+        "transport": [
+          {
+            "id": "vb-t1",
+            "text": "Transport ins Verbrennungszentrum gemäss Indikationskriterien",
+            "info": "Erwachsene Grad 2 > 10 % KOF · Kinder / ältere Patienten Grad 2 > 5 % · ab Grad 3 > 5 % · Hände, Gesicht, Genitalien · Starkstrom, Blitzschlag.",
+            "kritisch": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "hypothermie",
+      "titel": "Hypothermie",
+      "kategorie": "Umweltnotfälle",
+      "dringlichkeit": "P1",
+      "algorithmen": [
+        "5.4",
+        "3.2"
+      ],
+      "meldung": {
+        "alarm": "Mann, ca. 75 J., unterkühlt aufgefunden",
+        "ort": "Garten eines Einfamilienhauses, Januar, −6 °C",
+        "situation": "Nachbarin meldet: Der Mann liegt im Garten im Schnee und reagiert kaum. Er war seit gestern Abend nicht mehr zu sehen."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "8/min"
+          ],
+          [
+            "SpO₂",
+            "nicht messbar"
+          ],
+          [
+            "HF",
+            "36/min, Vorhofflimmern"
+          ],
+          [
+            "BD",
+            "85/50 mmHg"
+          ],
+          [
+            "GCS",
+            "7"
+          ],
+          [
+            "BZ",
+            "5.8 mmol/l"
+          ],
+          [
+            "Temp.",
+            "28.4 °C (ösophageal)"
+          ]
+        ],
+        "befunde": "Kalte, steife Haut, nasse Kleidung. Schutzreflexe vorhanden. Kein Trauma ersichtlich. Bekannte Demenz.",
+        "verlauf": [
+          "Grobe Bewegungen / Umlagern: Kammerflimmern → Alg. 3.2 (< 30 °C: max. 3 Defibrillationen, keine i.v.-Medikamente).",
+          "Bei schonender Bergung: stabil bis zur Übergabe."
+        ]
+      },
+      "zusatzpunkte": {
+        "szene": [
+          {
+            "id": "hp-s1",
+            "text": "Schonende Bergung ohne Zeitverlust, Bewegungen möglichst vermeiden",
+            "kritisch": true
+          }
+        ],
+        "xabcde": [
+          {
+            "id": "hp-x1",
+            "text": "Nasse Kleidung entfernt, vor weiterem Auskühlen geschützt",
+            "kritisch": true
+          },
+          {
+            "id": "hp-x2",
+            "text": "Körpertemperatur gemessen (wenn möglich ösophageal)"
+          },
+          {
+            "id": "hp-x3",
+            "text": "Kreislaufstillstand ausgeschlossen (Pulskontrolle bis 1 min)"
+          },
+          {
+            "id": "hp-x4",
+            "text": "Schutzreflexe beurteilt",
+            "info": "Fehlen sie: Atemwegssicherung erwägen, Aufgebot NA."
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "hp-m1",
+            "text": "O₂-Gabe"
+          },
+          {
+            "id": "hp-m2",
+            "text": "≥ 30 °C: aktive externe Erwärmung des Körperstamms, warme Infusion",
+            "info": "Wacher Patient: aktiv wärmen."
+          },
+          {
+            "id": "hp-m3",
+            "text": "Kreislaufstillstand: Vorgehen nach Körpertemperatur",
+            "info": "< 30 °C: REA fortführen, max. 3 Defibrillationen, keine i.v.-Medikamente, Transport unter REA erwägen. 30–35 °C: REA fortführen, Medikamente im doppelten Zeitintervall, Defibrillation fortführen."
+          }
+        ],
+        "transport": [
+          {
+            "id": "hp-t1",
+            "text": "< 30 °C: Zentrumsspital mit ECMO (ISB, USB), frühzeitige Flugrettung erwägen",
+            "kritisch": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "geburt",
+      "titel": "Geburt",
+      "kategorie": "Geburtshilfe",
+      "dringlichkeit": "P1",
+      "algorithmen": [
+        "6.1"
+      ],
+      "meldung": {
+        "alarm": "Frau, 31 J., starke Wehen, Geburt steht bevor",
+        "ort": "Mehrfamilienhaus, 4. OG mit Lift",
+        "situation": "Ehemann meldet: Seine Frau hat Wehen alle 2 Minuten und muss pressen. Es ist ihr drittes Kind."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "22/min"
+          ],
+          [
+            "SpO₂",
+            "98 %"
+          ],
+          [
+            "HF",
+            "104/min"
+          ],
+          [
+            "BD",
+            "130/80 mmHg"
+          ],
+          [
+            "APGAR Kind",
+            "1 min: 7 · 5 min: 9 · 10 min: 10"
+          ]
+        ],
+        "befunde": "39. SSW, Mutterpass vorhanden, keine Komplikationen, Schädellage. Fruchtwasser klar, vor einer Stunde abgegangen. Kopf beim Pressen sichtbar.",
+        "verlauf": [
+          "Geburt innert 10 min. Kind schreit nach Abtrocknen und Stimulation.",
+          "Variante: Kind schlaff, keine Atmung (APGAR 3) → Neugeborenenversorgung (Alg. 60.2).",
+          "Nach der Geburt: verstärkte Blutung → Alg. 6.3."
+        ]
+      },
+      "zusatzpunkte": {
+        "anamnese": [
+          {
+            "id": "gb-a1",
+            "text": "Mutterpass: Gravida / Para, SSW, Termin, Komplikationen, Lage des Kindes",
+            "kritisch": true
+          },
+          {
+            "id": "gb-a2",
+            "text": "Fruchtwasser- / Blutabgang erfragt"
+          }
+        ],
+        "xabcde": [
+          {
+            "id": "gb-x1",
+            "text": "Presswehen und / oder Kopf sichtbar → am Ort bleiben",
+            "info": "Nein: Beckenhochlagerung, Linksseitenlage, «Füsse voraus» einladen, rascher Transport, Tokolyse erwägen (Rücksprache Hebamme): Magnesium 2 g als Kurzinfusion.",
+            "kritisch": true
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "gb-m1",
+            "text": "Aufgebot Hebamme / NEO-Team / Isolette erwogen"
+          },
+          {
+            "id": "gb-m2",
+            "text": "Geburt vorbereitet (Wärme, Tücher, Abnabelungsset)"
+          },
+          {
+            "id": "gb-m3",
+            "text": "Beim Pressen unterstützt: Dammschutz, Kopfbremse, Schulterentwicklung",
+            "kritisch": true
+          },
+          {
+            "id": "gb-m4",
+            "text": "Kind abgetrocknet, Wärmeschutz",
+            "kritisch": true
+          },
+          {
+            "id": "gb-m5",
+            "text": "Abgenabelt, Geburtszeit dokumentiert"
+          },
+          {
+            "id": "gb-m6",
+            "text": "APGAR nach 1, 5 und 10 min",
+            "info": "Atmung: keine 0 · unregelmässig 1 · regelmässig 2 | Puls: kein 0 · < 100/min 1 · > 100/min 2 | Grundtonus: schlaff 0 · träge 1 · aktive Bewegungen 2 | Aussehen: blass-grau/blau 0 · Stamm rosa, Extremitäten blau 1 · rosa 2 | Reflexe: keine 0 · Grimassieren 1 · Schreien 2"
+          },
+          {
+            "id": "gb-m7",
+            "text": "Mutter versorgt: Nachblutung und Uteruskontraktion kontrolliert",
+            "kritisch": true
+          },
+          {
+            "id": "gb-m8",
+            "text": "Uterotonika nach der Geburt erwogen"
+          },
+          {
+            "id": "gb-m9",
+            "text": "Plazenta asserviert"
+          }
+        ]
+      }
+    },
+    {
+      "id": "praepartal",
+      "titel": "Präpartale Blutung",
+      "kategorie": "Geburtshilfe",
+      "dringlichkeit": "P1",
+      "algorithmen": [
+        "6.3"
+      ],
+      "meldung": {
+        "alarm": "Frau, 34 J., 33. SSW, Bauchschmerzen und Blutung",
+        "ort": "Einfamilienhaus",
+        "situation": "Frau meldet selbst: Nach einem Sturz auf der Treppe hat sie Bauchschmerzen, der Bauch ist hart und sie blutet aus der Scheide."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "24/min"
+          ],
+          [
+            "SpO₂",
+            "96 %"
+          ],
+          [
+            "HF",
+            "118/min"
+          ],
+          [
+            "BD",
+            "95/60 mmHg"
+          ],
+          [
+            "GCS",
+            "15"
+          ],
+          [
+            "NRS",
+            "8/10"
+          ]
+        ],
+        "befunde": "Brettharter, druckschmerzhafter Uterus (Dauerkontraktion), mässige dunkle Blutung mit Koageln. Kindsbewegungen seit dem Sturz vermindert. Mutterpass: keine Plazenta praevia bekannt.",
+        "verlauf": [
+          "In Rückenlage: BD 80/50 mmHg, Schwindel (Vena-cava-Kompressionssyndrom).",
+          "Ohne Volumen nach 15 min: HF 135/min, BD 75/45 mmHg.",
+          "Arbeitsdiagnose: vorzeitige Plazentalösung."
+        ]
+      },
+      "zusatzpunkte": {
+        "anamnese": [
+          {
+            "id": "pb-a1",
+            "text": "SSW, Mutterpass, bekannte Plazenta praevia erfragt"
+          },
+          {
+            "id": "pb-a2",
+            "text": "Trauma / Unfall, St. n. Sectio erfragt"
+          }
+        ],
+        "xabcde": [
+          {
+            "id": "pb-x1",
+            "text": "Blutungsstärke beurteilt",
+            "info": "Stärker als Menstruation oder Koagel = Hinweis auf stärkere Blutung.",
+            "kritisch": true
+          },
+          {
+            "id": "pb-x2",
+            "text": "Kindsbewegungen, Schmerzen / Wehen / harter Uterus, Kreislauf beurteilt",
+            "info": "Verminderte Kindsbewegungen, Schmerzen / harter Uterus oder Kreislaufsymptome → Vorgehen wie bei starker Blutung."
+          },
+          {
+            "id": "pb-x3",
+            "text": "Differenzialdiagnosen bedacht",
+            "info": "Plazenta praevia: meist schmerzlos, oft bekannt · Vorzeitige Plazentalösung: Schmerzen, Holzuterus, Trauma · Uterusruptur: starke Schmerzen, Schock, St. n. Sectio."
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "pb-m1",
+            "text": "Hochdosiert O₂"
+          },
+          {
+            "id": "pb-m2",
+            "text": "Grosslumiger i.v.-Zugang, Ringerfundin, Ziel BD syst. > 100 mmHg",
+            "kritisch": true
+          },
+          {
+            "id": "pb-m3",
+            "text": "Tranexamsäure erwogen"
+          },
+          {
+            "id": "pb-m4",
+            "text": "Phenylephrin 0,05–0,1 mg"
+          },
+          {
+            "id": "pb-m5",
+            "text": "Angepasste Analgesie mit Fentanyl",
+            "info": "Cave: postpartale Atemdepression beim Kind möglich."
+          },
+          {
+            "id": "pb-m6",
+            "text": "Linksseitenlage (Vena-cava-Kompressionssyndrom), evtl. Schocklagerung",
+            "kritisch": true
+          }
+        ],
+        "transport": [
+          {
+            "id": "pb-t1",
+            "text": "Rascher Transport in Geburtsklinik mit Voranmeldung",
+            "kritisch": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "postpartal",
+      "titel": "Postpartale Blutung",
+      "kategorie": "Geburtshilfe",
+      "dringlichkeit": "P1",
+      "algorithmen": [
+        "6.3",
+        "3.9"
+      ],
+      "meldung": {
+        "alarm": "Frau, 29 J., starke Blutung nach Hausgeburt",
+        "ort": "Bauernhaus ausserhalb des Dorfes",
+        "situation": "Hebamme meldet: Kind vor 30 min geboren, Plazenta vollständig. Jetzt starke Blutung, der Uterus ist weich."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "26/min"
+          ],
+          [
+            "SpO₂",
+            "95 %"
+          ],
+          [
+            "HF",
+            "132/min"
+          ],
+          [
+            "BD",
+            "82/50 mmHg"
+          ],
+          [
+            "Rekap.",
+            "4 s"
+          ],
+          [
+            "GCS",
+            "14"
+          ]
+        ],
+        "befunde": "Weicher, schlecht kontrahierter Uterus (Atonie), geschätzter Blutverlust 1200 ml. Neugeborenes gesund beim Vater.",
+        "verlauf": [
+          "Nach manueller Uteruskompression: Blutung deutlich weniger.",
+          "Ohne Kompression: BD 70/40 mmHg, GCS 12."
+        ]
+      },
+      "zusatzpunkte": {
+        "xabcde": [
+          {
+            "id": "pp-x1",
+            "text": "Postpartale Blutung erkannt: manuelle Uteruskompression",
+            "kritisch": true
+          },
+          {
+            "id": "pp-x2",
+            "text": "Hochdosiert O₂"
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "pp-m1",
+            "text": "1–2 Zugänge; Ringer Acetat 250 ml als Bolus, max. 1000 ml (Alg. 3.9)"
+          },
+          {
+            "id": "pp-m2",
+            "text": "Tranexamsäure 1 g",
+            "kritisch": true
+          },
+          {
+            "id": "pp-m3",
+            "text": "Uterotonika mit Hebamme besprochen"
+          },
+          {
+            "id": "pp-m4",
+            "text": "Aufgebot NA / Flugrettung erwogen"
+          },
+          {
+            "id": "pp-m5",
+            "text": "Wärmeerhalt"
+          }
+        ],
+        "transport": [
+          {
+            "id": "pp-t1",
+            "text": "Rascher Transport in Geburtsklinik mit Voranmeldung",
+            "kritisch": true
           }
         ]
       }
@@ -2663,6 +4488,146 @@
           }
         ]
       }
+    },
+    {
+      "id": "meningokokken",
+      "titel": "Meningokokkensepsis",
+      "kategorie": "Pädiatrie",
+      "dringlichkeit": "P1",
+      "algorithmen": [
+        "3.10"
+      ],
+      "meldung": {
+        "alarm": "Kind, 4 J., hohes Fieber und Ausschlag",
+        "ort": "Einfamilienhaus",
+        "situation": "Mutter meldet: Ihre Tochter hat seit heute Morgen hohes Fieber, ist jetzt sehr schläfrig und hat rote Punkte an den Beinen."
+      },
+      "instruktor": {
+        "vitalwerte": [
+          [
+            "AF",
+            "36/min"
+          ],
+          [
+            "SpO₂",
+            "94 %"
+          ],
+          [
+            "HF",
+            "168/min"
+          ],
+          [
+            "BD",
+            "78/40 mmHg"
+          ],
+          [
+            "Rekap.",
+            "4 s"
+          ],
+          [
+            "GCS",
+            "12"
+          ],
+          [
+            "BZ",
+            "4.8 mmol/l"
+          ],
+          [
+            "Temp.",
+            "40.3 °C"
+          ],
+          [
+            "Gewicht",
+            "ca. 16 kg"
+          ]
+        ],
+        "befunde": "Petechien und Purpura an Beinen und Rumpf, nicht wegdrückbar (Glastest). Kalte Extremitäten, Nackensteife fraglich.",
+        "verlauf": [
+          "Ohne Volumen nach 10 min: BD 65/35 mmHg, GCS 9.",
+          "Nach Ringer Acetat 20 ml/kg (320 ml): HF 150/min, BD 85/45 mmHg."
+        ]
+      },
+      "zusatzpunkte": {
+        "ersteindruck": [
+          {
+            "id": "pat",
+            "text": "Pädiatrisches Beurteilungsdreieck (Aussehen, Atemarbeit, Hautdurchblutung)",
+            "info": "Erster Blick aus Distanz, bevor das Kind berührt wird.",
+            "kritisch": true
+          }
+        ],
+        "xabcde": [
+          {
+            "id": "norm",
+            "text": "Altersentsprechende Normwerte berücksichtigt",
+            "info": "AF, HF und BD je nach Alter unterschiedlich – Tabelle / Kinder-Notfallband nutzen."
+          },
+          {
+            "id": "mk-x1",
+            "text": "Petechien / Meningitiszeichen erkannt: Aufgebot NA erwägen, schneller Transport",
+            "kritisch": true
+          },
+          {
+            "id": "mk-x2",
+            "text": "Hypotonie nach Kinderformel erkannt: BD syst. < 80 mmHg + (2 × Alter)",
+            "kritisch": true
+          }
+        ],
+        "massnahmen": [
+          {
+            "id": "mk-m0",
+            "text": "Infektionsschutz (Maske Team)",
+            "kritisch": true
+          },
+          {
+            "id": "mk-m1",
+            "text": "Ringer Acetat 20 ml/kg KG",
+            "kritisch": true
+          },
+          {
+            "id": "mk-m2",
+            "text": "Vasopressoren erwägen: Phenylephrin 0,001–0,002 mg/kg KG, Adrenalin 10 mcg weise, Noradrenalin-Perfusor"
+          },
+          {
+            "id": "mk-m3",
+            "text": "Temperatur > 40 °C: physikalische Kühlung, Paracetamol erwägen"
+          },
+          {
+            "id": "mk-m4",
+            "text": "Gewicht erfragt / geschätzt"
+          }
+        ],
+        "transport": [
+          {
+            "id": "mk-t1",
+            "text": "Kinderklinik, Voranmeldung, Bezugsperson begleitet",
+            "kritisch": true
+          }
+        ]
+      }
     }
-  ]
+  ],
+  "quelle": "Medikamente, Dosierungen und Grenzwerte gemäss Algorithmen RD Grenchen 2023 (FG Medical RD soH, Stand 12.07.2023).",
+  "algorithmen": {
+    "3.2": "3.2 Kreislaufstillstand",
+    "3.3": "3.3 ROSC",
+    "3.4": "3.4 Akuter Thoraxschmerz inkl. Links- und Rechtsherzinsuffizienz",
+    "3.6.1": "3.6.1 Tachykarde Herzrhythmusstörungen",
+    "3.6.2": "3.6.2 Bradykarde Herzrhythmusstörungen",
+    "3.7": "3.7 Pacer / ICD Fehlfunktion",
+    "3.8": "3.8 Hypertensiver Notfall",
+    "3.9": "3.9 Hämorrhagischer Schock",
+    "3.10": "3.10 Sepsis",
+    "4.1": "4.1 Bewusstseinsstörung",
+    "4.2": "4.2 Krampfanfall",
+    "4.3": "4.3 Stroke",
+    "5.1": "5.1 Extremitätentrauma",
+    "5.2": "5.2 Verbrennung / Verätzung",
+    "5.3": "5.3 Inhalationstrauma / CO-Intox",
+    "5.4": "5.4 Hypothermie",
+    "5.5": "5.5 Schmerzen nicht kardialer Ursache",
+    "6.1": "6.1 Geburt / APGAR",
+    "6.3": "6.3 Peripartale Blutung",
+    "8.11": "8.11 Indikation zur Wirbelsäulenimmobilisation"
+  }
 }

@@ -27,7 +27,10 @@ Wichtig: Die App funktioniert nur über eine Webadresse, nicht durch Doppelklick
 - **Neutrale Checkliste** (Startseite, «Freie Übung»): alle Standardphasen ohne Szenario, mit Feld für das Einsatzstichwort. Sie entsteht aus dem Eintrag `"neutral": true` in `faelle.json`.
 - Fortschritt wird nur auf dem jeweiligen Gerät gespeichert.
 
-## 4. Fälle bearbeiten (`faelle.json`)
+## 4. Quelle der Medikamente
+Medikamente, Dosierungen und Grenzwerte stammen aus den **Algorithmen RD Grenchen 2023** (FG Medical RD soH, Stand 12.07.2023). Jeder Fall zeigt im Übungsmodus unter «Grundlage», auf welchen Algorithmen er beruht (in `faelle.json` im Feld `"algorithmen"`).
+
+## 5. Fälle bearbeiten (`faelle.json`)
 Die Datei mit einem Texteditor öffnen (z. B. TextEdit im Modus «Reiner Text» oder VS Code).
 
 **`phasen`** – die 9 Standardphasen, die in jedem Fall vorkommen.
@@ -71,5 +74,5 @@ Nach dem Bearbeiten den Ordner einfach erneut auf Netlify hochladen. Geänderte 
 
 Achtung: Wird die `id` eines Punktes geändert, geht dessen gespeicherter Haken auf den Geräten verloren.
 
-## 5. Design oder Funktionen ändern
+## 6. Design oder Funktionen ändern
 Änderungen werden automatisch geladen, sobald das Gerät online ist. Eine Versionsnummer muss nicht mehr angepasst werden.
